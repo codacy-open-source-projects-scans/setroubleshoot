@@ -1,0 +1,620 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Bruno Queiros <bqueiros@gmail.com>, 2013
+# Dimitris Glezos <glezos@transifex.com>, 2011
+# Miguel Sousa <migueljorgesousa@sapo.pt>, 2011
+# nmartins <nmartins10@gmail.com>, 2011
+# nunmiranda <nunmiranda@gmail.com>, 2011
+# Rui Gouveia <rui.gouveia@gmail.com>, 2010, 2011
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2017-08-31 08:30-0400\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Portuguese (http://www.transifex.com/projects/p/fedora/"
+"language/pt/)\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 4.6.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux Resolução de Problemas"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "Despiste problemas com acessos negados devido ao SELinux"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr ""
+
+#, python-format
+msgid "port %s"
+msgstr "porto %s"
+
+msgid "Unknown"
+msgstr "Desconhecido"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+
+msgid "Must call policy_init first"
+msgstr "Deve invocar policy_init primeiro"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+
+msgid "Error during access vector computation"
+msgstr "Erro durante o cálculo do vector de acesso"
+
+msgid "SELinux Alert Browser"
+msgstr "Alerta de Navegação SELinux"
+
+msgid "The source process:"
+msgstr "O processo de origem:"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "No"
+msgstr "Não"
+
+msgid "Attempted this access:"
+msgstr "Tentativa de acesso a este:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "Janela de detalhes do SETroubleshoot"
+
+msgid "Would you like to receive alerts?"
+msgstr "Gostaria de receber alertas?"
+
+msgid "Notify Admin"
+msgstr "Notificar administrador"
+
+msgid "Troubleshoot"
+msgstr "Resolução de erros"
+
+msgid "Details"
+msgstr "Detalhes"
+
+msgid "SETroubleshoot Alert List"
+msgstr "Lista de Alertas SETroubleshoot"
+
+msgid "List All Alerts"
+msgstr "Listar todos os alertas"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Processo de origem"
+
+msgid "Attempted Access"
+msgstr "Tentativa de acesso"
+
+msgid "On this"
+msgstr "Nesta"
+
+msgid "Occurred"
+msgstr "Ocorreu"
+
+msgid "Last Seen"
+msgstr "Última Vez Visto"
+
+msgid "Status"
+msgstr "Estado"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "Impossível permitir acesso."
+
+msgid "Notify"
+msgstr "Notificar"
+
+msgid "Notify alert in the future."
+msgstr "Alerta de notificação no futuro."
+
+msgid "Ignore"
+msgstr "Ignorar"
+
+msgid "Ignore alert in the future."
+msgstr "Ignorar alerta no futuro."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Se está a tentar...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>Então esta é a solução.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"Plugin\n"
+"Detalhes"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Reportar\n"
+"Erro"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Plugin: %s "
+
+msgid "Unable to grant access."
+msgstr "Impossível permitir acesso."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "Alerta %d de %d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "Nesta %s:"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "No Alerts"
+msgstr "Não há alertas"
+
+msgid "SELinux has detected a problem."
+msgstr "O SELinux detectou um problema."
+
+msgid "Sealert Error"
+msgstr "Erro Sealert"
+
+msgid "Sealert Message"
+msgstr "Mensagens do sealert"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "assinatura não encontrada"
+
+msgid "multiple signatures matched"
+msgstr "múltiplas assinaturas correspondem"
+
+msgid "id not found"
+msgstr "id não encontrado"
+
+msgid "database not found"
+msgstr "base de dados não encontrada"
+
+msgid "item is not a member"
+msgstr "o item não é membro"
+
+msgid "illegal to change user"
+msgstr "não é permitido mudar o utilizador"
+
+msgid "method not found"
+msgstr "método não encontrado"
+
+msgid "cannot create GUI"
+msgstr "não é possível criar a GUI"
+
+msgid "value unknown"
+msgstr "valor desconhecido"
+
+msgid "cannot open file"
+msgstr "não é possível abrir o ficheiro"
+
+msgid "invalid email address"
+msgstr "endereço de e-mail inválido"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "erro de socket"
+
+msgid "connection has been broken"
+msgstr "a ligação foi interrompida"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Pedido inválido. O descritor do ficheiro não está aberto"
+
+msgid "insufficient permission to modify user"
+msgstr "permissões insuficientes para modificar utilizador"
+
+msgid "authentication failed"
+msgstr "autenticação falhou"
+
+msgid "user prohibited"
+msgstr "utilizador proibido"
+
+msgid "not authenticated"
+msgstr "não autenticado"
+
+msgid "user lookup failed"
+msgstr "utilizador não encontrado"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "Ups, o %s obteve um erro!"
+
+msgid "Error"
+msgstr "Erro"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr ""
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "O utilizador (%s) não pode modificar dados para (%s)"
+
+msgid "Started"
+msgstr "Iniciado"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "À escuta de eventos audit"
+
+msgid "Never Ignore"
+msgstr "Nunca Ignorar"
+
+msgid "Ignore Always"
+msgstr "Ignorar Sempre"
+
+msgid "Ignore After First Alert"
+msgstr "Ignorar Depois do Primeiro Alerta"
+
+msgid "directory"
+msgstr "directório"
+
+msgid "semaphore"
+msgstr "semáforo"
+
+msgid "shared memory"
+msgstr "memória partilhada"
+
+msgid "message queue"
+msgstr "fila de mensagens"
+
+msgid "message"
+msgstr "mensagem"
+
+msgid "file"
+msgstr "ficheiro"
+
+msgid "socket"
+msgstr "socket"
+
+msgid "process"
+msgstr "processo"
+
+msgid "process2"
+msgstr ""
+
+msgid "filesystem"
+msgstr "sistema de ficheiros"
+
+msgid "node"
+msgstr "nó"
+
+msgid "capability"
+msgstr "capacidade"
+
+msgid "capability2"
+msgstr ""
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s tem um tipo de permissão (%s). Este acesso não foi negado."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "O SELinux está em modo permissivo. Este acesso não foi negado."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux está a proibir %s de utilizar os acessos %s num processo."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux está a proibir %s de utilizar os acessos '%s' num processo."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux está a proibir %s de utilizar a capacidade %s."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux está a proibir %s de utilizar as capacidades '%s'."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux está a proibir %s de %s aceder a %s %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux está a proibir %s de aceder '%s' no %s %s."
+
+msgid "Additional Information:\n"
+msgstr "Informações adicionais:\n"
+
+msgid "Source Context"
+msgstr "Contexto de Origem"
+
+msgid "Target Context"
+msgstr "Contexto de Destino"
+
+msgid "Target Objects"
+msgstr "Objectos de Destino"
+
+msgid "Source"
+msgstr "Fonte"
+
+msgid "Source Path"
+msgstr "Caminho de Origem"
+
+msgid "Port"
+msgstr "Porto"
+
+msgid "Host"
+msgstr "Máquina"
+
+msgid "Source RPM Packages"
+msgstr "Pacotes RPM Fonte"
+
+msgid "Target RPM Packages"
+msgstr "Pacotes RPM Destino"
+
+msgid "SELinux Policy RPM"
+msgstr ""
+
+msgid "Local Policy RPM"
+msgstr ""
+
+msgid "Selinux Enabled"
+msgstr "Selinux Activo"
+
+msgid "Policy Type"
+msgstr "Tipo de Política"
+
+msgid "Enforcing Mode"
+msgstr "Modo de Execução Forçada"
+
+msgid "Host Name"
+msgstr "Nome da Máquina"
+
+msgid "Platform"
+msgstr "Plataforma"
+
+msgid "Alert Count"
+msgstr "Contador de Alertas"
+
+msgid "First Seen"
+msgstr "Primeira Vez Visto"
+
+msgid "Local ID"
+msgstr "ID Local"
+
+msgid "Raw Audit Messages"
+msgstr "Mensagens de Auditoria em Bruto"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"Em seguida "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Fazer\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "Novo alerta de segurança SELinux"
+
+msgid "AVC denial, click icon to view"
+msgstr "Recusa AVC, carregue no ícone para ver"
+
+msgid "Dismiss"
+msgstr "Descartar"
+
+msgid "Show"
+msgstr "Mostrar"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "Recusa SELinux AVC, carregue no ícone para ver"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+"O SELinux não está activo, o sealert não será executado em sistemas que não "
+"possuam o SELinux activo"
+
+msgid "Not fixable."
+msgstr "Não corrigível."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "%s executado com sucesso"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "O plugin %s não é válido para o id %s"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux não está activo, setroubleshootd a sair..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "fork #1 falhou: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+
+msgid "Troubleshoot selected alert"
+msgstr "Resolução de erros para o alerta seleccionado"
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete Selected Alerts"
+msgstr "Apagar os alertas seleccionados"
+
+msgid "Close"
+msgstr ""
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>O SELinux detectou um problema.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "Activar pop-ups de alerta."
+
+msgid "Turn off alert pop-ups."
+msgstr "Desactivar pop-ups de alerta."
+
+msgid "On this file:"
+msgstr "Neste ficheiro:"
+
+msgid "label"
+msgstr "etiqueta"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"Alerta vermelho de despiste de informação.  Pode requerer previlégios "
+"administrativos para solucionar."
+
+msgid "Email alert to system administrator."
+msgstr "E-mail de alerta para o administrador de sistemas."
+
+msgid "Delete current alert from the database."
+msgstr "Apagar o alerta actual da base de dados."
+
+msgid "Previous"
+msgstr ""
+
+msgid "Show previous alert."
+msgstr "Mostrar alerta anterior."
+
+msgid "Next"
+msgstr ""
+
+msgid "Show next alert."
+msgstr "Mostrar próximo alerta."
+
+msgid "List all alerts in the database."
+msgstr "Listar todos os alertas da base de dados."
+
+msgid "Review and Submit Bug Report"
+msgstr "Rever e Submeter Relatório de Erro"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Rever e Submeter um Relatório de Erro</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"Pode pretender rever a seguir o resultado do erro que irá ser incluído no "
+"relatório de erro e modificá-lo para excluir qualquer dado sensível."
+
+msgid "Included error output:"
+msgstr "Resultado do erro incluído:"
+
+msgid "Submit Report"
+msgstr "Submeter Relatório"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "Esta operação foi concluída."
+
+msgid "Success!"
+msgstr "Sucesso!"
+
+msgid "button"
+msgstr "botão"

@@ -1,0 +1,623 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Alexander Todorov <atodorov@redhat.com>, 2008
+# Boris Yakimov <borisyakimov@ymail.com>, 2012
+# Dimitris Glezos <glezos@transifex.com>, 2011
+# Valentin Laskov <laskov@festa.bg>, 2012-2013
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2017-08-31 08:29-0400\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Bulgarian (http://www.transifex.com/projects/p/fedora/"
+"language/bg/)\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 4.6.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux коректор"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "Отстраняване на проблеми със SELinux забрани"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "порт %s"
+
+msgid "Unknown"
+msgstr "Непознат"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+
+msgid "Must call policy_init first"
+msgstr "Първо трябва да се извика policy_init."
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+
+msgid "Error during access vector computation"
+msgstr "Грешка по време на изчисляване на вектор за достъп"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux Браузър за Аларми"
+
+msgid "The source process:"
+msgstr "Процесът източник:"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Не"
+
+msgid "Attempted this access:"
+msgstr "Опит за достъпване:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshoot Прозорец с детайли"
+
+msgid "Would you like to receive alerts?"
+msgstr "Бихте ли искали да получавате аларми ?"
+
+msgid "Notify Admin"
+msgstr "Уведоми Админ-а"
+
+msgid "Troubleshoot"
+msgstr "Разследване на неизправности"
+
+msgid "Details"
+msgstr "Детайли"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot Списък с Аларми"
+
+msgid "List All Alerts"
+msgstr "Списък с всички аларми"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Процес източник "
+
+msgid "Attempted Access"
+msgstr "Опит за достъп"
+
+msgid "On this"
+msgstr "На това"
+
+msgid "Occurred"
+msgstr "Настъпи"
+
+msgid "Last Seen"
+msgstr "Видяно за последно"
+
+msgid "Status"
+msgstr "Статус"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "Не може да се предостави достъп."
+
+msgid "Notify"
+msgstr "Уведоми"
+
+msgid "Notify alert in the future."
+msgstr "В бъдеще съобщавай за аларми."
+
+msgid "Ignore"
+msgstr "Игнорирай"
+
+msgid "Ignore alert in the future."
+msgstr "Игнорирай тази аларма в бъдеще"
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Ако се опитвахте да...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>Тогава това е решението.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"Plugin\n"
+"Детаили"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Доклад\n"
+"Бъг"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Plugin: %s "
+
+msgid "Unable to grant access."
+msgstr "Не може да се предостави достъп."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "Тревога %d на %d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "На това %s:"
+
+msgid "N/A"
+msgstr "Не е достъпно"
+
+msgid "No Alerts"
+msgstr "Без сигнали"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux засече проблем."
+
+msgid "Sealert Error"
+msgstr "Sealert грешка"
+
+msgid "Sealert Message"
+msgstr "Sealert съобщение"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "сигнатурата не е намерена"
+
+msgid "multiple signatures matched"
+msgstr "съвпадат няколко сигнатури"
+
+msgid "id not found"
+msgstr "не е намерено id"
+
+msgid "database not found"
+msgstr "не е намерена базата данни"
+
+msgid "item is not a member"
+msgstr "елементът не е член"
+
+msgid "illegal to change user"
+msgstr "не е редно да се променя потребителя"
+
+msgid "method not found"
+msgstr "методът не е намерен"
+
+msgid "cannot create GUI"
+msgstr "не може да се създаде ГПИ"
+
+msgid "value unknown"
+msgstr "непозната стойност"
+
+msgid "cannot open file"
+msgstr "не може да се отвори файла"
+
+msgid "invalid email address"
+msgstr "невалиден имейл адрес"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "грешка в сокет"
+
+msgid "connection has been broken"
+msgstr "връзката се счупи"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Невалидна заявка. Файловия дескриптор не е отворен"
+
+msgid "insufficient permission to modify user"
+msgstr "недостатъчни права за редактиране на потребител"
+
+msgid "authentication failed"
+msgstr "провал при удостоверяване"
+
+msgid "user prohibited"
+msgstr "Забранено за този потребител"
+
+msgid "not authenticated"
+msgstr "не удостоверен"
+
+msgid "user lookup failed"
+msgstr "Търсенето на този потребител се провали"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "Опаа, %s попадна на грешка!"
+
+msgid "Error"
+msgstr "Грешка"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr ""
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "Потребителят (%s) не може да променя данни за (%s)"
+
+msgid "Started"
+msgstr "Стартирано"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Одит слушател"
+
+msgid "Never Ignore"
+msgstr "Никога не игнорирай"
+
+msgid "Ignore Always"
+msgstr "Игнорирай винаги"
+
+msgid "Ignore After First Alert"
+msgstr "Игнорирай след първата тревога"
+
+msgid "directory"
+msgstr "директория"
+
+msgid "semaphore"
+msgstr "семафор"
+
+msgid "shared memory"
+msgstr "споделена памет"
+
+msgid "message queue"
+msgstr "опашка на съобщенията"
+
+msgid "message"
+msgstr "съобщение"
+
+msgid "file"
+msgstr "файл"
+
+msgid "socket"
+msgstr "сокет"
+
+msgid "process"
+msgstr "процес"
+
+msgid "process2"
+msgstr ""
+
+msgid "filesystem"
+msgstr "файлова система"
+
+msgid "node"
+msgstr "node"
+
+msgid "capability"
+msgstr "способност"
+
+msgid "capability2"
+msgstr ""
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s  е разрешен тип (%s). Този достъп не е бил отказан."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux е в разрешителен режим. Този достъп не е бил отказан."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux попречи на %s да използва достъп %s върху процес."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr ""
+"SELinux попречи на %s да използва многократно достъп '%s' върху процес."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux попречи на %s да използва %s способността."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux попречи на %s да използва '%s' способностите."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux предпазва %s от достъп %s на %s с етикет %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux предпазва %s от достъп '%s' на %s с етикет %s."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux предпазва %s от достъп %s на %s %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux предпазва %s от многократен достъп '%s' на %s %s."
+
+msgid "Additional Information:\n"
+msgstr "Допълнителна информация:\n"
+
+msgid "Source Context"
+msgstr "Контекст на източника"
+
+msgid "Target Context"
+msgstr "Целеви контекст"
+
+msgid "Target Objects"
+msgstr "Целеви обекти"
+
+msgid "Source"
+msgstr "Източник"
+
+msgid "Source Path"
+msgstr "Път на източника"
+
+msgid "Port"
+msgstr "Порт"
+
+msgid "Host"
+msgstr "Хост"
+
+msgid "Source RPM Packages"
+msgstr "Изходни RPM пакети"
+
+msgid "Target RPM Packages"
+msgstr "Целеви RPM пакети"
+
+msgid "SELinux Policy RPM"
+msgstr ""
+
+msgid "Local Policy RPM"
+msgstr ""
+
+msgid "Selinux Enabled"
+msgstr "Selinux е разрешен"
+
+msgid "Policy Type"
+msgstr "Тип политика"
+
+msgid "Enforcing Mode"
+msgstr "Насилствен режим"
+
+msgid "Host Name"
+msgstr "Име на хост"
+
+msgid "Platform"
+msgstr "Платформа"
+
+msgid "Alert Count"
+msgstr "Брой тревоги"
+
+msgid "First Seen"
+msgstr "Видяно за първи път"
+
+msgid "Local ID"
+msgstr "Локално ID"
+
+msgid "Raw Audit Messages"
+msgstr "Сурови одит съобщения"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  Плъгинът %s (%.4s confidence) предлага   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"Тогава"
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Направи\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "Ново предупреждение за сигурността от SELinux"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC забрана, цъкнете иконата за преглед"
+
+msgid "Dismiss"
+msgstr "Отхвърли"
+
+msgid "Show"
+msgstr "Покажи"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC забрана, цъкнете за преглед"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr "SELinux не е включен, sealert няма да работи на не-SELinux системи"
+
+msgid "Not fixable."
+msgstr "Не е поправимо."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "Успешно пусна %s"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "Плъгинът %s е невалиден за %s id"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux не е разрешен, setroubleshootd излиза..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "стартирането на #1 се провали: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+
+msgid "Troubleshoot selected alert"
+msgstr "Разследване на избраната аларма"
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete Selected Alerts"
+msgstr "Изтрий избраните аларми"
+
+msgid "Close"
+msgstr ""
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux засече проблем.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "Включване на pop-up за алармите."
+
+msgid "Turn off alert pop-ups."
+msgstr "Изключване на pop-up за алармите."
+
+msgid "On this file:"
+msgstr "На този файл:"
+
+msgid "label"
+msgstr "етикет"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"Прочетете информацията за разследване на алармата.  Може да изисква "
+"административни права за отстраняване на проблема."
+
+msgid "Email alert to system administrator."
+msgstr "Имейл предупреждение до системния администратор."
+
+msgid "Delete current alert from the database."
+msgstr "Изтрий тази аларма от базата данни"
+
+msgid "Previous"
+msgstr ""
+
+msgid "Show previous alert."
+msgstr "Покажи предишната аларма."
+
+msgid "Next"
+msgstr ""
+
+msgid "Show next alert."
+msgstr "Покажи следващата аларма."
+
+msgid "List all alerts in the database."
+msgstr "Списък с всички аларми в базата данни"
+
+msgid "Review and Submit Bug Report"
+msgstr "Преглед и Подаване на доклад за грешка"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Преглед и Подаване на доклад за грешка</"
+"span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"Може би ще желаете да преразгледате изхода на грешката, който ще бъде "
+"включен в доклада за този бъг и да го преразгледате, за да се изтрият "
+"всякакви лични данни по-долу."
+
+msgid "Included error output:"
+msgstr "Включен изход на грешка:"
+
+msgid "Submit Report"
+msgstr "Подай доклада"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr ""
+"Тази операция е завършена.  Бързата кафява лисица прескочи мързеливото куче."
+
+msgid "Success!"
+msgstr "Успех!"
+
+msgid "button"
+msgstr "бутон"

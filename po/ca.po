@@ -1,0 +1,633 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Dimitris Glezos <glezos@transifex.com>, 2011
+# Xavier Conde Rueda <xavi.conde@gmail.com>, 2006
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2015. #zanata
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017. #zanata
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2018-02-27 05:31-0500\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
+"Language-Team: Catalan (http://www.transifex.com/projects/p/fedora/language/"
+"ca/)\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 4.6.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "Eina per solucionar els problemes amb SELinux"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "Solucioneu els problemes dels accessos denegats del SELinux"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "política;seguretat;selinux;avc;permisos;mac;alerta;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "port %s"
+
+msgid "Unknown"
+msgstr "Desconegut"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+
+msgid "Must call policy_init first"
+msgstr "Primer s'ha de cridar policy_init"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+
+msgid "Error during access vector computation"
+msgstr "S'ha produït un error en l'AVC"
+
+msgid "SELinux Alert Browser"
+msgstr "Navegador d'alertes de SELinux"
+
+msgid "The source process:"
+msgstr "El procés d'origen:"
+
+msgid "Yes"
+msgstr "Sí"
+
+msgid "No"
+msgstr "No"
+
+msgid "Attempted this access:"
+msgstr "Va intentar aquest accés:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "Finestra de detalls SETroubleshoot"
+
+msgid "Would you like to receive alerts?"
+msgstr "Voleu rebre les alertes?"
+
+msgid "Notify Admin"
+msgstr "Notifica a l'administrador"
+
+msgid "Troubleshoot"
+msgstr "Soluciona el problema"
+
+msgid "Details"
+msgstr "Detalls"
+
+msgid "SETroubleshoot Alert List"
+msgstr "Llista de les alertes de SETroubleshoot"
+
+msgid "List All Alerts"
+msgstr "Llista totes les alertes"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Procés d'origen"
+
+msgid "Attempted Access"
+msgstr "Accés que es va intentar"
+
+msgid "On this"
+msgstr "Sobre"
+
+msgid "Occurred"
+msgstr "Ocurrències"
+
+msgid "Last Seen"
+msgstr "Vist per darrera vegada"
+
+msgid "Status"
+msgstr "Estat"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "No es pot garantir l'accés."
+
+msgid "Notify"
+msgstr "Notifica"
+
+msgid "Notify alert in the future."
+msgstr "Notifica l'alerta en el futur."
+
+msgid "Ignore"
+msgstr "Ignora"
+
+msgid "Ignore alert in the future."
+msgstr "Ignora l'alerta en el futur."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Si estàveu intentat...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>aleshores aquesta és la solució.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"Detalls del\n"
+"connector"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Informa de l'error\n"
+"de programari"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Connector: %s "
+
+msgid "Unable to grant access."
+msgstr "No es pot garantir l'accés."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "Alerta %d de %d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "Sobre aquest %s:"
+
+msgid "N/A"
+msgstr "N/D"
+
+msgid "No Alerts"
+msgstr "Sense alertes"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux ha detectat un problema."
+
+msgid "Sealert Error"
+msgstr "Error sealert"
+
+msgid "Sealert Message"
+msgstr "Missatge sealert"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "signatura no trobada"
+
+msgid "multiple signatures matched"
+msgstr "concorden múltiples signatures"
+
+msgid "id not found"
+msgstr "no s'ha trobat l'identificador"
+
+msgid "database not found"
+msgstr "no s'ha trobat la base de dades"
+
+msgid "item is not a member"
+msgstr "l'element no és un membre"
+
+msgid "illegal to change user"
+msgstr "és il·legal canviar d'usuari"
+
+msgid "method not found"
+msgstr "no s'ha trobat el mètode"
+
+msgid "cannot create GUI"
+msgstr "no es pot crear la interfície gràfica"
+
+msgid "value unknown"
+msgstr "valor desconegut"
+
+msgid "cannot open file"
+msgstr "no es pot obrir el fitxer"
+
+msgid "invalid email address"
+msgstr "l'adreça de correu electrònic no és vàlida"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "error de socket"
+
+msgid "connection has been broken"
+msgstr "la connexió s'ha trencat"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "La petició no és correcta. El descriptor del fitxer no està obert"
+
+msgid "insufficient permission to modify user"
+msgstr "permisos insuficients per modificar l'usuari"
+
+msgid "authentication failed"
+msgstr "l'autenticació ha fallat"
+
+msgid "user prohibited"
+msgstr "usuari prohibit"
+
+msgid "not authenticated"
+msgstr "no autenticat"
+
+msgid "user lookup failed"
+msgstr "la cerca de l'usuari ha fallat"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "%s ha trobat un error!"
+
+msgid "Error"
+msgstr "Error"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"Si voleu permetre que $SOURCE_BASE_PATH tingui accés de $ACCESS a "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr "Per als missatges complets de SELinux executeu: sealert -l %s"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "L'usuari (%s) no pot modificar les dades de (%s)"
+
+msgid "Started"
+msgstr "Iniciat"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Escoltador d'auditoria"
+
+msgid "Never Ignore"
+msgstr "No l'ignoris mai"
+
+msgid "Ignore Always"
+msgstr "Ignora sempre"
+
+msgid "Ignore After First Alert"
+msgstr "Ignora després de la primera alerta"
+
+msgid "directory"
+msgstr "directori"
+
+msgid "semaphore"
+msgstr "semàfor"
+
+msgid "shared memory"
+msgstr "memòria compartida"
+
+msgid "message queue"
+msgstr "cua de missatges"
+
+msgid "message"
+msgstr "missatge"
+
+msgid "file"
+msgstr "fitxer"
+
+msgid "socket"
+msgstr "socket"
+
+msgid "process"
+msgstr "procés"
+
+msgid "process2"
+msgstr "procés2"
+
+msgid "filesystem"
+msgstr "sistema de fitxers"
+
+msgid "node"
+msgstr "node"
+
+msgid "capability"
+msgstr "capacitat"
+
+msgid "capability2"
+msgstr "capacitat2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s té un tipus permissiu (%s). No es va denegar aquest accés."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux està en mode permissiu. No es va denegar aquest accés."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux està prevenint %s de l'ús d'accés %s en un procés."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux està prevenint %s dels usos d'accés '%s' en un procés."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux està prevenint %s de l'ús de la capacitat %s."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux està prevenint %s dels usos de les capacitats '%s'."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux està prevenint %s de l'accés %s en %s etiquetada %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux està prevenint %s dels accessos '%s' en %s etiquetada %s."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux està prevenint %s de l'accés %s en %s %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux està prevenint %s dels accessos '%s' en %s %s."
+
+msgid "Additional Information:\n"
+msgstr "Informació addicional:\n"
+
+msgid "Source Context"
+msgstr "Context de l'origen"
+
+msgid "Target Context"
+msgstr "Context de l'objectiu"
+
+msgid "Target Objects"
+msgstr "Objectes destí"
+
+msgid "Source"
+msgstr "Origen"
+
+msgid "Source Path"
+msgstr "Camí d'origen"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Host"
+msgstr "Amfitrió"
+
+msgid "Source RPM Packages"
+msgstr "Origen dels paquets RPM"
+
+msgid "Target RPM Packages"
+msgstr "Destí dels paquets RPM"
+
+msgid "SELinux Policy RPM"
+msgstr ""
+
+msgid "Local Policy RPM"
+msgstr ""
+
+msgid "Selinux Enabled"
+msgstr "S'ha habilitat SElinux"
+
+msgid "Policy Type"
+msgstr "Tipus de política"
+
+msgid "Enforcing Mode"
+msgstr "Mode de compliment"
+
+msgid "Host Name"
+msgstr "Nom de l'amfitrió"
+
+msgid "Platform"
+msgstr "Plataforma"
+
+msgid "Alert Count"
+msgstr "Comptador d'alertes"
+
+msgid "First Seen"
+msgstr "Vist per primera vegada"
+
+msgid "Local ID"
+msgstr "Identificador local"
+
+msgid "Raw Audit Messages"
+msgstr "Missatges d'auditoria sense processar"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  El connector %s (amb confiança del %.4s) suggereix   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"Aleshores "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Fes\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "Nova alerta de seguretat de SELinux"
+
+msgid "AVC denial, click icon to view"
+msgstr "Denegació de l'AVC, feu clic a la icona per més informació"
+
+msgid "Dismiss"
+msgstr "Ignora"
+
+msgid "Show"
+msgstr "Mostra"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr ""
+"Denegació de l'AVC de SELinux, feu clic a la icona per a més informació"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+"SELinux no està habilitat, sealert no s'executarà als sistemes sense SELinux"
+
+msgid "Not fixable."
+msgstr "No es pot corregir."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "Es van executar amb èxit %s"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "El connector %s no és vàlid per a l'id %s"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux no està habilitat i s'està tancant setroubleshootd..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "fork #1 ha fallat: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"Drets d'autor (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "Alerta Troubleshoot seleccionada"
+
+msgid "Delete"
+msgstr "Suprimeix"
+
+msgid "Delete Selected Alerts"
+msgstr "Suprimeix les alertes seleccionades"
+
+msgid "Close"
+msgstr "Tanca"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux ha detectat un problema.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "Activa les finestres emergents d'alerta."
+
+msgid "Turn off alert pop-ups."
+msgstr "Desactiva les finestres emergents d'alerta."
+
+msgid "On this file:"
+msgstr "Sobre aquest fitxer:"
+
+msgid "label"
+msgstr "etiqueta"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"Llegiu la informació per solucionar el problema de l'alerta. Pot requerir "
+"privilegis d'administració per a solucionar-ho."
+
+msgid "Email alert to system administrator."
+msgstr "Missatge de correu electrònic d'alerta a l'administrador del sistema."
+
+msgid "Delete current alert from the database."
+msgstr "Suprimeix l'alerta actual de la base de dades."
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Show previous alert."
+msgstr "Mostra l'anterior alerta."
+
+msgid "Next"
+msgstr "Següent"
+
+msgid "Show next alert."
+msgstr "Mostra la següent alerta."
+
+msgid "List all alerts in the database."
+msgstr "Llista totes les alertes en la base de dades."
+
+msgid "Review and Submit Bug Report"
+msgstr "Revisa i envia l'informe de l'error de programari"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Revisa i envia l'informe de l'error de "
+"programari</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"És possible que vulgueu revisar la sortida d'error que s'inclou en aquest "
+"informe d'error de programari i modificar-ho a continuació per excloure "
+"qualsevol dada sensible."
+
+msgid "Included error output:"
+msgstr "Sortida que s'inclou de l'error:"
+
+msgid "Submit Report"
+msgstr "Envia l'informe"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr ""
+"S'ha completat aquesta operació. Jove xef, porti whisky amb quinze glaçons "
+"d'hidrogen, coi!"
+
+msgid "Success!"
+msgstr "Amb èxit!"
+
+msgid "button"
+msgstr "botó"

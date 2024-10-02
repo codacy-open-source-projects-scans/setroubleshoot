@@ -1,0 +1,596 @@
+# Andreas-Johann Ø Ulvestad <aj@aju.no>, 2017. #zanata
+# Petr Lautrbach <plautrba@fedoraproject.org>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2017-08-23 04:28-0400\n"
+"Last-Translator: Petr Lautrbach <plautrba@fedoraproject.org>\n"
+"Language-Team: Norwegian Nynorsk\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Zanata 4.6.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr ""
+
+msgid "Troubleshoot SELinux access denials"
+msgstr ""
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr ""
+
+#, python-format
+msgid "port %s"
+msgstr "port %s"
+
+msgid "Unknown"
+msgstr "Ukjend"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+
+msgid "Must call policy_init first"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+
+msgid "Error during access vector computation"
+msgstr ""
+
+msgid "SELinux Alert Browser"
+msgstr ""
+
+msgid "The source process:"
+msgstr ""
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nei"
+
+msgid "Attempted this access:"
+msgstr "Prøvde denne tilgangen:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshoot detaljvindauge"
+
+msgid "Would you like to receive alerts?"
+msgstr "Vil du motta varslar?"
+
+msgid "Notify Admin"
+msgstr "Varsle Admin"
+
+msgid "Troubleshoot"
+msgstr "Feilsøking"
+
+msgid "Details"
+msgstr "Detaljar"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot varselliste"
+
+msgid "List All Alerts"
+msgstr "Liste alle verslar"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Kjeldeprosess"
+
+msgid "Attempted Access"
+msgstr "Prøvde tilgang"
+
+msgid "On this"
+msgstr "På denne"
+
+msgid "Occurred"
+msgstr "Skjedde"
+
+msgid "Last Seen"
+msgstr "Sist sett"
+
+msgid "Status"
+msgstr "Status"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "Kunne ikkje gje tilgang."
+
+msgid "Notify"
+msgstr "Varsle"
+
+msgid "Notify alert in the future."
+msgstr "Varsle varslar i framtida."
+
+msgid "Ignore"
+msgstr "Ignorer"
+
+msgid "Ignore alert in the future."
+msgstr "Ignorer varslar i framtida."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Dersom du prøvde å...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>Så er dette løysninga.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Rapport\n"
+"Feil"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Programtillegg: %s"
+
+msgid "Unable to grant access."
+msgstr "Kunne ikkje gje tilgang."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "Varsel %d av %d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "På denne %s:"
+
+msgid "N/A"
+msgstr "I/G"
+
+msgid "No Alerts"
+msgstr "Inga varslar"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux har merka eit problem."
+
+msgid "Sealert Error"
+msgstr "Sealert-feil"
+
+msgid "Sealert Message"
+msgstr "Sealert-melding"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "signatur var ikkje funne"
+
+msgid "multiple signatures matched"
+msgstr "fleire signaturar stemte"
+
+msgid "id not found"
+msgstr "id ikkje funne"
+
+msgid "database not found"
+msgstr "database ikkje funne"
+
+msgid "item is not a member"
+msgstr "ting er ikkje eit medlem"
+
+msgid "illegal to change user"
+msgstr "ulovleg å endre brukar"
+
+msgid "method not found"
+msgstr "metode ikkje funne"
+
+msgid "cannot create GUI"
+msgstr "kunne ikkje opprette GUI"
+
+msgid "value unknown"
+msgstr "ukjend verdi"
+
+msgid "cannot open file"
+msgstr "kan ikkje opne fil"
+
+msgid "invalid email address"
+msgstr "ugyldig epostadresse"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr ""
+
+msgid "connection has been broken"
+msgstr "kopling vart broten"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Ugyldig førespurnad. Filpeikaren er ikkje open"
+
+msgid "insufficient permission to modify user"
+msgstr "ikkje nok tilgang til å endre brukar"
+
+msgid "authentication failed"
+msgstr "autentisering feila"
+
+msgid "user prohibited"
+msgstr "brukar nekta"
+
+msgid "not authenticated"
+msgstr "ikkje autentisert"
+
+msgid "user lookup failed"
+msgstr "brukaroppslag feila"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "Oops, %s traff ein feil!"
+
+msgid "Error"
+msgstr "Feil"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr ""
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "Brukaren (%s) kan ikkje endre data for (%s)"
+
+msgid "Started"
+msgstr "Starta"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Audit Listener"
+
+msgid "Never Ignore"
+msgstr "Aldri ignorer"
+
+msgid "Ignore Always"
+msgstr "Ignorer alltid"
+
+msgid "Ignore After First Alert"
+msgstr "Ignorer etter første varsel"
+
+msgid "directory"
+msgstr "katalog"
+
+msgid "semaphore"
+msgstr "semafor"
+
+msgid "shared memory"
+msgstr "delt minne"
+
+msgid "message queue"
+msgstr "meldingskø"
+
+msgid "message"
+msgstr "melding"
+
+msgid "file"
+msgstr "fil"
+
+msgid "socket"
+msgstr ""
+
+msgid "process"
+msgstr "prosess"
+
+msgid "process2"
+msgstr ""
+
+msgid "filesystem"
+msgstr "filsystem"
+
+msgid "node"
+msgstr "node"
+
+msgid "capability"
+msgstr ""
+
+msgid "capability2"
+msgstr ""
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr ""
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux hindrar %s frå å bruke '%s'-tilgangen på ein prosess."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux hindrar %s frå å bruke %s-funksjonen."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux hindrar %s frå å bruke '%s'-funksjonen."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux hindrar %s frå å få tilgang til %s på %s %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux hindrar %s frå %s frå %s sin tilgang på %s %s."
+
+msgid "Additional Information:\n"
+msgstr "Meir informasjon:\n"
+
+msgid "Source Context"
+msgstr "Kjeldekontekst"
+
+msgid "Target Context"
+msgstr "Målkontekst"
+
+msgid "Target Objects"
+msgstr "Målobjekter"
+
+msgid "Source"
+msgstr "Kjelde"
+
+msgid "Source Path"
+msgstr "Kjeldebane"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Host"
+msgstr "Vert"
+
+msgid "Source RPM Packages"
+msgstr "Kjelde-RPM-pakker"
+
+msgid "Target RPM Packages"
+msgstr "Mål-RPM-pakker"
+
+msgid "SELinux Policy RPM"
+msgstr ""
+
+msgid "Local Policy RPM"
+msgstr ""
+
+msgid "Selinux Enabled"
+msgstr "Selinux aktivert"
+
+msgid "Policy Type"
+msgstr "Regeltype"
+
+msgid "Enforcing Mode"
+msgstr "Handhevingmodus"
+
+msgid "Host Name"
+msgstr "Vertnamn"
+
+msgid "Platform"
+msgstr "Plattform"
+
+msgid "Alert Count"
+msgstr "Varseltellar"
+
+msgid "First Seen"
+msgstr "Først sett"
+
+msgid "Local ID"
+msgstr "Lokal ID"
+
+msgid "Raw Audit Messages"
+msgstr ""
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr ""
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+
+msgid "New SELinux security alert"
+msgstr ""
+
+msgid "AVC denial, click icon to view"
+msgstr ""
+
+msgid "Dismiss"
+msgstr ""
+
+msgid "Show"
+msgstr ""
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr ""
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+
+msgid "Not fixable."
+msgstr ""
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr ""
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr ""
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr ""
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr ""
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+
+msgid "Troubleshoot selected alert"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete Selected Alerts"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr ""
+
+msgid "Turn on alert pop-ups."
+msgstr ""
+
+msgid "Turn off alert pop-ups."
+msgstr "Skru av varsel-sprettoppvindauger."
+
+msgid "On this file:"
+msgstr "På denne fila:"
+
+msgid "label"
+msgstr "merke"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+
+msgid "Email alert to system administrator."
+msgstr "Send e-post til systemadministratoren."
+
+msgid "Delete current alert from the database."
+msgstr "Slett noverande varslar frå databasen."
+
+msgid "Previous"
+msgstr ""
+
+msgid "Show previous alert."
+msgstr "Vis forrige varsel."
+
+msgid "Next"
+msgstr ""
+
+msgid "Show next alert."
+msgstr "Vis neste varsel."
+
+msgid "List all alerts in the database."
+msgstr "List alle varslar i databasen."
+
+msgid "Review and Submit Bug Report"
+msgstr "Sjå over og send inn feilrapportar"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Sjå over og send inn feilrapport</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+
+msgid "Included error output:"
+msgstr ""
+
+msgid "Submit Report"
+msgstr "Send inn rapport"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr ""
+
+msgid "Success!"
+msgstr "Suksess!"
+
+msgid "button"
+msgstr "knapp"

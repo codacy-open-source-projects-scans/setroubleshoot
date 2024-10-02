@@ -1,0 +1,650 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Dimitris Glezos <glezos@transifex.com>, 2011
+# Juhani Numminen <juhaninumminen0@gmail.com>, 2013
+# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2011
+# Ville-Pekka Vainio <vpvainio@iki.fi>, 2012
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2022-07-05 05:19+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/setroubleshoot/fi/>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux-ongelmanratkaisin"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "Ratkaise SELinuxin pääsyesto-ongelmia"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "portti %s"
+
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+"%s\n"
+"**** Tallennettu AVC on sallittu nykyisessä käytännössä ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+"%s\n"
+"**** Tallennettua AVC:ta ei vaadita nykyisessä käytännössä. 'semodule -B' "
+"ottaa käyttöön dontaudit-säännöt ****\n"
+
+msgid "Must call policy_init first"
+msgstr "policy_init:iä on kutsuttava ensin"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+"%s\n"
+"**** Ei kelvollinen AVC: huono kohdekonteksti ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+"%s\n"
+"**** Ei kelvollinen AVC: huono lähdekonteksti ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+"%s\n"
+"**** Ei kelvollinen AVC: huono tyyppiluokka ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+"%s\n"
+"**** Ei kelvollinen AVC: huono lupa ****\n"
+
+msgid "Error during access vector computation"
+msgstr "Virhe pääsyvektorilaskennassa"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux-varoitusselain"
+
+msgid "The source process:"
+msgstr "Lähdeprosessi:"
+
+msgid "Yes"
+msgstr "Kyllä"
+
+msgid "No"
+msgstr "Ei"
+
+msgid "Attempted this access:"
+msgstr "Yritti tätä käyttöä:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshootin lisätietoikkuna"
+
+msgid "Would you like to receive alerts?"
+msgstr "Haluatko vastaanottaa varoituksia?"
+
+msgid "Notify Admin"
+msgstr "Ilmoita ylläpitäjälle"
+
+msgid "Troubleshoot"
+msgstr "Vianetsintä"
+
+msgid "Details"
+msgstr "Lisätietoja"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot-varoitusluettelo"
+
+msgid "List All Alerts"
+msgstr "Luettele kaikki varoitukset"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Lähdeprosessi"
+
+msgid "Attempted Access"
+msgstr "Yritetty käyttö"
+
+msgid "On this"
+msgstr "Tällä"
+
+msgid "Occurred"
+msgstr "Tapahtui"
+
+msgid "Last Seen"
+msgstr "Viimeisin"
+
+msgid "Status"
+msgstr "Tila"
+
+#, python-format
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr ""
+"Järjestelmänvalvojalle ei voi ilmoittaa.\n"
+"\n"
+"%s"
+
+msgid "Notify"
+msgstr "Ilmoita"
+
+msgid "Notify alert in the future."
+msgstr "Huomauta varoituksesta jatkossa."
+
+msgid "Ignore"
+msgstr "Ohita"
+
+msgid "Ignore alert in the future."
+msgstr "Ohita varoitus jatkossa."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Jos yritit...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>niin tässä on ratkaisu.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"Liitännäisen\n"
+"tiedot"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Ilmoita\n"
+"ohjelmavirheestä"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Liitännäinen: %s "
+
+msgid "Unable to grant access."
+msgstr "Käyttöoikeutta ei voida antaa."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "Varoitus %d/%d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "Tällä %s:llä:"
+
+msgid "N/A"
+msgstr "Ei saatavilla"
+
+msgid "No Alerts"
+msgstr "Ei varoituksia"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux on havainnut ongelman."
+
+msgid "Sealert Error"
+msgstr "SEalert-virhe"
+
+msgid "Sealert Message"
+msgstr "Sealertin viesti"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "allekirjoitusta ei löydy"
+
+msgid "multiple signatures matched"
+msgstr "useat allekirjoitukset vastaavat"
+
+msgid "id not found"
+msgstr "tunnistetta ei löydy"
+
+msgid "database not found"
+msgstr "tietokantaa ei löydy"
+
+msgid "item is not a member"
+msgstr "nimike ei ole jäsen"
+
+msgid "illegal to change user"
+msgstr "käyttäjää vaihtaminen ei ole sallittua"
+
+msgid "method not found"
+msgstr "metodia ei löydy"
+
+msgid "cannot create GUI"
+msgstr "graafista käyttöliittymää ei voida luoda"
+
+msgid "value unknown"
+msgstr "tuntematon arvo"
+
+msgid "cannot open file"
+msgstr "tiedostoa ei voida avata"
+
+msgid "invalid email address"
+msgstr "virheellinen sähköpostiosoite"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "pistokevirhe"
+
+msgid "connection has been broken"
+msgstr "yhteys katkesi"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Virheellinen pyyntö. Tiedostokuvaaja ei ole avoinna"
+
+msgid "insufficient permission to modify user"
+msgstr "käyttäjän muokkaamiseen ei ole riittävästi oikeuksia"
+
+msgid "authentication failed"
+msgstr "tunnistautuminen epäonnistui"
+
+msgid "user prohibited"
+msgstr "käyttäjällä ei ole käyttöoikeuksia"
+
+msgid "not authenticated"
+msgstr "ei tunnistauduttu"
+
+msgid "user lookup failed"
+msgstr "käyttäjäkysely epäonnistui"
+
+#, c-format, python-format
+msgid "Oops, %s hit an error!"
+msgstr "Oho, %s-virhe!"
+
+msgid "Error"
+msgstr "Virhe"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"Jos haluat sallia $SOURCE_BASE_PATH:n käyttöoikeuden $ACCESS tähän "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr " Saadaksesi täydelliset SELinux-viestit, suorita 'sealert -l %s'"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "Käyttäjä (%s) ei voi muokata käyttäjän (%s) tietoja"
+
+msgid "Started"
+msgstr "Aloitettu"
+
+msgid "AVC"
+msgstr "Pääsyvektorivälimuisti"
+
+msgid "Audit Listener"
+msgstr "Tarkastuskuuntelija"
+
+msgid "Never Ignore"
+msgstr "Älä ohita koskaan"
+
+msgid "Ignore Always"
+msgstr "Ohita aina"
+
+msgid "Ignore After First Alert"
+msgstr "Ohita ensimmäisen varoituksen jälkeen"
+
+msgid "directory"
+msgstr "hakemisto"
+
+msgid "semaphore"
+msgstr "semafori"
+
+msgid "shared memory"
+msgstr "jaettu muisti"
+
+msgid "message queue"
+msgstr "viestijono"
+
+msgid "message"
+msgstr "viesti"
+
+msgid "file"
+msgstr "tiedosto"
+
+msgid "socket"
+msgstr "pistoke"
+
+msgid "process"
+msgstr "prosessi"
+
+msgid "process2"
+msgstr "prosessi2"
+
+msgid "filesystem"
+msgstr "tiedostojärjestelmä"
+
+msgid "node"
+msgstr "solmu"
+
+msgid "capability"
+msgstr "ominaisuus"
+
+msgid "capability2"
+msgstr "kyky2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "Lähteellä %s on salliva tyyppi (%s). Tätä käyttöä ei estetty."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux on sallivassa tilassa. Tätä käyttöä ei estetty."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr ""
+"SELinux estää kohdetta %s käyttämästä \"%s\"-käyttöoikeutta prosessiin."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux estää %s:a käyttämästä '%s':n käyttöoikeuksia prosessiin."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux estää %s:a käyttämästä %s-kykyä."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux estää %s:a käyttämästä '%s'-kykyjä."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux estää %s:a käyttämästä %s:n käyttöoikeuksia %s-nimiseen %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux estää %s:a käyttämästä '%s':n käyttöoikeuksia %s-nimiseen %s."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux estää %s:a käyttämästä %s:n käyttöoikeutta tähän %s %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux estää %s:a käyttämästä '%s':n käyttöoikeuksia tähän %s %s."
+
+msgid "Additional Information:\n"
+msgstr "Lisätiedot:\n"
+
+msgid "Source Context"
+msgstr "Lähdekonteksti"
+
+msgid "Target Context"
+msgstr "Kohdekonteksti"
+
+msgid "Target Objects"
+msgstr "Kohdeobjektit"
+
+msgid "Source"
+msgstr "Lähde"
+
+msgid "Source Path"
+msgstr "Lähteen polku"
+
+msgid "Port"
+msgstr "Portti"
+
+msgid "Host"
+msgstr "Kone"
+
+msgid "Source RPM Packages"
+msgstr "Lähteen RPM-paketit"
+
+msgid "Target RPM Packages"
+msgstr "Kohteen RPM-paketit"
+
+msgid "SELinux Policy RPM"
+msgstr "SELinux-käytännön RPM"
+
+msgid "Local Policy RPM"
+msgstr "Paikallisen käytännön RPM"
+
+msgid "Selinux Enabled"
+msgstr "SELinux käytössä"
+
+msgid "Policy Type"
+msgstr "Käytännön tyyppi"
+
+msgid "Enforcing Mode"
+msgstr "Toimeenpanotila"
+
+msgid "Host Name"
+msgstr "Konenimi"
+
+msgid "Platform"
+msgstr "Alusta"
+
+msgid "Alert Count"
+msgstr "Varoitusten määrä"
+
+msgid "First Seen"
+msgstr "Ensimmäinen"
+
+msgid "Local ID"
+msgstr "Paikallinen tunniste"
+
+msgid "Raw Audit Messages"
+msgstr "Muokkaamattomat tarkastusviestit"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"***** Laajennus %s (%.4s confidence) ehdottaa   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"Niin "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Tee\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "Uusi SELinux-turvallisuusvaroitus"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC-esto, näytä napsauttamalla"
+
+msgid "Dismiss"
+msgstr "Hylkää"
+
+msgid "Show"
+msgstr "Näytä"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinuxin AVC-esto, näytä napsauttamalla"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr "SELinux Troubleshooter: Applet vaatii, että SELinux on käytössä"
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr "SELinux ei ole käytössä, sealertia ei suoriteta"
+
+msgid "Not fixable."
+msgstr "Ei korjattavissa."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "Komennon %s suoritus onnistui"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "Liitännäinen %s on virheellinen tunnisteelle %s"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux ei ole käytössä, setroubleshootd lopettaa..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "fork #1 epäonnistui: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"Tekijänoikeus (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "Tee vianetsintä valitusta varoituksesta"
+
+msgid "Delete"
+msgstr "Poistaa"
+
+msgid "Delete Selected Alerts"
+msgstr "Poista valitut varoitukset"
+
+msgid "Close"
+msgstr "Sulje"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux on havainnut ongelman.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "Ottaa käyttöön varoitusten ponnahdusikkunat."
+
+msgid "Turn off alert pop-ups."
+msgstr "Poista käytöstä varoitusten ponnahdusikkunat."
+
+msgid "On this file:"
+msgstr "Tässä tiedostossa:"
+
+msgid "label"
+msgstr "nimiö"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"Lue varoituksen ratkaisutiedot. Ongelman korjaaminen saattaa vaatia "
+"ylläpitäjän oikeuksia."
+
+msgid "Email alert to system administrator."
+msgstr "Lähetä varoitus sähköpostilla järjestelmän ylläpitäjälle."
+
+msgid "Delete current alert from the database."
+msgstr "Poista nykyinen varoitus tietokannasta."
+
+msgid "Previous"
+msgstr "Edellinen"
+
+msgid "Show previous alert."
+msgstr "Näytä edellinen varoitus."
+
+msgid "Next"
+msgstr "Seuraava"
+
+msgid "Show next alert."
+msgstr "Näytä seuraava varoitus."
+
+msgid "List all alerts in the database."
+msgstr "Luettele kaikki tietokannassa olevat varoitukset."
+
+msgid "Review and Submit Bug Report"
+msgstr "Tarkista ja lähetä vikailmoitus"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Tarkista ja lähetä vikailmoitus</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"Kannattaa tarkistaa vikailmoitukseen liitetty virhetuloste ja muokata sitä "
+"niin, ettei siinä ole mitään yksityistä tietoa. Tämä voidaan tehdä alla "
+"olevassa tekstikentässä."
+
+msgid "Included error output:"
+msgstr "Mukaan liitettävä virhetuloste:"
+
+msgid "Submit Report"
+msgstr "Lähetä ilmoitus"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "Tämä toiminto onnistui."
+
+msgid "Success!"
+msgstr "Onnistui!"
+
+msgid "button"
+msgstr "painike"
+
+#~ msgid ""
+#~ "%s \n"
+#~ "**** TEST OF method source - ATTEMPT #2 ****\n"
+#~ msgstr ""
+#~ "%s\n"
+#~ "**** Lähteen menetelmän TESTI- Kokeilu # 2 ****\n"

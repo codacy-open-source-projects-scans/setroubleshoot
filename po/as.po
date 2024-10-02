@@ -1,0 +1,621 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2009
+# Dimitris Glezos <glezos@indifex.com>, 2011
+# ngoswami <ngoswami@redhat.com>, 2011
+# ngoswami <ngoswami@redhat.com>, 2012-2013
+# paragdas <paragdas4@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2017-08-31 08:29-0400\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Assamese (http://www.transifex.com/projects/p/fedora/language/"
+"as/)\n"
+"Language: as\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 4.6.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux সমস্যামুক্তক"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "SELinux দ্বাৰা প্ৰতিৰোধ কৰা অনুমতিৰ সমস্যা সমাধান কৰক"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "পোৰ্ট %s"
+
+msgid "Unknown"
+msgstr "অজ্ঞাত"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+
+msgid "Must call policy_init first"
+msgstr "policy_init -ক প্ৰথমতে মাতিব লাগিব"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+
+msgid "Error during access vector computation"
+msgstr "অভিগম সদিশ গণনাত ত্ৰুটি"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux সাৱধানী ব্ৰাউছাৰ"
+
+msgid "The source process:"
+msgstr "উৎস প্ৰক্ৰিয়াটো:"
+
+msgid "Yes"
+msgstr "হয়"
+
+msgid "No"
+msgstr "নহয়"
+
+msgid "Attempted this access:"
+msgstr "এই অভিগম প্ৰচেষ্টা কৰা হৈছে:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshoot বিৱৰণসমূহৰ উইন্ডো"
+
+msgid "Would you like to receive alerts?"
+msgstr "আপুনি সাৱধানী গ্ৰহন কৰিব বিচাৰে নে?"
+
+msgid "Notify Admin"
+msgstr "প্ৰশাসকক অৱগত কৰক"
+
+msgid "Troubleshoot"
+msgstr "সমস্যামুক্তি"
+
+msgid "Details"
+msgstr "বিৱৰণসমূহ"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot সতৰ্কবাৰ্তাৰ তালিকা"
+
+msgid "List All Alerts"
+msgstr "সকলো সাৱধানী দেখুৱাওক"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "উৎস প্ৰক্ৰিয়া"
+
+msgid "Attempted Access"
+msgstr "প্ৰচেষ্টিত অভিগম"
+
+msgid "On this"
+msgstr "এইটোত"
+
+msgid "Occurred"
+msgstr "ঘটিত"
+
+msgid "Last Seen"
+msgstr "সৰ্বশেষ প্ৰদৰ্শন"
+
+msgid "Status"
+msgstr "অৱস্থা"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "অভিগম্যতা দিব নোৱাৰি।"
+
+msgid "Notify"
+msgstr "অৱগত কৰক"
+
+msgid "Notify alert in the future."
+msgstr "ভৱিষ্যতত সতৰ্কত অধিসূচীত কৰিব।"
+
+msgid "Ignore"
+msgstr "উপেক্ষা কৰক"
+
+msgid "Ignore alert in the future."
+msgstr "ভৱিষ্যতত সাৱধানী উপেক্ষা কৰিব।"
+
+msgid "<b>If you were trying to...</b>"
+msgstr "যদি আপুনি চেষ্টা কৰি আছিল..."
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "তেন্তে এইটো হল সমাধান"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"প্লাগিন\n"
+"বিৱৰণসমূহ"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"সংবাদ দিয়ক\n"
+"বাগ"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "প্লাগিন: %s "
+
+msgid "Unable to grant access."
+msgstr "অভিগম্যতা দিব নোৱাৰি।"
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "%d -ক %d ৰ বিষয়ে অৱগত কৰক"
+
+#, python-format
+msgid "On this %s:"
+msgstr "এই %s টোত:"
+
+msgid "N/A"
+msgstr "অপ্ৰযোজ্য"
+
+msgid "No Alerts"
+msgstr "কোনো সাৱধানী নাই"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux এটা সমস্যা ধৰা পেলাইছে।"
+
+msgid "Sealert Error"
+msgstr "Sealert ৰ ভুল"
+
+msgid "Sealert Message"
+msgstr "Sealert বাৰ্তা"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "স্বাক্ষৰ পোৱা নাযায়"
+
+msgid "multiple signatures matched"
+msgstr "একাধিক স্বাক্ষৰৰ সৈতে মিল পোৱা গৈছে"
+
+msgid "id not found"
+msgstr "id পোৱা নাযায়"
+
+msgid "database not found"
+msgstr "ডাটাবেইচ পোৱা নাযায়"
+
+msgid "item is not a member"
+msgstr "বস্তু সদস্য নহয়"
+
+msgid "illegal to change user"
+msgstr "ব্যৱহাৰকাৰী পৰিবৰ্তন কৰা বৈধ নহয়"
+
+msgid "method not found"
+msgstr "পদ্ধতি পোৱা নাযায়"
+
+msgid "cannot create GUI"
+msgstr "GUI নিৰ্মাণ কৰিবলৈ ব্যৰ্থ"
+
+msgid "value unknown"
+msgstr "মান অজ্ঞাত"
+
+msgid "cannot open file"
+msgstr "ফাইল খুলিবলৈ ব্যৰ্থ"
+
+msgid "invalid email address"
+msgstr "অবৈধ ই-মেইল ঠিকনা"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "চকেট সংক্ৰান্ত সমস্যা"
+
+msgid "connection has been broken"
+msgstr "সংযোগ বিচ্ছিন্ন হৈছে"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "অবৈধ অনুৰোধ। ফাইল বিৱৰণ খোলা নহয়"
+
+msgid "insufficient permission to modify user"
+msgstr "ব্যৱহাৰকাৰী পৰিবৰ্তনৰ বাবে পৰ্যাপ্ত অনুমতি অনুপস্থিত"
+
+msgid "authentication failed"
+msgstr "প্ৰমাণীকৰণ বিফল হ'ল"
+
+msgid "user prohibited"
+msgstr "ব্যৱহাৰকাৰীৰ ওপৰত নিষেধাজ্ঞা"
+
+msgid "not authenticated"
+msgstr "অনুমোদিত নহয়"
+
+msgid "user lookup failed"
+msgstr "ব্যৱহাৰকাৰী অনুসন্ধান ব্যৰ্থ"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "দুঃখিত, %s এটা সমস্যাৰ সন্মুখিন হৈছে!"
+
+msgid "Error"
+msgstr "ত্ৰুটি"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr ""
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "ব্যৱহাৰকাৰী (%s) দ্বাৰা (%s) সংক্ৰান্ত তথ্য পৰিবৰ্তন কৰা সম্ভৱ নহয়"
+
+msgid "Started"
+msgstr "আৰম্ভ কৰা হৈছে"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Audit Listener"
+
+msgid "Never Ignore"
+msgstr "কেতিয়াও প্ৰত্যাখ্যান কৰা ন'হ'ব"
+
+msgid "Ignore Always"
+msgstr "সৰ্বদা উপেক্ষা কৰা হ'ব"
+
+msgid "Ignore After First Alert"
+msgstr "প্ৰথম সতৰ্কবাৰ্তাৰ পিছত উপেক্ষা কৰা হ'ব"
+
+msgid "directory"
+msgstr "ডাইৰেকটৰি"
+
+msgid "semaphore"
+msgstr "চেমাফোৰ"
+
+msgid "shared memory"
+msgstr "অংশীদাৰী কৰা মেমৰি"
+
+msgid "message queue"
+msgstr "বাৰ্তা শাৰী"
+
+msgid "message"
+msgstr "বাৰ্তা"
+
+msgid "file"
+msgstr "ফাইল"
+
+msgid "socket"
+msgstr "চকেট"
+
+msgid "process"
+msgstr "প্ৰক্ৰিয়া"
+
+msgid "process2"
+msgstr ""
+
+msgid "filesystem"
+msgstr "ফাইলচিস্টেম"
+
+msgid "node"
+msgstr "ন'ড"
+
+msgid "capability"
+msgstr "ক্ষমতা"
+
+msgid "capability2"
+msgstr ""
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s ৰ পাৰ্মিছিভ ধৰণ আছে (%s)। অভিগম কৰিব দিয়া হ'ল।"
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux অনুমতি অৱস্থাত আছে। এই অভিগম অস্বীকাৰ কৰা হোৱা নাই।"
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux এ %s ক এটা প্ৰক্ৰিয়াত %s অভিগম ব্যৱহাৰ কৰাৰ পৰা প্ৰতিৰোধ কৰি আছে।"
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr ""
+"SELinux এ %s ক এটা প্ৰক্ৰিয়াত '%s' প্ৰক্ৰিয়াসমূহ ব্যৱহাৰ কৰাৰ পৰা প্ৰতিৰোধ কৰি আছে।"
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux এ %s ক %s ক্ষমতা ব্যৱহাৰ কৰাৰ পৰা প্ৰতিৰোধ কৰি আছে।"
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux এ %s ক '%s' ক্ষমতাসমূহ ব্যৱহাৰ কৰাৰ পৰা প্ৰতিৰোধ কৰি আছে।"
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux এ %s ক %s লেবেল থকা %s ত %s অভিগম প্ৰতিৰোধ কৰি আছে।"
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux এ %s ক %s লেবেল থকা %s ত '%s'  অভিগমসমূহ প্ৰতিৰোধ কৰি আছে।"
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux এ %s ক %s %s ত %s অভিগমৰ পৰা প্ৰতিৰোধ কৰি আছে।"
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux এ %s ক %s %s ত '%s' অভিগমসমূহৰ পৰা প্ৰতিৰোধ কৰি আছে।"
+
+msgid "Additional Information:\n"
+msgstr "অতিৰিক্ত তথ্য:\n"
+
+msgid "Source Context"
+msgstr "উৎসৰ পৰিপ্ৰেক্ষতিত"
+
+msgid "Target Context"
+msgstr "গন্তব্যৰ পৰিপ্ৰেক্ষতিত"
+
+msgid "Target Objects"
+msgstr "গন্তব্যৰ অবজেক্ট"
+
+msgid "Source"
+msgstr "উৎস"
+
+msgid "Source Path"
+msgstr "উৎসৰ পথ"
+
+msgid "Port"
+msgstr "পোৰ্ট"
+
+msgid "Host"
+msgstr "হস্ট"
+
+msgid "Source RPM Packages"
+msgstr "উৎসৰ RPM পেকেইজ"
+
+msgid "Target RPM Packages"
+msgstr "লক্ষ্য RPM পেকেইজ"
+
+msgid "SELinux Policy RPM"
+msgstr ""
+
+msgid "Local Policy RPM"
+msgstr ""
+
+msgid "Selinux Enabled"
+msgstr "Selinux সামৰ্থবান"
+
+msgid "Policy Type"
+msgstr "নিয়মনীতিৰ ধৰণ"
+
+msgid "Enforcing Mode"
+msgstr "বলৱৎকৰণ অৱস্থা"
+
+msgid "Host Name"
+msgstr "হস্টৰ নাম"
+
+msgid "Platform"
+msgstr "স্থাপত্য"
+
+msgid "Alert Count"
+msgstr "সতৰ্কবাণীৰ সংখ্যা"
+
+msgid "First Seen"
+msgstr "প্ৰথম প্ৰদৰ্শন"
+
+msgid "Local ID"
+msgstr "স্থানীয় ID"
+
+msgid "Raw Audit Messages"
+msgstr "মূল অডিট বাৰ্তা"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  প্লাগিন %s (%.4s আত্মবিশ্বাস) উপদেশ দিয়ে   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"তেতিয়াহলে "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"কৰক\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "SELinux সুৰক্ষাসূচক নতুন সতৰ্কবাৰ্তা"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC প্ৰত্যাখ্যান, আইকন ক্লিক কৰি প্ৰদৰ্শন কৰক"
+
+msgid "Dismiss"
+msgstr "বাতিল"
+
+msgid "Show"
+msgstr "প্ৰদৰ্শন"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC প্ৰত্যাখ্যান, ক্লিক কৰি চাওক"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr "SELinux সামৰ্থবান নহয়, sealert SELinux নহোৱা চিস্টেমসমূহত নচলে"
+
+msgid "Not fixable."
+msgstr "সংশোধনযোগ্য নহয়।"
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "সাফল্যেৰ সৈতে %s সঞ্চালিত হৈছে"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "প্লাগিন %s %s আই-ডিৰ বাবে বৈধ নহয়"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux অসামৰ্থবান, setroubleshootd প্ৰস্থান কৰি আছে..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "fork #1 বিফল: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+
+msgid "Troubleshoot selected alert"
+msgstr "নিৰ্বাচিত সাৱধানী সমস্যামুক্তি কৰক"
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete Selected Alerts"
+msgstr "নিৰ্বাচিত সাৱধানীসমূহ মচি দিয়ক"
+
+msgid "Close"
+msgstr ""
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux এটা সমস্যা ধৰা পেলাইছে।</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "সাৱধানী পপ-আপসমূহ আৰম্ভ কৰক।"
+
+msgid "Turn off alert pop-ups."
+msgstr "সাৱধানী পপ-আপসমূহ বন্ধ কৰক।"
+
+msgid "On this file:"
+msgstr "এই ফাইলত:"
+
+msgid "label"
+msgstr "লেবেল"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"সাৱধানী সমস্যামুক্তি তথ্য পঢ়ক। প্ৰতিকাৰৰ বাবে প্ৰশাসনীয় সুবিধাসমূহৰ প্ৰয়োজন হব পাৰে।"
+
+msgid "Email alert to system administrator."
+msgstr "চিস্টেম প্ৰশাসকলে ই-মেইল সাৱধানী।"
+
+msgid "Delete current alert from the database."
+msgstr "বৰ্তমান সাৱধানী ডাটাবেইচৰ পৰা মচি দিয়ক।"
+
+msgid "Previous"
+msgstr ""
+
+msgid "Show previous alert."
+msgstr "পুৰ্বৱৰ্তী সাৱধানী দেখুৱাওক।"
+
+msgid "Next"
+msgstr ""
+
+msgid "Show next alert."
+msgstr "পৰৱৰ্তী সাৱধানী দেখুৱাওক।"
+
+msgid "List all alerts in the database."
+msgstr "ডাটাবেইচত থকা সকলো সাৱধানী দেখুৱাওক।"
+
+msgid "Review and Submit Bug Report"
+msgstr "বাগ ৰিপোৰ্ট পৰ্যালোচনা কৰি প্ৰতিবেদন কৰক"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>বাগ ৰিপোৰ্ট পৰ্যালোচনা কৰি প্ৰতিবেদন কৰক</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"আপুনি ত্ৰুটি আউটপুট যোনটো এই বাগ সংবাদত অন্তৰ্ভুক্ত কৰা হব তাক পুনৰ চাব পাৰে আৰু সলনি "
+"কৰিব পাৰে তলত থকা কোনো সংবেদ্য তথ্য বাদ দিবলে।"
+
+msgid "Included error output:"
+msgstr "অন্তৰ্ভুক্ত ত্ৰুটিৰ নিৰ্গম:"
+
+msgid "Submit Report"
+msgstr "প্ৰতিবেদন কৰক"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "এই কাম সমাপ্ত হৈছে।  The quick brown fox jumped over the lazy dog।"
+
+msgid "Success!"
+msgstr "সফল"
+
+msgid "button"
+msgstr "বুটাম"

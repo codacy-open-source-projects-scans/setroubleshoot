@@ -1,0 +1,604 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Dimitris Glezos <glezos@transifex.com>, 2011
+# Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008
+# Nikola Pajtic <salgeras@gmail.com>, 2008
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2015-02-20 02:17-0500\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Serbian (http://www.transifex.com/projects/p/fedora/language/"
+"sr/)\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Zanata 4.6.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux претраживач грешака"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "Решавање SELinux забрана приступа"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr ""
+
+#, python-format
+msgid "port %s"
+msgstr ""
+
+msgid "Unknown"
+msgstr "Непознато"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+
+msgid "Must call policy_init first"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+
+msgid "Error during access vector computation"
+msgstr ""
+
+msgid "SELinux Alert Browser"
+msgstr ""
+
+msgid "The source process:"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Attempted this access:"
+msgstr ""
+
+msgid "SETroubleshoot Details Window"
+msgstr ""
+
+msgid "Would you like to receive alerts?"
+msgstr ""
+
+msgid "Notify Admin"
+msgstr ""
+
+msgid "Troubleshoot"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot списак узбуна"
+
+msgid "List All Alerts"
+msgstr ""
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr ""
+
+msgid "Attempted Access"
+msgstr ""
+
+msgid "On this"
+msgstr ""
+
+msgid "Occurred"
+msgstr ""
+
+msgid "Last Seen"
+msgstr "Последње виђено"
+
+msgid "Status"
+msgstr "Стање"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "Не могу да дозволим приступ."
+
+msgid "Notify"
+msgstr ""
+
+msgid "Notify alert in the future."
+msgstr ""
+
+msgid "Ignore"
+msgstr ""
+
+msgid "Ignore alert in the future."
+msgstr ""
+
+msgid "<b>If you were trying to...</b>"
+msgstr ""
+
+msgid "<b>Then this is the solution.</b>"
+msgstr ""
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+
+#, python-format
+msgid "Plugin: %s "
+msgstr ""
+
+msgid "Unable to grant access."
+msgstr "Не могу да дозволим приступ."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr ""
+
+#, python-format
+msgid "On this %s:"
+msgstr ""
+
+msgid "N/A"
+msgstr ""
+
+msgid "No Alerts"
+msgstr ""
+
+msgid "SELinux has detected a problem."
+msgstr ""
+
+msgid "Sealert Error"
+msgstr "Sealert грешка"
+
+msgid "Sealert Message"
+msgstr "Sealert порука"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "није пронађен потпис"
+
+msgid "multiple signatures matched"
+msgstr "више потписа се преклапа"
+
+msgid "id not found"
+msgstr "није пронађен ИБ"
+
+msgid "database not found"
+msgstr "није пронађена база података"
+
+msgid "item is not a member"
+msgstr "ставка није члан"
+
+msgid "illegal to change user"
+msgstr "није дозвољена промена корисника"
+
+msgid "method not found"
+msgstr "није пронађен метод"
+
+msgid "cannot create GUI"
+msgstr "не могу да направим GUI"
+
+msgid "value unknown"
+msgstr "непозната вредност"
+
+msgid "cannot open file"
+msgstr "не могу да отворим датотеку"
+
+msgid "invalid email address"
+msgstr "нетачна адреса е-поште"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "грешка у прикључку"
+
+msgid "connection has been broken"
+msgstr "веза је прекинута"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Неисправан захтев. Описник датотеке није отворен"
+
+msgid "insufficient permission to modify user"
+msgstr "недостаје дозвола за измену корисника"
+
+msgid "authentication failed"
+msgstr "аутентификација није успела"
+
+msgid "user prohibited"
+msgstr "корисник забранио"
+
+msgid "not authenticated"
+msgstr "није аутентификовано"
+
+msgid "user lookup failed"
+msgstr "претраживање корисника неуспешно"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "Опа, %s је наишао на грешку!"
+
+msgid "Error"
+msgstr "Грешка"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr ""
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "Корисник (%s) не може мењати податке за (%s)"
+
+msgid "Started"
+msgstr "Покренуто"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Ослушкивач провере"
+
+msgid "Never Ignore"
+msgstr "Никада не занемаруј"
+
+msgid "Ignore Always"
+msgstr "Занемари увек"
+
+msgid "Ignore After First Alert"
+msgstr "Занемари после прве узбуне"
+
+msgid "directory"
+msgstr ""
+
+msgid "semaphore"
+msgstr ""
+
+msgid "shared memory"
+msgstr ""
+
+msgid "message queue"
+msgstr ""
+
+msgid "message"
+msgstr ""
+
+msgid "file"
+msgstr ""
+
+msgid "socket"
+msgstr ""
+
+msgid "process"
+msgstr ""
+
+msgid "process2"
+msgstr ""
+
+msgid "filesystem"
+msgstr ""
+
+msgid "node"
+msgstr ""
+
+msgid "capability"
+msgstr ""
+
+msgid "capability2"
+msgstr ""
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s има врсту допуштања (%s). Овај приступ није одбијен."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr ""
+
+msgid "Additional Information:\n"
+msgstr ""
+
+msgid "Source Context"
+msgstr "Изворни садржај"
+
+msgid "Target Context"
+msgstr "Циљни садржај"
+
+msgid "Target Objects"
+msgstr "Циљни објекти"
+
+msgid "Source"
+msgstr "Извор"
+
+msgid "Source Path"
+msgstr "Изворна путања"
+
+msgid "Port"
+msgstr "Порт"
+
+msgid "Host"
+msgstr "Домаћин"
+
+msgid "Source RPM Packages"
+msgstr "Изворни RPM пакети"
+
+msgid "Target RPM Packages"
+msgstr "Циљни RPM пакети"
+
+msgid "SELinux Policy RPM"
+msgstr ""
+
+msgid "Local Policy RPM"
+msgstr ""
+
+msgid "Selinux Enabled"
+msgstr "Selinux укључен"
+
+msgid "Policy Type"
+msgstr "Врста полисе"
+
+msgid "Enforcing Mode"
+msgstr "Режим приморавања"
+
+msgid "Host Name"
+msgstr "Име домаћина"
+
+msgid "Platform"
+msgstr "Платформа"
+
+msgid "Alert Count"
+msgstr "Број узбуна"
+
+msgid "First Seen"
+msgstr "Прво виђено"
+
+msgid "Local ID"
+msgstr "Локални ИБ"
+
+msgid "Raw Audit Messages"
+msgstr "Изворне поруке контроле"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+
+msgid "*"
+msgstr ""
+
+msgid "\n"
+msgstr ""
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+
+msgid "New SELinux security alert"
+msgstr "Нова SELinux безбедносна узбуна"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC забрана, кликните на иконицу за преглед"
+
+msgid "Dismiss"
+msgstr "Одбаци"
+
+msgid "Show"
+msgstr "Прикажи"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC забрана, кликните за преглед"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+
+msgid "Not fixable."
+msgstr "Није поправљиво."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "Успешно извршено %s"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr ""
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux није укључен, setroubleshootd излази..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "рачвање #1 није успело: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+
+msgid "Troubleshoot selected alert"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete Selected Alerts"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr ""
+
+msgid "Turn on alert pop-ups."
+msgstr ""
+
+msgid "Turn off alert pop-ups."
+msgstr ""
+
+msgid "On this file:"
+msgstr ""
+
+msgid "label"
+msgstr ""
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+
+msgid "Email alert to system administrator."
+msgstr ""
+
+msgid "Delete current alert from the database."
+msgstr ""
+
+msgid "Previous"
+msgstr ""
+
+msgid "Show previous alert."
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "Show next alert."
+msgstr ""
+
+msgid "List all alerts in the database."
+msgstr ""
+
+msgid "Review and Submit Bug Report"
+msgstr "Прегледај и пошаљи извештај о грешци"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Провери и пошаљи извештај о грешци</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"Можда бисте желели да прегледате излаз грешке који ће бити укључен у овај "
+"извештај и изменити га избацивањем поверљивих података испод."
+
+msgid "Included error output:"
+msgstr "Укључени излаз грешке:"
+
+msgid "Submit Report"
+msgstr "Пошаљи извештај"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "Ова операција је завршена."
+
+msgid "Success!"
+msgstr "Успешно!"
+
+msgid "button"
+msgstr "дугме"

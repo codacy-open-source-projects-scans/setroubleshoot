@@ -1,0 +1,627 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Dušan Kazik <prescott66@gmail.com>, 2011
+# feonsu <feonsu@gmail.com>, 2017. #zanata
+# Lukas Vrabec <lvrabec@redhat.com>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2019-07-04 01:03-0400\n"
+"Last-Translator: Lukas Vrabec <lvrabec@redhat.com>\n"
+"Language-Team: Slovak (http://www.transifex.com/projects/p/fedora/language/"
+"sk/)\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Zanata 4.6.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux vyhľadávač porúch"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "Vyhľadanie SELinux porúch zamietnutých prístupov"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "politika;bezpečnosť;selinux;avc;oprávnenie;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "port %s"
+
+msgid "Unknown"
+msgstr "Neznáme"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+
+msgid "Must call policy_init first"
+msgstr "Najskôr musí byť zavolané policy_init"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+
+msgid "Error during access vector computation"
+msgstr "Chyba počas prístupu k vektorovému výpočtu"
+
+msgid "SELinux Alert Browser"
+msgstr "Prehliadač SELinux výstrah"
+
+msgid "The source process:"
+msgstr "Zdrojový proces:"
+
+msgid "Yes"
+msgstr "Áno"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "Attempted this access:"
+msgstr "Pokus o tento prístup:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "Okno s podrobnosťami SETroubleshoot"
+
+msgid "Would you like to receive alerts?"
+msgstr "Chcete prijímať výstrahy?"
+
+msgid "Notify Admin"
+msgstr "Oznámiť administrátorovi"
+
+msgid "Troubleshoot"
+msgstr "Riešiť problém"
+
+msgid "Details"
+msgstr "Podrobnosti"
+
+msgid "SETroubleshoot Alert List"
+msgstr "Zoznam výstrah SETroubleshoot"
+
+msgid "List All Alerts"
+msgstr "Zoznam všetkých výstrah"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Zdrojový proces"
+
+msgid "Attempted Access"
+msgstr "Pokus o prístup"
+
+msgid "On this"
+msgstr "Na tomto"
+
+msgid "Occurred"
+msgstr "Nastal"
+
+msgid "Last Seen"
+msgstr "Naposledy videné"
+
+msgid "Status"
+msgstr "Stav"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "Nedá sa udeliť prístup."
+
+msgid "Notify"
+msgstr "Oznámiť"
+
+msgid "Notify alert in the future."
+msgstr "Oznámiť výstrahu v budúcnosti"
+
+msgid "Ignore"
+msgstr "Ignorovať"
+
+msgid "Ignore alert in the future."
+msgstr "Ignorovať výstrahu v budúcnosti"
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Ak ste sa pokúšali o...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>Potom toto je riešenie.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"Detaily\n"
+"zás. modulu"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Nahlásiť\n"
+"chybu"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Zásuvný modul: %s "
+
+msgid "Unable to grant access."
+msgstr "Nedá sa udeliť prístup."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "Výstraha %d z %d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "Na tomto %s:"
+
+msgid "N/A"
+msgstr "Nedostupné"
+
+msgid "No Alerts"
+msgstr "Žiadne výstrahy"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux zistil problém."
+
+msgid "Sealert Error"
+msgstr "Sealert chyba"
+
+msgid "Sealert Message"
+msgstr "Sealert správa"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "podpis nenájdený"
+
+msgid "multiple signatures matched"
+msgstr "odpovedá viacerým podpisom"
+
+msgid "id not found"
+msgstr "id nenájdené"
+
+msgid "database not found"
+msgstr "databáza nenájdená"
+
+msgid "item is not a member"
+msgstr "položka nie je členom"
+
+msgid "illegal to change user"
+msgstr "neplatná zmena používateľa"
+
+msgid "method not found"
+msgstr "metóda nenájdená"
+
+msgid "cannot create GUI"
+msgstr "nedá sa vytvoriť grafické rozhranie"
+
+msgid "value unknown"
+msgstr "hodnota neznáma"
+
+msgid "cannot open file"
+msgstr "nedá sa otvoriť súbor"
+
+msgid "invalid email address"
+msgstr "neplatná emailová adresa"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "chyba soketu"
+
+msgid "connection has been broken"
+msgstr "spojenie bolo prerušené"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Neplatná požiadavka. Popisovač súboru nie je otvorený"
+
+msgid "insufficient permission to modify user"
+msgstr "nedostatočné oprávnenia na zmenu užívateľa"
+
+msgid "authentication failed"
+msgstr "autorizácia zlyhala"
+
+msgid "user prohibited"
+msgstr "užívateľ zakázaný"
+
+msgid "not authenticated"
+msgstr "neautorizovaný"
+
+msgid "user lookup failed"
+msgstr "hľadanie používateľa zlyhalo"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "Ale nie, %s nastala chyba!"
+
+msgid "Error"
+msgstr "Chyba"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"Ak chcete povoliť $SOURCE_BASE_PATH prístup $ACCESS k $TARGET_BASE_PATH  "
+"triedy $TARGET_CLASS"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr "Pre kompletnú SELinux správu spusti: sealert -l %s"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "Užívateľ (%s) nemôže meniť údaje pre (%s)"
+
+msgid "Started"
+msgstr "Spustené"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Sledovanie auditu"
+
+msgid "Never Ignore"
+msgstr "Nikdy neignorovať"
+
+msgid "Ignore Always"
+msgstr "Ignorovať vždy"
+
+msgid "Ignore After First Alert"
+msgstr "Ignorovať po prvej výstrahe"
+
+msgid "directory"
+msgstr "adresár"
+
+msgid "semaphore"
+msgstr "semafor"
+
+msgid "shared memory"
+msgstr "zdieľaná pamäť"
+
+msgid "message queue"
+msgstr "fronta správ"
+
+msgid "message"
+msgstr "správa"
+
+msgid "file"
+msgstr "súbor"
+
+msgid "socket"
+msgstr "soket"
+
+msgid "process"
+msgstr "proces"
+
+msgid "process2"
+msgstr "process2"
+
+msgid "filesystem"
+msgstr "súborový systém"
+
+msgid "node"
+msgstr "uzol"
+
+msgid "capability"
+msgstr "schopnosť"
+
+msgid "capability2"
+msgstr "capability2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr ""
+"%s je v tolerantnom (permissive) režime (%s). Tento prístup nebol zamietnutý."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr ""
+"SELinux je v tolerantnom (permissive) režime. Tento prístup nebol zamietnutý."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux bráni %s využívať %s prístup k procesu."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux bráni %s využívať '%s' prístup k procesu."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux bráni %s využívať funkciu %s."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux bráni %s využívať funkciu '%s'."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux bráni %s prístupu %s k %s označený ako %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux bráni %s prístupu '%s' k %s označený ako %s."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux bráni %s prístupu %s k %s %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux bráni %s prístupu '%s' k %s %s."
+
+msgid "Additional Information:\n"
+msgstr "Dodatočné informácie:\n"
+
+msgid "Source Context"
+msgstr "Zdrojový kontext"
+
+msgid "Target Context"
+msgstr "Cieľový kontext"
+
+msgid "Target Objects"
+msgstr "Cieľové objekty"
+
+msgid "Source"
+msgstr "Zdroj"
+
+msgid "Source Path"
+msgstr "Zdrojová cesta"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Host"
+msgstr "Počítač"
+
+msgid "Source RPM Packages"
+msgstr "Zdrojové RPM balíčky"
+
+msgid "Target RPM Packages"
+msgstr "Cieľové RPM balíčky"
+
+msgid "SELinux Policy RPM"
+msgstr ""
+
+msgid "Local Policy RPM"
+msgstr ""
+
+msgid "Selinux Enabled"
+msgstr "SELinux je povolený"
+
+msgid "Policy Type"
+msgstr "Typ politiky"
+
+msgid "Enforcing Mode"
+msgstr "Vynucovací režim"
+
+msgid "Host Name"
+msgstr "Názov počítača"
+
+msgid "Platform"
+msgstr "Platforma"
+
+msgid "Alert Count"
+msgstr "Počet výstrah"
+
+msgid "First Seen"
+msgstr "Prvýkrát videné"
+
+msgid "Local ID"
+msgstr "Lokálne ID"
+
+msgid "Raw Audit Messages"
+msgstr "Pôvodná správa z auditu"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  Zásuvný modul %s (%.4s dôvernosť) navrhuje   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"Potom "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Urobte\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "Nová SELinux bezpečnostná výstraha"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC odmietnutie, kliknite na zobrazenie"
+
+msgid "Dismiss"
+msgstr "Zrušiť"
+
+msgid "Show"
+msgstr "Zobraziť"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC odmietnutie, kliknite na zobrazenie"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr "SELinux Troubleshooter: Aplikácia vyžaduje povolený SELinux"
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+"SELinux nie je povolený, sealert sa nespúšťa na systémoch bez SELinuxu."
+
+msgid "Not fixable."
+msgstr "Neopraviteľné."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "Úspešne spustené %s"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "Zásuvný modul %s nie je platný pre %s id"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux nie je povolený, setroubleshootd bude ukončený..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "spustenie #1 zlyhalo: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "Riešiť vybranú výstrahu"
+
+msgid "Delete"
+msgstr "Zmazať"
+
+msgid "Delete Selected Alerts"
+msgstr "Zmazať zvolené výstrahy"
+
+msgid "Close"
+msgstr "Zavrieť"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux narazil na problém.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "Zapnúť vyskakovacie okná s výstrahami."
+
+msgid "Turn off alert pop-ups."
+msgstr "Vypnúť vyskakovacie okná s výstrahami."
+
+msgid "On this file:"
+msgstr "Na tento súbor:"
+
+msgid "label"
+msgstr "menovka"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr "Prečítať informácie o výstrahe. Môže vyžadovať oprávnenia správcu."
+
+msgid "Email alert to system administrator."
+msgstr "Odoslať výstrahu e-mailom administrátorovi."
+
+msgid "Delete current alert from the database."
+msgstr "Zmazať aktuálnu výstrahu z databázy."
+
+msgid "Previous"
+msgstr "Predchádzajúci"
+
+msgid "Show previous alert."
+msgstr "Zobraziť predošlú výstrahu."
+
+msgid "Next"
+msgstr "Ďalej"
+
+msgid "Show next alert."
+msgstr "Zobraziť nasledujúcu výstrahu."
+
+msgid "List all alerts in the database."
+msgstr "Zoznam všetkých výstrah v databáze."
+
+msgid "Review and Submit Bug Report"
+msgstr "Skontrolovať a odoslať hlásenie o chybe"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Skontrolovať a odoslať hlásenie o chybe</"
+"span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"Možno si budete nižšie chcieť prezrieť chybový výstup, ktorý bude zahrnutý "
+"do hlásenia o chybe a upraviť ho, aby ste odstránili citlivé údaje."
+
+msgid "Included error output:"
+msgstr "Zahrnutý chybový výstup:"
+
+msgid "Submit Report"
+msgstr "Odoslať hlásenie"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "Operácia bola dokončená. "
+
+msgid "Success!"
+msgstr "Úspech!"
+
+msgid "button"
+msgstr "tlačidlo"

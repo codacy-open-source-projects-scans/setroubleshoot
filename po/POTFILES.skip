@@ -1,0 +1,10 @@
+src/xml_data_v01.py
+src/build/lib/setroubleshoot/Plugin.py
+src/build/lib/setroubleshoot/audit_data.py
+src/build/lib/setroubleshoot/browser.py
+src/build/lib/setroubleshoot/errcode.py
+src/build/lib/setroubleshoot/gui_utils.py
+src/build/lib/setroubleshoot/rpc.py
+src/build/lib/setroubleshoot/server.py
+src/build/lib/setroubleshoot/signature.py
+src/build/lib/setroubleshoot/util.py

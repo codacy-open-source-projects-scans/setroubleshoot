@@ -1,0 +1,655 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Dimitris Glezos <glezos@transifex.com>, 2011
+# Leah Liu <lliu@redhat.com>, 2008, 2009
+# Tommy He <lovenemesis@gmail.com>, 2011, 2012
+# Tiansworld <tiansworld@fedoraproject.org>, 2013
+# Tony Fu <tfu@redhat.com>, 2006
+# Wei Liu <LLIU@REDHAT.COM>, 2012-2013
+# Xi Huang <xhuang@redhat.com>, 2006
+# yusuf <yusufma77@yahoo.com>, 2011
+# Tian Shixiong <tiansworld@fedoraproject.org>, 2016. #zanata
+# Ludek Janda <ljanda@redhat.com>, 2018. #zanata
+# Ludek Janda <ljanda@redhat.com>, 2020. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2022-09-07 08:49+0000\n"
+"Last-Translator: Ludek Janda <ljanda@redhat.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
+"projects/setroubleshoot/setroubleshoot/zh_CN/>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux 故障排除工具"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "对 SELinux 访问拒绝进行故障排除"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "端口 %s"
+
+msgid "Unknown"
+msgstr "未知"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+"%s \n"
+"**** 记录的 AVC 在当前的政策中是允许的 ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+"%s \n"
+"**** 记录的 AVC 在当前的政策中未被审计。 'semodule -B' 将会打开 dontaudit 规"
+"则 ****\n"
+
+msgid "Must call policy_init first"
+msgstr "必须首先调用 policy_init"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+"%s \n"
+"**** 无效的 AVC：错误的目标上下文 ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+"%s \n"
+"**** 无效的 AVC：无效的源上下文 ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+"%s \n"
+"**** 无效的 AVC：错误的类型类 ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+"%s \n"
+"**** 无效的 AVC：错误的权限 ****\n"
+
+msgid "Error during access vector computation"
+msgstr "访问矢量运算时出错"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux 警报浏览器"
+
+msgid "The source process:"
+msgstr "源进程："
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Attempted this access:"
+msgstr "尝试了这个访问："
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshoot 详情窗口"
+
+msgid "Would you like to receive alerts?"
+msgstr "您希望收到警报吗？"
+
+msgid "Notify Admin"
+msgstr "通知管理员"
+
+msgid "Troubleshoot"
+msgstr "故障排除"
+
+msgid "Details"
+msgstr "详情"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot 警报列表"
+
+msgid "List All Alerts"
+msgstr "列出所有警报"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "源进程"
+
+msgid "Attempted Access"
+msgstr "尝试的访问"
+
+msgid "On this"
+msgstr "对这个"
+
+msgid "Occurred"
+msgstr "已发生的"
+
+msgid "Last Seen"
+msgstr "最后一次看到的"
+
+msgid "Status"
+msgstr "状态"
+
+#, python-format
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr ""
+"无法通知管理员。\n"
+"\n"
+"%s"
+
+msgid "Notify"
+msgstr "通知"
+
+msgid "Notify alert in the future."
+msgstr "通知以后的警报。"
+
+msgid "Ignore"
+msgstr "忽略"
+
+msgid "Ignore alert in the future."
+msgstr "忽略以后的警报。"
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>如果您想要...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>那么这是解决方案。</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"插件\n"
+"详情"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"报告\n"
+"Bug"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "插件：%s "
+
+msgid "Unable to grant access."
+msgstr "不能赋予访问权限。"
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "%d 个警报中的 %d 个"
+
+#, python-format
+msgid "On this %s:"
+msgstr "关于这个 %s："
+
+msgid "N/A"
+msgstr "不适用"
+
+msgid "No Alerts"
+msgstr "没有警报"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux 已检测到一个问题。"
+
+msgid "Sealert Error"
+msgstr "Sealert 错误"
+
+msgid "Sealert Message"
+msgstr "Sealert 消息"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "没有找到签名"
+
+msgid "multiple signatures matched"
+msgstr "多个签名匹配"
+
+msgid "id not found"
+msgstr "没有找到 id"
+
+msgid "database not found"
+msgstr "没有找到数据库"
+
+msgid "item is not a member"
+msgstr "项目不是一个成员"
+
+msgid "illegal to change user"
+msgstr "非法更改用户"
+
+msgid "method not found"
+msgstr "没有找到方法"
+
+msgid "cannot create GUI"
+msgstr "无法创建 GUI"
+
+msgid "value unknown"
+msgstr "值未知"
+
+msgid "cannot open file"
+msgstr "无法打开文件"
+
+msgid "invalid email address"
+msgstr "无效的电子邮件地址"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "套接字错误"
+
+msgid "connection has been broken"
+msgstr "连接已中断"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "无效的请求。文件描述符没有打开"
+
+msgid "insufficient permission to modify user"
+msgstr "没有足够的权限来修改用户"
+
+msgid "authentication failed"
+msgstr "认证失败"
+
+msgid "user prohibited"
+msgstr "用户被禁止"
+
+msgid "not authenticated"
+msgstr "没有认证"
+
+msgid "user lookup failed"
+msgstr "用户查找失败"
+
+#, c-format, python-format
+msgid "Oops, %s hit an error!"
+msgstr "哎呀，%s 出错了！"
+
+msgid "Error"
+msgstr "错误"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"如果你想允许 $SOURCE_BASE_PATH 对 $TARGET_BASE_PATH $TARGET_CLASS 拥有 "
+"$ACCESS 访问权限"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr " 如需要完整的 SELinux 信息，请运行 sealert -l %s"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "用户 (%s) 不能为 (%s) 修改数据"
+
+msgid "Started"
+msgstr "已启动"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "审计侦听程序"
+
+msgid "Never Ignore"
+msgstr "从不忽略"
+
+msgid "Ignore Always"
+msgstr "总是忽略"
+
+msgid "Ignore After First Alert"
+msgstr "在第一个警报后忽略"
+
+msgid "directory"
+msgstr "目录"
+
+msgid "semaphore"
+msgstr "信号量"
+
+msgid "shared memory"
+msgstr "共享的内存"
+
+msgid "message queue"
+msgstr "消息队列"
+
+msgid "message"
+msgstr "消息"
+
+msgid "file"
+msgstr "文件"
+
+msgid "socket"
+msgstr "套接口"
+
+msgid "process"
+msgstr "进程"
+
+msgid "process2"
+msgstr "process2"
+
+msgid "filesystem"
+msgstr "文件系统"
+
+msgid "node"
+msgstr "节点"
+
+msgid "capability"
+msgstr "能力"
+
+msgid "capability2"
+msgstr "capability2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s 有一个容许类型 (%s)。此访问未被拒绝。"
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux 处于许可模式。此访问未被拒绝。"
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux 正在阻止 %s 对进程使用 %s 访问。"
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux 正在阻止 %s 对进程使用 %s 访问。"
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux 正在阻止 %s 使用 %s 功能。"
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux 正在阻止 %s 使用 '%s' 功能。"
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux 正在阻止 %s 对标记为 %s 的 %s 进行 %s 访问。"
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux 正在阻止 %s 对标记为 %s 的 %s 进行 '%s' 访问。"
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux 正在阻止 %s 对 %s %s 进行 %s 访问。"
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux 正在阻止 %s 对 %s %s 进行 '%s' 访问。"
+
+msgid "Additional Information:\n"
+msgstr "其它信息:\n"
+
+msgid "Source Context"
+msgstr "源环境"
+
+msgid "Target Context"
+msgstr "目标环境"
+
+msgid "Target Objects"
+msgstr "目标对象"
+
+msgid "Source"
+msgstr "源"
+
+msgid "Source Path"
+msgstr "源路径"
+
+msgid "Port"
+msgstr "端口"
+
+msgid "Host"
+msgstr "主机"
+
+msgid "Source RPM Packages"
+msgstr "源 RPM 软件包"
+
+msgid "Target RPM Packages"
+msgstr "目标 RPM 软件包"
+
+msgid "SELinux Policy RPM"
+msgstr "SELinux 策略 RPM"
+
+msgid "Local Policy RPM"
+msgstr "本地策略 RPM"
+
+msgid "Selinux Enabled"
+msgstr "Selinux 已启用"
+
+msgid "Policy Type"
+msgstr "策略类型"
+
+msgid "Enforcing Mode"
+msgstr "强制模式"
+
+msgid "Host Name"
+msgstr "主机名"
+
+msgid "Platform"
+msgstr "平台"
+
+msgid "Alert Count"
+msgstr "警报数"
+
+msgid "First Seen"
+msgstr "第一次看到的"
+
+msgid "Local ID"
+msgstr "本地 ID"
+
+msgid "Raw Audit Messages"
+msgstr "原始审计消息"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  插件 %s (%.4s 置信度) 建议   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"然后 "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"做\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "新 SELinux 安全警报"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC 拒绝，请点击图标查看"
+
+msgid "Dismiss"
+msgstr "清除"
+
+msgid "Show"
+msgstr "显示"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC 拒绝，请点击查看"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr "SELinux Troubleshooter：Applet要求启用SELinux"
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr "SELinux 没有启用，sealert 将不会在非 SELinux 系统上运行"
+
+msgid "Not fixable."
+msgstr "不可修复。"
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "成功运行 %s"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "插件 %s 对 %s id 无效"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux 没有启用，setroubleshootd 正在退出..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "fork #1 失败: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"版权所有（c）2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "对选定的警报进行故障排除"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Delete Selected Alerts"
+msgstr "删除选定的警报"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux 已检测到一个问题。</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "打开警报弹出窗口。"
+
+msgid "Turn off alert pop-ups."
+msgstr "关闭警报弹出窗口。"
+
+msgid "On this file:"
+msgstr "关于此文件："
+
+msgid "label"
+msgstr "标记"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr "阅读警报故障排除信息。可能需要管理员权限才能修复。"
+
+msgid "Email alert to system administrator."
+msgstr "将警报发邮件给系统管理员。"
+
+msgid "Delete current alert from the database."
+msgstr "从数据库中删除当前的警报。"
+
+msgid "Previous"
+msgstr "上一个"
+
+msgid "Show previous alert."
+msgstr "显示上一个警报。"
+
+msgid "Next"
+msgstr "下一个"
+
+msgid "Show next alert."
+msgstr "显示下一个警报。"
+
+msgid "List all alerts in the database."
+msgstr "列出数据库中所有的警报。"
+
+msgid "Review and Submit Bug Report"
+msgstr "审核并提交 Bug 报告"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr "<span size='large' weight='bold'>审核并提交 Bug 报告</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"您可能想要审核将包含在这个 bug 报告中的错误输出，并且进行修改以排除任何敏感的"
+"数据。"
+
+msgid "Included error output:"
+msgstr "包含的错误输出："
+
+msgid "Submit Report"
+msgstr "提交报告"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "操作完成。敏捷的棕色狐狸跳过了那只懒狗。"
+
+msgid "Success!"
+msgstr "成功！"
+
+msgid "button"
+msgstr "按钮"
+
+#, fuzzy
+#~| msgid ""
+#~| "%s \n"
+#~| "**** Invalid AVC: bad source context ****\n"
+#~ msgid ""
+#~ "%s \n"
+#~ "**** TEST OF method source - ATTEMPT #2 ****\n"
+#~ msgstr ""
+#~ "%s \n"
+#~ "**** 无效的 AVC：无效的源上下文 ****\n"

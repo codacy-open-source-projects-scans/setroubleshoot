@@ -1,0 +1,655 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Aytunç Öztürk <aytuncsnet@gmail.com>, 2012
+# Onur Baysan <onurbaysan@gmail.com>, 2011
+# Serdar Sağlam <teknomobil@msn.com>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2022-11-25 17:19+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/setroubleshoot/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+"X-Generator: Weblate 4.14.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux Sorun Giderici"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "SELinux erişim reddi sorunlarını giderin"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr ""
+"policy;security;selinux;avc;permission;mac;alert;sealert;politika;güvenlik;"
+"izin;uyarı;"
+
+#, python-format
+msgid "port %s"
+msgstr "port %s"
+
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+"%s \n"
+"**** Geçerli politikada kayıtlı AVC'ye izin veriliyor ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+"%s \n"
+"**** Kayıtlı AVC geçerli politikada denetlenmiyor (dontaudit). 'semodule -B' "
+"dontaudit kurallarını etkinleştirecektir ****\n"
+
+msgid "Must call policy_init first"
+msgstr "İlk olarak policy_init çağırılmalı"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+"%s \n"
+"**** Geçersiz AVC: yanlış hedef bağlamı ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+"%s \n"
+"**** Geçersiz AVC: yanlış kaynak bağlamı ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+"%s \n"
+"**** Geçersiz AVC: yanlış tür sınıfı ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+"%s \n"
+"**** Geçersiz AVC: yanlış izin ****\n"
+
+msgid "Error during access vector computation"
+msgstr "Vector hesaplaması erişimi sırasında hata"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux Uyarı Tarayıcı"
+
+msgid "The source process:"
+msgstr "Kaynak işlem:"
+
+msgid "Yes"
+msgstr "Evet"
+
+msgid "No"
+msgstr "Hayır"
+
+msgid "Attempted this access:"
+msgstr "Bu erişim denendi:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshoot Ayrıntıları Penceresi"
+
+msgid "Would you like to receive alerts?"
+msgstr "Uyarıları almak ister misiniz?"
+
+msgid "Notify Admin"
+msgstr "Yöneticiye Bildir"
+
+msgid "Troubleshoot"
+msgstr "Sorun Giderme"
+
+msgid "Details"
+msgstr "Ayrıntılar"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot Uyarı Listesi"
+
+msgid "List All Alerts"
+msgstr "Tüm Uyarıları Listele"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Kaynak işlem"
+
+msgid "Attempted Access"
+msgstr "Erişim Denemesi"
+
+msgid "On this"
+msgstr "Bunda"
+
+msgid "Occurred"
+msgstr "Meydana geldi"
+
+msgid "Last Seen"
+msgstr "Son Görülme"
+
+msgid "Status"
+msgstr "Durum"
+
+#, python-format
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr ""
+"Yönetici bilgilendirilemiyor.\n"
+"\n"
+"%s"
+
+msgid "Notify"
+msgstr "Bildir"
+
+msgid "Notify alert in the future."
+msgstr "Bundan sonra uyarıları bildir."
+
+msgid "Ignore"
+msgstr "Yok say"
+
+msgid "Ignore alert in the future."
+msgstr "Gelecekteki uyarıları yok say."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Denediğiniz şey...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>Çözüm budur.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"Eklenti\n"
+"Ayrıntıları"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Hata\n"
+"Bildir"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Eklenti: %s "
+
+msgid "Unable to grant access."
+msgstr "Erişim sağlanamadı."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "%d nin %d uyarısı"
+
+#, python-format
+msgid "On this %s:"
+msgstr "%s üzerinde:"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "No Alerts"
+msgstr "Uyarı yok"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux bir problem tespti etti."
+
+msgid "Sealert Error"
+msgstr "Sealert Hatası"
+
+msgid "Sealert Message"
+msgstr "Sealert Mesajı"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "imza bulunamadı"
+
+msgid "multiple signatures matched"
+msgstr "birden fazla imza eşleşti"
+
+msgid "id not found"
+msgstr "id bulunamadı"
+
+msgid "database not found"
+msgstr "veri tabanı bulunamadı"
+
+msgid "item is not a member"
+msgstr "öğe bir üye değil"
+
+msgid "illegal to change user"
+msgstr "kullanıcı değiştirme geçersiz"
+
+msgid "method not found"
+msgstr "yöntem bulunamadı"
+
+msgid "cannot create GUI"
+msgstr "GUI yaratma"
+
+msgid "value unknown"
+msgstr "bilinmeyen değer"
+
+msgid "cannot open file"
+msgstr "dosyayı açma"
+
+msgid "invalid email address"
+msgstr "geçersiz email adresi"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "soket hatası"
+
+msgid "connection has been broken"
+msgstr "bağlantı koptu"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Geçersiz istek. File belirteci açık değil"
+
+msgid "insufficient permission to modify user"
+msgstr "kullanıcıyı değiştirmek için yeterli izin yok"
+
+msgid "authentication failed"
+msgstr "kimlik denetimi başarısız oldu"
+
+msgid "user prohibited"
+msgstr "kullanıcı yasaklandı"
+
+msgid "not authenticated"
+msgstr "yetkilendirilmemiş"
+
+msgid "user lookup failed"
+msgstr "kullanıcı arama başarısız"
+
+#, c-format, python-format
+msgid "Oops, %s hit an error!"
+msgstr "Tüh, %s bir hatayla karşılaştı!"
+
+msgid "Error"
+msgstr "Hata"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"$SOURCE_BASE_PATH’ın $TARGET_BASE_PATH $TARGET_CLASS için $ACCESS erişimine "
+"sahip olmasına izin vermek istiyorsanız"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr " Tam SELinux mesajları için şu komutu çalıştırın: sealert -l %s"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "(%s) kullanıcısı, (%s) için verileri değiştiremez"
+
+msgid "Started"
+msgstr "Başladı"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Denetim Dinleyici"
+
+msgid "Never Ignore"
+msgstr "Asla Yok Sayma"
+
+msgid "Ignore Always"
+msgstr "Her Zaman Yok Say"
+
+msgid "Ignore After First Alert"
+msgstr "İlk Uyarıdan Sonra Yok Say"
+
+msgid "directory"
+msgstr "dizin"
+
+msgid "semaphore"
+msgstr "semafor"
+
+msgid "shared memory"
+msgstr "paylaşılan bellek"
+
+msgid "message queue"
+msgstr "mesaj kuyruğu"
+
+msgid "message"
+msgstr "mesaj"
+
+msgid "file"
+msgstr "dosya"
+
+msgid "socket"
+msgstr "soket"
+
+msgid "process"
+msgstr "işlem"
+
+msgid "process2"
+msgstr "işlem2"
+
+msgid "filesystem"
+msgstr "dosya sistemi"
+
+msgid "node"
+msgstr "düğüm"
+
+msgid "capability"
+msgstr "yetenek"
+
+msgid "capability2"
+msgstr "yetenek2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s, izin veren bir türe sahip (%s). Bu erişim reddedilmedi."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux izin veren modda. Bu erişim reddedilmedi."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr ""
+"SELinux, %s'nin bir işlem üzerinde %s erişimini kullanmasını engelliyor."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr ""
+"SELinux, %s'nin bir işlem üzerinde '%s' erişimlerini kullanmasını engelliyor."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux, %s'nin %s yeteneğini kullanmasını engelliyor."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux, %s'nin '%s' yeteneklerini kullanmasını engelliyor."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux, %s'nin %s erişimini %s üzerinde (%s etiketli) engelliyor."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr ""
+"SELinux, %s'nin '%s' erişimlerini %s üzerinde (%s etiketli) engelliyor."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux, %s'nin %s erişimini %s %s üzerinde engelliyor."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux, %s'nin '%s' erişimlerini %s %s üzerinde engelliyor."
+
+msgid "Additional Information:\n"
+msgstr "Ek Bilgi:\n"
+
+msgid "Source Context"
+msgstr "Kaynak Bağlam"
+
+msgid "Target Context"
+msgstr "Hedef Bağlam"
+
+msgid "Target Objects"
+msgstr "Hedef Nesneler"
+
+msgid "Source"
+msgstr "Kaynak"
+
+msgid "Source Path"
+msgstr "Kaynak Yol"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Host"
+msgstr "Ana Makine"
+
+msgid "Source RPM Packages"
+msgstr "Kaynak RPM Paketleri"
+
+msgid "Target RPM Packages"
+msgstr "Hedef RPM Paketleri"
+
+msgid "SELinux Policy RPM"
+msgstr "SELinux Politikası RPM'i"
+
+msgid "Local Policy RPM"
+msgstr "Yerel Politika RPM'i"
+
+msgid "Selinux Enabled"
+msgstr "SELinux Etkin"
+
+msgid "Policy Type"
+msgstr "Politika Türü"
+
+msgid "Enforcing Mode"
+msgstr "Zorlama Modu"
+
+msgid "Host Name"
+msgstr "Ana Makine Adı"
+
+msgid "Platform"
+msgstr "Platform"
+
+msgid "Alert Count"
+msgstr "Alarm Sayısı"
+
+msgid "First Seen"
+msgstr "İlk Görülme"
+
+msgid "Local ID"
+msgstr "Yerel ID"
+
+msgid "Raw Audit Messages"
+msgstr "Ham Denetim Mesajları"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  %s eklentisi (%.4s güvenilirlik) şunları öneriyor   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"Sonra "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Do\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "Yeni SELinux güvenlik uyarısı"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC reddi, görüntülemek için simgeye tıklayın"
+
+msgid "Dismiss"
+msgstr "Reddet"
+
+msgid "Show"
+msgstr "Göster"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC reddi, görüntülemek için tıklayın"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+"SELinux Sorun Giderici: Uygulamanın çalışması için SELinux "
+"etkinleştirilmelidir"
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+"SELinux etkin değil, sealert SELinux olmayan sistemlerde çalışmayacaktır"
+
+msgid "Not fixable."
+msgstr "Düzeltilebilir değil."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "%s başarılı bir şekilde çalıştı"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "%s eklentisi %s id si için geçerli değil"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux etkin değil, setroubleshootd çıkış yapıyor..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "fork#1 başarısız: %d(%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"Telif Hakkı (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "Seçili uyarıyla ilgili sorunları gider"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Delete Selected Alerts"
+msgstr "Seçili Uyarıları Sil"
+
+msgid "Close"
+msgstr "Kapat"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux hata tespit etti.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "Açılır pencere uyarılarını aç."
+
+msgid "Turn off alert pop-ups."
+msgstr "Açılır pencere uyarılarını kapat."
+
+msgid "On this file:"
+msgstr "Bu dosya üzerinde:"
+
+msgid "label"
+msgstr "label"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"Uyarıyla ilgili sorun giderme bilgilerini okuyun. Düzeltmek için yönetici "
+"ayrıcalıkları gerekebilir."
+
+msgid "Email alert to system administrator."
+msgstr "Uyarıyla ilgili sistem yöneticisine e-posta gönder."
+
+msgid "Delete current alert from the database."
+msgstr "Geçerli uyarıyı veri tabanından sil."
+
+msgid "Previous"
+msgstr "Önceki"
+
+msgid "Show previous alert."
+msgstr "Önceki uyarıyı göster."
+
+msgid "Next"
+msgstr "Sonraki"
+
+msgid "Show next alert."
+msgstr "Sonraki uyarıyı göster."
+
+msgid "List all alerts in the database."
+msgstr "Veri tabanındaki tüm uyarıları listele."
+
+msgid "Review and Submit Bug Report"
+msgstr "Gözden Geçir ve Hata Raporunu Gönder"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Gözden Geçir ve Hata Raporunu Gönder</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"Bu hata bildirimine dahil edilecek hata çıktısını incelemek ve aşağıda "
+"hassas verileri hariç tutmak için değiştirmek isteyebilirsiniz."
+
+msgid "Included error output:"
+msgstr "Dahil edilen hata çıktısı:"
+
+msgid "Submit Report"
+msgstr "Raporu Gönder"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr ""
+"Bu işlem tamamlandı. Hızlı kahverengi tilki, aptal köpeğin üzerinden atladı."
+
+msgid "Success!"
+msgstr "Başarılı!"
+
+msgid "button"
+msgstr "düğme"
+
+#~ msgid ""
+#~ "%s \n"
+#~ "**** TEST OF method source - ATTEMPT #2 ****\n"
+#~ msgstr ""
+#~ "%s \n"
+#~ "**** yöntem kaynağının TEST EDİLMESİ - DENEME #2 ****\n"

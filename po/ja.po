@@ -1,0 +1,669 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Dimitris Glezos <glezos@transifex.com>, 2011
+# Hajime Taira <htaira@redhat.com>, 2011
+# hyuugabaru <hyu_gabaru@yahoo.co.jp>, 2009
+# Kiyoto Hashida <khashida@redhat.com>, 2008, 2009, 2010
+# Kiyoto Hashida <khashida@redhat.com>, 2006, 2007
+# noriko <noriko@fedoraproject.org>, 2013
+# Noriko Mizumoto <noriko@redhat.com>, 2006, 2008
+# Tomoyuki KATO <tomo@dream.daynight.jp>, 2011-2013
+# 高一人参 @欠陥遺伝子 <www.carrotsoft@gmail.com>, 2011
+# Noriko Mizumoto <noriko.mizumoto@gmail.com>, 2016. #zanata
+# Vit Mojzis <vmojzis@redhat.com>, 2017. #zanata
+# Ludek Janda <ljanda@redhat.com>, 2018. #zanata
+# Vit Mojzis <vmojzis@redhat.com>, 2018. #zanata
+# Ludek Janda <ljanda@redhat.com>, 2020. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2022-09-06 18:19+0000\n"
+"Last-Translator: Transtats <suanand@redhat.com>\n"
+"Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/setroubleshoot/ja/>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux Troubleshooter"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "SELinux アクセス拒否のトラブルシューティング"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "ポート %s"
+
+msgid "Unknown"
+msgstr "不明"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+"%s \n"
+"**** 記録した AVC は現行のポリシーで許可されています。 ***\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+"%s \n"
+"**** 記録した AVC が現在のポリシーで dontaudit されています。 'semodule -B' "
+"が dontaudit ルールをオンにします。 ***\n"
+
+msgid "Must call policy_init first"
+msgstr "policy_init を最初にコールしなければなりません"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+"%s \n"
+"**** 無効な AVC: 不正ターゲットコンテキストです。 ***\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+"%s \n"
+"**** 無効な AVC: 不正ソースコンテキストです。 ***\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+"%s \n"
+"**** 無効な AVC: 不正タイプクラスです ***\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+"%s \n"
+"**** 無効な AVC: 不正認可です ***\n"
+
+msgid "Error during access vector computation"
+msgstr "アクセスベクターの演算時にエラーが発生しました"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux 通知ブラウザー"
+
+msgid "The source process:"
+msgstr "原因プロセス:"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid "No"
+msgstr "いいえ"
+
+msgid "Attempted this access:"
+msgstr "試行したアクセス:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshoot の詳細のウィンドウ"
+
+msgid "Would you like to receive alerts?"
+msgstr "通知を受け取りますか？"
+
+msgid "Notify Admin"
+msgstr "管理者に通知"
+
+msgid "Troubleshoot"
+msgstr "トラブルシュート"
+
+msgid "Details"
+msgstr "詳細"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot 通知リスト"
+
+msgid "List All Alerts"
+msgstr "すべての通知の一覧"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "ソースプロセス"
+
+msgid "Attempted Access"
+msgstr "試行したアクセス"
+
+msgid "On this"
+msgstr "試行の対象"
+
+msgid "Occurred"
+msgstr "発生回数"
+
+msgid "Last Seen"
+msgstr "最後の画面"
+
+msgid "Status"
+msgstr "ステータス"
+
+#, python-format
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr ""
+"管理者に通知できません。\n"
+"\n"
+"%s"
+
+msgid "Notify"
+msgstr "通知する"
+
+msgid "Notify alert in the future."
+msgstr "後ほど警告を表示します。"
+
+msgid "Ignore"
+msgstr "無視"
+
+msgid "Ignore alert in the future."
+msgstr "次回から警告を無視します。"
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>次を試行していた場合...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>これが解決策です。</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"プラグイン\n"
+"詳細"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"バグ\n"
+"報告"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "プラグイン: %s "
+
+msgid "Unable to grant access."
+msgstr "アクセスを認可できません。"
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "通知 %d / %d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "対象 %s:"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "No Alerts"
+msgstr "通知なし"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux は問題を検出しました。"
+
+msgid "Sealert Error"
+msgstr "Sealert エラー"
+
+msgid "Sealert Message"
+msgstr "Sealert メッセージ"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "署名が見つかりませんでした"
+
+msgid "multiple signatures matched"
+msgstr "複数の署名が一致しました"
+
+msgid "id not found"
+msgstr "ID が見つかりませんでした"
+
+msgid "database not found"
+msgstr "データベースが見つかりませんでした"
+
+msgid "item is not a member"
+msgstr "アイテムはメンバーではありません"
+
+msgid "illegal to change user"
+msgstr "ユーザーの変更は不正です"
+
+msgid "method not found"
+msgstr "メソッドが見つかりませんでした"
+
+msgid "cannot create GUI"
+msgstr "GUI を作成できません"
+
+msgid "value unknown"
+msgstr "値が不明です"
+
+msgid "cannot open file"
+msgstr "ファイルを開けません"
+
+msgid "invalid email address"
+msgstr "無効な電子メールアドレス"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "ソケットエラー"
+
+msgid "connection has been broken"
+msgstr "接続が遮断されました"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "無効な要求です。ファイル記述子は開いていません"
+
+msgid "insufficient permission to modify user"
+msgstr "ユーザーを変更するのに十分な権限がありません"
+
+msgid "authentication failed"
+msgstr "認証は失敗しました"
+
+msgid "user prohibited"
+msgstr "ユーザーは禁止されています"
+
+msgid "not authenticated"
+msgstr "認証されていません"
+
+msgid "user lookup failed"
+msgstr "ユーザーの検索に失敗しました"
+
+#, c-format, python-format
+msgid "Oops, %s hit an error!"
+msgstr "%s がエラーです!"
+
+msgid "Error"
+msgstr "エラー"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"$TARGET_BASE_PATH $TARGET_CLASS で、$SOURCE_BASE_PATH が $ACCESS アクセスする"
+"のを許可する場合"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr " 完全な SELinux メッセージを見るには、sealert -l %s を実行します"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "ユーザー (%s) は (%s) 用のデータを修正できません"
+
+msgid "Started"
+msgstr "開始済み"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "リスナーの監査"
+
+msgid "Never Ignore"
+msgstr "無視しない"
+
+msgid "Ignore Always"
+msgstr "常に無視する"
+
+msgid "Ignore After First Alert"
+msgstr "最初の通知以後は無視"
+
+msgid "directory"
+msgstr "ディレクトリー"
+
+msgid "semaphore"
+msgstr "セマフォ"
+
+msgid "shared memory"
+msgstr "共有メモリー"
+
+msgid "message queue"
+msgstr "メッセージキュー"
+
+msgid "message"
+msgstr "メッセージ"
+
+msgid "file"
+msgstr "ファイル"
+
+msgid "socket"
+msgstr "ソケット"
+
+msgid "process"
+msgstr "プロセス"
+
+msgid "process2"
+msgstr "process2"
+
+msgid "filesystem"
+msgstr "ファイルシステム"
+
+msgid "node"
+msgstr "ノード"
+
+msgid "capability"
+msgstr "機能"
+
+msgid "capability2"
+msgstr "capability2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr ""
+"%s には許容タイプ (%s) があります。このアクセスは拒否されませんでした。"
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux は permissive モードです。このアクセスは拒否されませんでした。"
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux により、%s がプロセスにおいて %s アクセスを使用できません。"
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux により、%s がプロセスにおいて '%s' アクセスを使用できません。"
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux により、%s が %s 能力を使用できません。"
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux により、%s が '%s' 能力を使用できません。"
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr ""
+"SELinux により、%s による %s アクセスが、%s ラベルの付いた %s で拒否されまし"
+"た。"
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr ""
+"SELinux により、%s による '%s' アクセスが、%s のラベルが付いた %s で拒否され"
+"ました。"
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux により、%s による %s アクセスが、%s %s で拒否されました。"
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux により、%s による '%s' アクセスが、%s %s で拒否されました。"
+
+msgid "Additional Information:\n"
+msgstr "追加情報:\n"
+
+msgid "Source Context"
+msgstr "ソースコンテキスト"
+
+msgid "Target Context"
+msgstr "ターゲットコンテキスト"
+
+msgid "Target Objects"
+msgstr "ターゲットオブジェクト"
+
+msgid "Source"
+msgstr "ソース"
+
+msgid "Source Path"
+msgstr "ソースパス"
+
+msgid "Port"
+msgstr "ポート"
+
+msgid "Host"
+msgstr "ホスト"
+
+msgid "Source RPM Packages"
+msgstr "ソース RPM パッケージ"
+
+msgid "Target RPM Packages"
+msgstr "ターゲット RPM パッケージ"
+
+msgid "SELinux Policy RPM"
+msgstr "SELinux Policy RPM"
+
+msgid "Local Policy RPM"
+msgstr "ローカルポリシー RPM"
+
+msgid "Selinux Enabled"
+msgstr "Selinux 有効化"
+
+msgid "Policy Type"
+msgstr "ポリシータイプ"
+
+msgid "Enforcing Mode"
+msgstr "強制モード"
+
+msgid "Host Name"
+msgstr "ホスト名"
+
+msgid "Platform"
+msgstr "プラットフォーム"
+
+msgid "Alert Count"
+msgstr "通知カウント"
+
+msgid "First Seen"
+msgstr "最初の画面"
+
+msgid "Local ID"
+msgstr "ローカル ID"
+
+msgid "Raw Audit Messages"
+msgstr "生の監査メッセージ"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  プラグイン %s (%.4s 信頼性) による示唆   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"このようにします: "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"そして、以下を実行します: \n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "新規の SELinux セキュリティ通知"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC 拒否、アイコンをクリックして表示"
+
+msgid "Dismiss"
+msgstr "解除"
+
+msgid "Show"
+msgstr "表示"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC 拒否、クリックして表示"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+"SELinux Troubleshooter: アプレットでは、SELinux が実行するように有効化されて"
+"いる必要があります"
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+"SELinux が有効化されていません。sealert は SELinux が有効なシステム以外では動"
+"作しません"
+
+msgid "Not fixable."
+msgstr "修正不可です。"
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "%s を正常に実行しました"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "プラグイン %s は %s id には認められていません"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux が有効になっていません。setroubleshootd は終了します..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "fork #1 は失敗です: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "SETroubleshoot が選択した警告"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Delete Selected Alerts"
+msgstr "選択したアラートを削除"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux は問題を検出しました。</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "通知のポップアップを有効化。"
+
+msgid "Turn off alert pop-ups."
+msgstr "通知のポップアップを無効化。"
+
+msgid "On this file:"
+msgstr "このファイル内:"
+
+msgid "label"
+msgstr "label"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"トラブルシューティングに関する情報をお読みください。多くの場合、トラブルを解"
+"決するには、root 権限が必要です。"
+
+msgid "Email alert to system administrator."
+msgstr "E メールでシステム管理者に通知。"
+
+msgid "Delete current alert from the database."
+msgstr "現在の通知をデータベースから削除。"
+
+msgid "Previous"
+msgstr "前へ"
+
+msgid "Show previous alert."
+msgstr "前の通知を表示。"
+
+msgid "Next"
+msgstr "次へ"
+
+msgid "Show next alert."
+msgstr "次の通知を表示。"
+
+msgid "List all alerts in the database."
+msgstr "データベースからすべての通知を一覧。"
+
+msgid "Review and Submit Bug Report"
+msgstr "確認とバグ報告の提出"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr "<span size='large' weight='bold'>確認とバグ報告の提出</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"このバグ報告に含まれるエラー出力を確認して、以下のような機密情報を排除するた"
+"めにそれを修正すると良いでしょう。"
+
+msgid "Included error output:"
+msgstr "含まれているエラー出力:"
+
+msgid "Submit Report"
+msgstr "報告の提出"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "このオプションは完了です。素早い茶色の狐がのろまな犬を飛び越えました。"
+
+msgid "Success!"
+msgstr "成功しました!"
+
+msgid "button"
+msgstr "ボタン"
+
+#, fuzzy
+#~| msgid ""
+#~| "%s \n"
+#~| "**** Invalid AVC: bad source context ****\n"
+#~ msgid ""
+#~ "%s \n"
+#~ "**** TEST OF method source - ATTEMPT #2 ****\n"
+#~ msgstr ""
+#~ "%s \n"
+#~ "**** 無効な AVC: 不正ソースコンテキストです。 ***\n"
