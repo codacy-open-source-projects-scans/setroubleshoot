@@ -58,7 +58,7 @@ you will be notified when the setroubleshoot daemon sends a message to
 sealert. sealert first checks if the alert is being [#alert-filtering
 filtered], if so sealert remains passively quiet in the background. If
 the alert is not filtered then sealert puts the setroubleshoot icon
-[[Image(source:gui/setroubleshoot_icon.png, 24, align=middle, nolink)]]
+[[Image(source:gui/setroubleshoot_icon.svg, 24, align=middle, nolink)]]
 up in the status area. It then briefly displays a
 notification balloon indicating an AVC denial has occurred and directs
 the user to click on the setroubleshoot icon to view it. The

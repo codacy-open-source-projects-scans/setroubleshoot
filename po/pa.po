@@ -12,32 +12,33 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-07 13:59+0200\n"
-"PO-Revision-Date: 2017-08-31 08:30-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Panjabi (Punjabi) (http://www.transifex.com/projects/p/fedora/"
-"language/pa/)\n"
+"PO-Revision-Date: 2024-10-19 16:38+0000\n"
+"Last-Translator: A S Alam <aalam@users.noreply.translate.fedoraproject.org>\n"
+"Language-Team: Punjabi <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/setroubleshoot/pa/>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 4.6.2\n"
+"X-Generator: Weblate 5.7.2\n"
 
 msgid "SELinux Troubleshooter"
 msgstr "SELinux ਸਮੱਸਿਆ-ਨਿਪਟਾਰਾ"
 
 msgid "Troubleshoot SELinux access denials"
-msgstr "SELinux ਪਹੁੰਚ ਪਾਬੰਦੀ ਦਾ ਸਮੱਸਿਆ-ਨਿਪਟਾਰਾ"
+msgstr "SELinux ਪਹੁੰਚ ਪਾਬੰਦੀਆਂ ਦਾ ਸਮੱਸਿਆ-ਨਿਪਟਾਰਾ"
 
 msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
-msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr ""
+"ਪਾਲਸੀ;ਸੁਰੱਖਿਆ;ਐਸਈਲੀਨਕਸ;ਇਜਾਜ਼ਤ;ਮਨਜ਼ੂਰੀ;ਮੈਕ;ਚੇਤਾਵਨੀ;ਐਸਈ-ਚੇਤਾਵਨੀ;ਏਵੀਸੀ;ਐਸਈ-ਲੀਨਕਸ;"
 
 #, python-format
 msgid "port %s"
 msgstr "ਪੋਰਟ %s"
 
 msgid "Unknown"
-msgstr "ਆਣਜਾਣੀ"
+msgstr "ਅਣਪਛਾਤਾ"
 
 #, python-format
 msgid ""
@@ -53,7 +54,7 @@ msgid ""
 msgstr ""
 
 msgid "Must call policy_init first"
-msgstr "policy_init ਨੂੰ ਪਹਿਲਾ ਕਾਲ ਕਰਨਾ ਜਰੂਰੀ ਹੈ"
+msgstr "policy_init ਨੂੰ ਪਹਿਲਾਂ ਕਾਲ ਕਰਨਾ ਜਰੂਰੀ ਹੈ"
 
 #, python-format
 msgid ""
@@ -83,10 +84,10 @@ msgid "Error during access vector computation"
 msgstr "ਐਕਸੈੱਸ ਵੈਕਟਰ ਕੰਪਿਊਟੇਸ਼ਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ ਹੈ"
 
 msgid "SELinux Alert Browser"
-msgstr "SELinux ਚੇਤਾਵਨੀ ਝਲਕਾਰਾ"
+msgstr "SELinux ਚੇਤਾਵਨੀ ਬਰਾਊਜ਼ਰ"
 
 msgid "The source process:"
-msgstr "ਸਰੋਤ ਕਾਰਜ:"
+msgstr "ਸਰੋਤ ਪ੍ਰੋਸੈਸ:"
 
 msgid "Yes"
 msgstr "ਹਾਂ"
@@ -98,19 +99,19 @@ msgid "Attempted this access:"
 msgstr "ਇਹ ਪਹੁੰਚ ਕੀਤੀ ਗਈ ਹੈ:"
 
 msgid "SETroubleshoot Details Window"
-msgstr "SETroubleshoot ਵੇਰਵਾ ਵਿੰਡੋ"
+msgstr "SETroubleshoot ਵੇਰਵਿਆਂ ਵਾਲੀ ਵਿੰਡੋ"
 
 msgid "Would you like to receive alerts?"
 msgstr "ਕੀ ਤੁਸੀਂ ਚੇਤਾਵਨੀਆਂ ਲੈਣੀਆਂ ਪਸੰਦ ਕਰਦੇ ਹੋ?"
 
 msgid "Notify Admin"
-msgstr "ਪਰਬੰਧਕ ਨੂੰ ਸੂਚਿਤ ਕਰੋ"
+msgstr "ਪਰਸ਼ਾਸਕ ਨੂੰ ਸੂਚਿਤ ਕਰੋ"
 
 msgid "Troubleshoot"
 msgstr "ਸਮੱਸਿਆ-ਨਿਪਟਾਰਾ"
 
 msgid "Details"
-msgstr "ਵੇਰਵਾ"
+msgstr "ਵੇਰਵੇ"
 
 msgid "SETroubleshoot Alert List"
 msgstr "SETroubleshoot ਚੇਤਾਵਨੀ ਸੂਚੀ"
@@ -122,16 +123,16 @@ msgid "#"
 msgstr "#"
 
 msgid "Source Process"
-msgstr "ਸਰੋਤ ਕਾਰਜ"
+msgstr "ਸਰੋਤ ਪ੍ਰੋਸੈਸ"
 
 msgid "Attempted Access"
-msgstr "ਕੀਤੀ ਗਈ ਪਹੁੰਚ"
+msgstr "ਪਹੁੰਚ ਦੀ ਕੀਤੀ ਕੋਸ਼ਿਸ਼"
 
 msgid "On this"
-msgstr "ਇਸ ਉੱਪਰ"
+msgstr "ਇਸ ਉੱਤੇ"
 
 msgid "Occurred"
-msgstr "ਵਾਪਰਿਆ ਹੈ"
+msgstr "ਵਾਪਰਿਆ"
 
 msgid "Last Seen"
 msgstr "ਆਖਰੀ ਝਲਕ"
@@ -139,13 +140,15 @@ msgstr "ਆਖਰੀ ਝਲਕ"
 msgid "Status"
 msgstr "ਸਥਿਤੀ"
 
-#, fuzzy, python-format
-#| msgid "Unable to grant access."
+#, python-format
 msgid ""
 "Unable to notify admin.\n"
 "\n"
 "%s"
-msgstr "ਪਹੁੰਚ ਮਨਜੂਰ ਕਰਨ ਵਿੱਚ ਅਸਫਲ।"
+msgstr ""
+"ਪਰਸ਼ਾਸ਼ਕ ਨੂੰ ਸੂਚਿਤ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ।\n"
+"\n"
+"%s"
 
 msgid "Notify"
 msgstr "ਸੂਚਿਤ ਕਰੋ"
@@ -170,7 +173,7 @@ msgid ""
 "Details"
 msgstr ""
 "ਪਲੱਗਇਨ\n"
-"ਵੇਰਵਾ"
+"ਵੇਰਵੇ"
 
 msgid ""
 "Report\n"
@@ -188,11 +191,11 @@ msgstr "ਪਹੁੰਚ ਮਨਜੂਰ ਕਰਨ ਵਿੱਚ ਅਸਫਲ।"
 
 #, python-format
 msgid "Alert %d of %d"
-msgstr "ਚੇਤਾਵਨੀ %d %d ਦੀ"
+msgstr "ਚੇਤਾਵਨੀ %d, ਕੁੱਲ %d"
 
 #, python-format
 msgid "On this %s:"
-msgstr "ਇਸ %s ਉੱਪਰ:"
+msgstr "ਇਸ %s ਉੱਤੇ:"
 
 msgid "N/A"
 msgstr "N/A"
@@ -223,13 +226,13 @@ msgid "database not found"
 msgstr "ਡਾਟਾਬੇਸ ਨਹੀਂ ਲੱਭਿਆ"
 
 msgid "item is not a member"
-msgstr "ਇਕਾਈ ਇੱਕ ਮੈਂਬਰ ਨਹੀਂ ਹੈ"
+msgstr "ਆਈਟਮ ਇੱਕ ਮੈਂਬਰ ਨਹੀਂ ਹੈ"
 
 msgid "illegal to change user"
-msgstr "ਉਪਭੋਗੀ ਤਬਦੀਲ ਕਰਨਾ ਗਲਤ ਹੈ"
+msgstr "ਵਰਤੋਂਕਾਰ ਨੂੰ ਬਦਲਣਾ ਗਲਤ ਹੈ"
 
 msgid "method not found"
-msgstr "ਵਿਧੀ ਨਹੀਂ ਲੱਭੀ"
+msgstr "ਢੰਗ ਨਹੀਂ ਲੱਭਿਆ"
 
 msgid "cannot create GUI"
 msgstr "GUI ਨਹੀਂ ਬਣ ਸਕਿਆ"
@@ -238,7 +241,7 @@ msgid "value unknown"
 msgstr "ਮੁੱਲ ਅਣਜਾਣਾ ਹੈ"
 
 msgid "cannot open file"
-msgstr "ਫਾਇਲ ਨੂੰ ਖੋਲ ਨਹੀਂ ਸਕਦਾ"
+msgstr "ਫਾਇਲ ਨੂੰ ਖੋਲ੍ਹਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ"
 
 msgid "invalid email address"
 msgstr "ਗਲਤ ਈ-ਮੇਲ ਸਿਰਨਾਵਾਂ"
@@ -248,25 +251,25 @@ msgid "socket error"
 msgstr "ਸਾਕਟ ਗਲਤੀ"
 
 msgid "connection has been broken"
-msgstr "ਕੁਨੈਕਸ਼ਨ ਟੁੱਟ ਗਿਆ ਹੈ"
+msgstr "ਕਨੈਕਸ਼ਨ ਟੁੱਟ ਗਿਆ ਹੈ"
 
 msgid "Invalid request. The file descriptor is not open"
 msgstr "ਗਲਤ ਬੇਨਤੀ। ਫਾਇਲ ਵੇਰਵਾ ਖੁੱਲਾ ਨਹੀਂ ਹੈ"
 
 msgid "insufficient permission to modify user"
-msgstr "ਉਪਭੋਗੀ ਤਬਦੀਲ ਕਰਨ ਲਈ ਲੋੜੀਂਦੇ ਅਧਿਕਾਰ ਨਹੀਂ ਹੈ"
+msgstr "ਵਰਤੋਂਕਾਰ ਨੂੰ ਤਬਦੀਲ ਕਰਨ ਲਈ ਲੋੜੀਂਦੇ ਅਧਿਕਾਰ ਨਹੀਂ ਹੈ"
 
 msgid "authentication failed"
-msgstr "ਪ੍ਰਮਾਣਿਕਤਾ ਫੇਲ"
+msgstr "ਪ੍ਰਮਾਣੀਕਰਨ ਅਸਫ਼ਲ ਹੈ"
 
 msgid "user prohibited"
-msgstr "ਉਪਭੋਗੀ ਪਾਬੰਦ ਹੈ"
+msgstr "ਵਰਤੋਂਕਾਰ ਉੱਤੇ ਪਾਬੰਦੀ ਹੈ"
 
 msgid "not authenticated"
 msgstr "ਪ੍ਰਮਾਣਿਤ ਨਹੀਂ ਹੈ"
 
 msgid "user lookup failed"
-msgstr "ਉਪਭੋਗੀ ਜਾਂਚ ਫੇਲ ਹੋਈ"
+msgstr "ਵਰਤੋਂਕਾਰ ਜਾਂਚ ਫੇਲ ਹੋਈ"
 
 #, fuzzy, c-format, python-format
 #| msgid "Opps, %s hit an error!"

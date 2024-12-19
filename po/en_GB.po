@@ -12,16 +12,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-07 13:59+0200\n"
-"PO-Revision-Date: 2017-08-31 08:30-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: English (United Kingdom) (http://www.transifex.com/projects/p/"
-"fedora/language/en_GB/)\n"
+"PO-Revision-Date: 2023-05-08 23:21+0000\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>\n"
+"Language-Team: English (United Kingdom) <https://translate.fedoraproject.org/"
+"projects/setroubleshoot/setroubleshoot/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15.2\n"
 
 msgid "SELinux Troubleshooter"
 msgstr "SELinux Troubleshooter"
@@ -30,7 +30,7 @@ msgid "Troubleshoot SELinux access denials"
 msgstr "Troubleshoot SELinux access denials"
 
 msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
-msgstr ""
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
 
 #, python-format
 msgid "port %s"
@@ -44,6 +44,8 @@ msgid ""
 "%s \n"
 "**** Recorded AVC is allowed in current policy ****\n"
 msgstr ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
 
 #, python-format
 msgid ""
@@ -51,6 +53,9 @@ msgid ""
 "**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
 "on dontaudit rules ****\n"
 msgstr ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
 
 msgid "Must call policy_init first"
 msgstr "Must call policy_init first"
@@ -60,24 +65,32 @@ msgid ""
 "%s \n"
 "**** Invalid AVC: bad target context ****\n"
 msgstr ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
 
 #, python-format
 msgid ""
 "%s \n"
 "**** Invalid AVC: bad source context ****\n"
 msgstr ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
 
 #, python-format
 msgid ""
 "%s \n"
 "**** Invalid AVC: bad type class ****\n"
 msgstr ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
 
 #, python-format
 msgid ""
 "%s \n"
 "**** Invalid AVC: bad permission ****\n"
 msgstr ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
 
 msgid "Error during access vector computation"
 msgstr "Error during access vector computation"
@@ -139,19 +152,21 @@ msgstr "Last Seen"
 msgid "Status"
 msgstr "Status"
 
-#, fuzzy, python-format
-#| msgid "Unable to grant access."
+#, python-format
 msgid ""
 "Unable to notify admin.\n"
 "\n"
 "%s"
-msgstr "Unable to grant access."
+msgstr ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
 
 msgid "Notify"
 msgstr "Notify"
 
 msgid "Notify alert in the future."
-msgstr ""
+msgstr "Notify alert in the future."
 
 msgid "Ignore"
 msgstr "Ignore"
@@ -160,10 +175,10 @@ msgid "Ignore alert in the future."
 msgstr "Ignore alert in the future."
 
 msgid "<b>If you were trying to...</b>"
-msgstr ""
+msgstr "<b>If you were trying to...</b>"
 
 msgid "<b>Then this is the solution.</b>"
-msgstr ""
+msgstr "<b>Then this is the solution.</b>"
 
 msgid ""
 "Plugin\n"
@@ -268,8 +283,7 @@ msgstr "not authenticated"
 msgid "user lookup failed"
 msgstr "user lookup failed"
 
-#, fuzzy, c-format, python-format
-#| msgid "Opps, %s hit an error!"
+#, c-format, python-format
 msgid "Oops, %s hit an error!"
 msgstr "Oops, %s hit an error!"
 
@@ -280,10 +294,12 @@ msgid ""
 "If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
 "$TARGET_BASE_PATH $TARGET_CLASS"
 msgstr ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the $"
+"TARGET_BASE_PATH $TARGET_CLASS"
 
 #, python-format
 msgid " For complete SELinux messages run: sealert -l %s"
-msgstr ""
+msgstr " For complete SELinux messages run: sealert -l %s"
 
 #, python-format
 msgid "The user (%s) cannot modify data for (%s)"
@@ -332,7 +348,7 @@ msgid "process"
 msgstr "process"
 
 msgid "process2"
-msgstr ""
+msgstr "process2"
 
 msgid "filesystem"
 msgstr "filesystem"
@@ -344,7 +360,7 @@ msgid "capability"
 msgstr "capability"
 
 msgid "capability2"
-msgstr ""
+msgstr "capability2"
 
 #, python-format
 msgid "%s has a permissive type (%s). This access was not denied."
@@ -355,35 +371,35 @@ msgstr "SELinux is in permissive mode. This access was not denied."
 
 #, python-format
 msgid "SELinux is preventing %s from using the %s access on a process."
-msgstr ""
+msgstr "SELinux is preventing %s from using the %s access on a process."
 
 #, python-format
 msgid "SELinux is preventing %s from using the '%s' accesses on a process."
-msgstr ""
+msgstr "SELinux is preventing %s from using the '%s' accesses on a process."
 
 #, python-format
 msgid "SELinux is preventing %s from using the %s capability."
-msgstr ""
+msgstr "SELinux is preventing %s from using the %s capability."
 
 #, python-format
 msgid "SELinux is preventing %s from using the '%s' capabilities."
-msgstr ""
+msgstr "SELinux is preventing %s from using the '%s' capabilities."
 
 #, python-format
 msgid "SELinux is preventing %s from %s access on the %s labeled %s."
-msgstr ""
+msgstr "SELinux is preventing %s from %s access on the %s labeled %s."
 
 #, python-format
 msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
-msgstr ""
+msgstr "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
 
 #, python-format
 msgid "SELinux is preventing %s from %s access on the %s %s."
-msgstr ""
+msgstr "SELinux is preventing %s from %s access on the %s %s."
 
 #, python-format
 msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
-msgstr ""
+msgstr "SELinux is preventing %s from '%s' accesses on the %s %s."
 
 msgid "Additional Information:\n"
 msgstr "Additional Information:\n"
@@ -416,10 +432,10 @@ msgid "Target RPM Packages"
 msgstr "Target RPM Packages"
 
 msgid "SELinux Policy RPM"
-msgstr ""
+msgstr "SELinux Policy RPM"
 
 msgid "Local Policy RPM"
-msgstr ""
+msgstr "Local Policy RPM"
 
 msgid "Selinux Enabled"
 msgstr "Selinux Enabled"
@@ -454,6 +470,9 @@ msgid ""
 "\n"
 "*****  Plugin %s (%.4s confidence) suggests   "
 msgstr ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
 
 msgid "*"
 msgstr "*"
@@ -499,7 +518,7 @@ msgid "SELinux AVC denial, click to view"
 msgstr "SELinux AVC denial, click to view"
 
 msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
-msgstr ""
+msgstr "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
 
 msgid "SELinux not enabled, sealert will not run on non SELinux systems"
 msgstr "SELinux not enabled, sealert will not run on non SELinux systems"
@@ -529,18 +548,23 @@ msgid ""
 "Daniel Walsh <dwalsh@redhat.com>\n"
 "John Dennis <jdennis@redhat.com>\n"
 msgstr ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
 
 msgid "Troubleshoot selected alert"
 msgstr "Troubleshoot selected alert"
 
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 msgid "Delete Selected Alerts"
 msgstr "Delete Selected Alerts"
 
 msgid "Close"
-msgstr ""
+msgstr "Close"
 
 msgid "<b>SELinux has detected a problem.</b>"
 msgstr "<b>SELinux has detected a problem.</b>"
@@ -571,13 +595,13 @@ msgid "Delete current alert from the database."
 msgstr "Delete current alert from the database."
 
 msgid "Previous"
-msgstr ""
+msgstr "Previous"
 
 msgid "Show previous alert."
 msgstr "Show previous alert."
 
 msgid "Next"
-msgstr ""
+msgstr "Next"
 
 msgid "Show next alert."
 msgstr "Show next alert."

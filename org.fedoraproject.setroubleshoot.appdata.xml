@@ -4,10 +4,13 @@
 BugReportURL: https://fedorahosted.org/setroubleshoot/ticket/14
 SentUpstream: 2014-07-02
 -->
-<component>
-  <id>org.fedoraproject.setroubleshoot.desktop</id>
-  <name>SETroubleShoot</name>
-  <metadata_license>gpl-2+</metadata_license>
+<component type="desktop-application">
+  <id>org.fedoraproject.setroubleshoot</id>
+  <name>SELinux Troubleshooter</name>
+  <developer_name>Red Hat, Inc.</developer_name>
+  <project_license>GPL-2.0</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <launchable type="desktop-id">setroubleshoot.desktop</launchable>
   <summary>Troubleshoot SELinux policy and access denials</summary>
   <description>
     <p>
@@ -22,10 +25,11 @@ SentUpstream: 2014-07-02
   <url type="homepage">https://pagure.io/setroubleshoot/</url>
   <screenshots>
     <screenshot type="default">
-      <caption>Example alert window.</caption>
-      <image type="source">https://docs.pagure.org/setroubleshoot/setroubleshoot.png</image>
+      <caption>Example alert window</caption>
+      <image>https://docs.pagure.org/setroubleshoot/setroubleshoot.png</image>
     </screenshot>
   </screenshots>
   <update_contact>setroubleshoot-owner@fedoraproject.org</update_contact>
+  <content_rating type="oars-1.1"/>
 </component>
 

@@ -1,3 +1,15 @@
+setroubleshoot 3.3.35                                      2024-11-26
+ - Adjust seapplet notification to desktop file
+ - Fix icon file name
+ - Do not hardcode /var/lib/selinux as store_root
+ - data: Fix AppStream metadata
+
+setroubleshoot 3.3.34                                      2024-11-04
+ - data: update app icon
+ - Disable bug reporting, if libreport is not available
+ - Enable Georgian and Arabic (ar) languages in configure.ac
+ - Update translations
+
 setroubleshoot 3.3.33                                      2024-01-31
  - Improve limiting RAM utilization
  - Check that SELinux is enabled before running

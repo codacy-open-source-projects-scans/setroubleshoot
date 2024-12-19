@@ -39,6 +39,7 @@ __all__ = [
     'get_rpm_nvr_by_type',
     'get_rpm_nvr_by_scontext',
     'get_rpm_source_package',
+    'get_store_root',
     'is_hex',
     'split_rpm_nvr',
     'file_types',
@@ -558,16 +559,16 @@ The dictionary is stored in "module_type_cache" to be used by
         return
 
     module_type_dict = dict()
-
     priorities = []
+    store_root = get_store_root()
 
     # get list of module priorities, present in the module store, sorted by integer value
-    with os.scandir("/var/lib/selinux/{}/active/modules".format(policytype)) as module_store:
+    with os.scandir("{}/{}/active/modules".format(store_root, policytype)) as module_store:
         priorities = sorted([x.name for x in module_store if x.is_dir() and __str_is_int(x.name)], key = lambda x: int(x))
 
     for dir in priorities:
         # find individual modules in each priority and identify type definitions
-        for (dirpath, dirnames, filenames) in os.walk("/var/lib/selinux/{}/active/modules/{}".format(policytype,dir)):
+        for (dirpath, dirnames, filenames) in os.walk("{}/{}/active/modules/{}".format(store_root, policytype,dir)):
             if "cil" in filenames:
                 try:
                     try:
@@ -903,6 +904,16 @@ def parse_datetime_offset(text):
         syslog.syslog(syslog.LOG_ERR, "could not parse datetime offset (%s)" % text)
         return None
 
+def get_store_root():
+    with open('/etc/selinux/semanage.conf') as f:
+        for line in f:
+            try:
+                (param, value) = line.split("=")
+                if param.strip() == "store-root":
+                    return value.strip()
+            except:
+                pass
+    return "/var/lib/selinux"
 #------------------------------------------------------------------------------
 
 STDOFFSET = datetime.timedelta(seconds=-time.timezone)

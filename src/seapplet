@@ -70,7 +70,7 @@ class SEApplet(GObject.Object):
         Setroubleshootd.alert.connect(self.send_notification)
 
         super().__init__()
-        Notify.init("seapplet")
+        Notify.init("setroubleshoot")
         # lets initialise with the application name
 
         # FIXME:

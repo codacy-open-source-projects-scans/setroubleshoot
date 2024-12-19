@@ -6,7 +6,7 @@
     <property name="visible">True</property>
     <property name="title" translatable="yes">Success!</property>
     <property name="window_position">center</property>
-    <property name="icon">setroubleshoot_icon.png</property>
+    <property name="icon">setroubleshoot_icon.svg</property>
     <child>
       <widget class="GtkVBox" id="vbox1">
         <property name="visible">True</property>

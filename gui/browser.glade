@@ -6,7 +6,7 @@
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
     <property name="window_position">center</property>
-    <property name="icon">setroubleshoot_icon.png</property>
+    <property name="icon">setroubleshoot_icon.svg</property>
     <property name="type_hint">normal</property>
     <property name="program_name">SETroubleshoot</property>
     <property name="copyright" translatable="yes">Copyright (c) 2010
@@ -50,7 +50,7 @@ John Dennis &lt;jdennis@redhat.com&gt;</property>
     <property name="default_width">975</property>
     <property name="default_height">400</property>
     <property name="destroy_with_parent">True</property>
-    <property name="icon">setroubleshoot_icon.png</property>
+    <property name="icon">setroubleshoot_icon.svg</property>
     <child>
       <object class="GtkBox" id="vbox3">
         <property name="visible">True</property>
@@ -150,7 +150,7 @@ John Dennis &lt;jdennis@redhat.com&gt;</property>
     <property name="title" translatable="yes">SETroubleshoot Details Window</property>
     <property name="window_position">center</property>
     <property name="destroy_with_parent">True</property>
-    <property name="icon">setroubleshoot_icon.png</property>
+    <property name="icon">setroubleshoot_icon.svg</property>
     <child>
       <object class="GtkBox" id="vbox301">
         <property name="width_request">600</property>
@@ -217,7 +217,7 @@ John Dennis &lt;jdennis@redhat.com&gt;</property>
     <property name="width_request">750</property>
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">SELinux Alert Browser</property>
-    <property name="icon">setroubleshoot_icon.png</property>
+    <property name="icon">setroubleshoot_icon.svg</property>
     <child>
       <object class="GtkBox" id="vbox1">
         <property name="visible">True</property>

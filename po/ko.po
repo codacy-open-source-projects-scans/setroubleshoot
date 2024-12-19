@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-07 13:59+0200\n"
-"PO-Revision-Date: 2022-11-29 12:19+0000\n"
+"PO-Revision-Date: 2023-10-11 09:36+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "setroubleshoot/setroubleshoot/ko/>\n"
@@ -24,13 +24,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 msgid "SELinux Troubleshooter"
 msgstr "SELinux 문제 해결사"
 
 msgid "Troubleshoot SELinux access denials"
-msgstr "SELinux 액세스 거부 문제 해결"
+msgstr "SELinux 접근 거부 문제 해결"
 
 msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
 msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
@@ -96,7 +96,7 @@ msgstr ""
 "**** 잘못된 AVC 잘못된 권한 ***\n"
 
 msgid "Error during access vector computation"
-msgstr "액세스 벡터 연산시 오류 발생"
+msgstr "접근 벡터 연산시 오류 발생"
 
 msgid "SELinux Alert Browser"
 msgstr "SELinux 보안 통지 브라우저"
@@ -202,7 +202,7 @@ msgid "Plugin: %s "
 msgstr "플러그인: %s "
 
 msgid "Unable to grant access."
-msgstr "액세스 권한을 부여할 수 없습니다."
+msgstr "접근 권한을 부여 할 수 없습니다."
 
 #, python-format
 msgid "Alert %d of %d"
@@ -297,8 +297,8 @@ msgid ""
 "If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
 "$TARGET_BASE_PATH $TARGET_CLASS"
 msgstr ""
-"허용하려는 경우 $SOURCE가질 _BASE_PATH $ACCESS 에 대한 액세스 "
-"$TARGET_BASE_PATH $TARGET_수업"
+"$SOURCE_BASE_PATH가 $TARGET_BASE_PATH $TARGET_CLASS에서 $ACCESS 접근을 "
+"갖도록 허용하려는 경우"
 
 #, python-format
 msgid " For complete SELinux messages run: sealert -l %s"
@@ -367,18 +367,18 @@ msgstr "능력 2"
 
 #, python-format
 msgid "%s has a permissive type (%s). This access was not denied."
-msgstr "%s은(는) 허용 유형 (%s)이 있습니다. 이 액세스는 거부되지 않습니다."
+msgstr "%s는 허용 유형 (%s)입니다. 이 접근은 거부되지 않습니다."
 
 msgid "SELinux is in permissive mode. This access was not denied."
 msgstr "SELinux가 허용 모드입니다. 이 접근은 거부되지 않습니다."
 
 #, python-format
 msgid "SELinux is preventing %s from using the %s access on a process."
-msgstr "SELinux는 프로세스에서 %s가 %s 액세스를 사용하지 못하게 합니다."
+msgstr "SELinux는 %s가 프로세서에서 %s 접근을 사용하지 못하게 합니다."
 
 #, python-format
 msgid "SELinux is preventing %s from using the '%s' accesses on a process."
-msgstr "SELinux는 프로세스에서 %s가 '%s' 액세스를 사용하지 못하게 합니다."
+msgstr "SELinux는 프로세스에서 %s가 '%s' 접근을 사용하지 못하게 합니다."
 
 #, python-format
 msgid "SELinux is preventing %s from using the %s capability."
@@ -390,21 +390,19 @@ msgstr "SELinux는 %s가 '%s' 기능을 사용하지 못하게 합니다."
 
 #, python-format
 msgid "SELinux is preventing %s from %s access on the %s labeled %s."
-msgstr ""
-"SELinux는 %s (%s로/으로 레이블됨)에서 %s가 %s 액세스하지 못하게 합니다."
+msgstr "SELinux는 %s로 명명된 %s의 %s 접근에서 %s를 차단합니다."
 
 #, python-format
 msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
-msgstr ""
-"SELinux는 %s (%s로/으로 레이블됨)에서 %s가 '%s' 액세스하지 못하게 합니다."
+msgstr "SELinux는 %s로 명명된 %s의 '%s'에서 접근하지 못하도록 %s를 차단합니다."
 
 #, python-format
 msgid "SELinux is preventing %s from %s access on the %s %s."
-msgstr "SELinux는 %s %s에서 %s가 %s 액세스하지 못하게 합니다."
+msgstr "SELinux는 %s %s의 %s 접근에서 %s를 차단합니다."
 
 #, python-format
 msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
-msgstr "SELinux는 %s %s에서 %s가 '%s' 액세스하지 못하게 합니다."
+msgstr "SELinux는 %s %s의 '%s' 접근에서 '%s'를 차단합니다."
 
 msgid "Additional Information:\n"
 msgstr "추가 정보:\n"

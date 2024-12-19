@@ -463,13 +463,14 @@ class SetroubleshootdDBusObject(dbus.service.Object):
         self.receiver = alert_receiver
         self.record_reader = AuditRecordReader(AuditRecordReader.TEXT_FORMAT)
         self.record_receiver = AuditRecordReceiver()
+        self.store_root = setroubleshoot.util.get_store_root()
 
     def add_audit_event(self, audit_event):
         # FIXME: do not hardcode /var/lib/selinux/ store_path
         policy_type = selinux.selinux_getpolicytype()[1]
         for store_path in [
             "%s%s/modules/active/disable_dontaudit" % (selinux.selinux_path(), policy_type),
-            "/var/lib/selinux/%s/active/disable_dontaudit" % policy_type
+            "%s/%s/active/disable_dontaudit" % (self.store_root, policy_type)
         ]:
             if os.path.exists(store_path):
                 syslog.syslog(syslog.LOG_ERR, "Setroubleshoot can not analyze AVCs while dontaudit rules are disabled, 'semodule -B' will turn on dontaudit rules.")

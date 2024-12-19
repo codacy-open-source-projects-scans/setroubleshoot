@@ -18,7 +18,7 @@
   <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
   <property name="focus_on_map">True</property>
   <property name="urgency_hint">False</property>
-  <property name="icon">setroubleshoot_icon.png</property>
+  <property name="icon">setroubleshoot_icon.svg</property>
 
   <child>
     <widget class="GtkVBox" id="vbox1">
