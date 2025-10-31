@@ -1,0 +1,635 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Arpad Biro <biro_arpad@yahoo.com>, 2006-2007
+# Dimitris Glezos <glezos@indifex.com>, 2011
+# Nikolas Slivka <snicore@gmail.com>, 2010
+# Peter Borsa <peter.borsa@gmail.com>, 2013
+# Ferenc Teknős <teknos.ferenc@gmail.com>, 2013
+# Zoltan Hoppár <hopparz@gmail.com>, 2012-2013
+# Meskó Balázs <meskobalazs@gmail.com>, 2018. #zanata
+# Meskó Balázs <meskobalazs@gmail.com>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2023-05-12 18:21+0000\n"
+"Last-Translator: Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>\n"
+"Language-Team: Hungarian <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/setroubleshoot/hu/>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux hibakezelő"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "SELinux hozzáférési elutasítások kezelése"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "házirend;biztonság;selinux;avc;jogosultság;mac;riasztás;"
+
+#, python-format
+msgid "port %s"
+msgstr "port: %s"
+
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+
+msgid "Must call policy_init first"
+msgstr "A policy_init kérést kell elsőként meghívni"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+
+msgid "Error during access vector computation"
+msgstr "Hiba a hozzáférési vektor kiszámításánál"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux riasztási böngésző"
+
+msgid "The source process:"
+msgstr "A forrásfolyamat:"
+
+msgid "Yes"
+msgstr "Igen"
+
+msgid "No"
+msgstr "Nem"
+
+msgid "Attempted this access:"
+msgstr "Ez próbált meg hozzáférni:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshoot részletező ablak"
+
+msgid "Would you like to receive alerts?"
+msgstr "Szeretne riasztásokat kapni?"
+
+msgid "Notify Admin"
+msgstr "Rendszergazda értesítése"
+
+msgid "Troubleshoot"
+msgstr "Hibaelhárítás"
+
+msgid "Details"
+msgstr "Részletek"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot riasztási lista"
+
+msgid "List All Alerts"
+msgstr "Összes riasztás felsorolása"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Forrás folyamat"
+
+msgid "Attempted Access"
+msgstr "Hozzáférési próbálkozás"
+
+msgid "On this"
+msgstr "Itt"
+
+msgid "Occurred"
+msgstr "Előfordulás"
+
+msgid "Last Seen"
+msgstr "Utoljára megjelent"
+
+msgid "Status"
+msgstr "Állapot"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "A hozzáférés nem engedélyezhető."
+
+msgid "Notify"
+msgstr "Értesítés"
+
+msgid "Notify alert in the future."
+msgstr "Riasztás a jövőben is."
+
+msgid "Ignore"
+msgstr "Mellőzés"
+
+msgid "Ignore alert in the future."
+msgstr "Riasztás mellőzése a jövőben."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Ha ezt szeretné…</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>Akkor ez a megoldás.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"Bővítmény\n"
+"részletei"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Hiba\n"
+"jelentése"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Bővítmény: %s "
+
+msgid "Unable to grant access."
+msgstr "A hozzáférés nem engedélyezhető."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "%d. / %d riasztás"
+
+#, python-format
+msgid "On this %s:"
+msgstr "Itt: %s:"
+
+msgid "N/A"
+msgstr "–"
+
+msgid "No Alerts"
+msgstr "Nincs riasztás"
+
+msgid "SELinux has detected a problem."
+msgstr "Az SElinux hibát észlelt."
+
+msgid "Sealert Error"
+msgstr "Sealert hiba"
+
+msgid "Sealert Message"
+msgstr "Sealert üzenet"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "aláírás nem található"
+
+msgid "multiple signatures matched"
+msgstr "több aláírás egyezik"
+
+msgid "id not found"
+msgstr "azonosító nem található"
+
+msgid "database not found"
+msgstr "adatbázis nem található"
+
+msgid "item is not a member"
+msgstr "az elem nem tag"
+
+msgid "illegal to change user"
+msgstr "nem változtathat felhasználót"
+
+msgid "method not found"
+msgstr "eljárás nem található"
+
+msgid "cannot create GUI"
+msgstr "GUI indítása sikertelen"
+
+msgid "value unknown"
+msgstr "ismeretlen érték"
+
+msgid "cannot open file"
+msgstr "fájl nem megnyitható"
+
+msgid "invalid email address"
+msgstr "Érvénytelen email cím"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "socket hiba"
+
+msgid "connection has been broken"
+msgstr "kapcsolat megszakadt"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Érvénytelen kérés. A fájl leíró nincs nyitva"
+
+msgid "insufficient permission to modify user"
+msgstr "elégtelen jogosultság a felhasználó megváltoztatására"
+
+msgid "authentication failed"
+msgstr "hitelesítés sikertelen"
+
+msgid "user prohibited"
+msgstr "felhasználó letiltva"
+
+msgid "not authenticated"
+msgstr "nincs azonosítva"
+
+msgid "user lookup failed"
+msgstr "felhasználó keresés eredménytelen"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "Hoppá, %s hibaüzenetet kapott!"
+
+msgid "Error"
+msgstr "Hiba"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr ""
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "A (%s) felhasználó nem módosíthatja (%s) adatait"
+
+msgid "Started"
+msgstr "Elindítva"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Audit figyelő"
+
+msgid "Never Ignore"
+msgstr "Soha ne mellőzze"
+
+msgid "Ignore Always"
+msgstr "Mindig mellőzze"
+
+msgid "Ignore After First Alert"
+msgstr "Mellőzze az első riasztás után"
+
+msgid "directory"
+msgstr "könyvtár"
+
+msgid "semaphore"
+msgstr "szemafor"
+
+msgid "shared memory"
+msgstr "osztott memória"
+
+msgid "message queue"
+msgstr "üzenetsor"
+
+msgid "message"
+msgstr "üzenet"
+
+msgid "file"
+msgstr "fájl"
+
+msgid "socket"
+msgstr "port"
+
+msgid "process"
+msgstr "folyamat"
+
+msgid "process2"
+msgstr ""
+
+msgid "filesystem"
+msgstr "fájlrendszer"
+
+msgid "node"
+msgstr "csomópont"
+
+msgid "capability"
+msgstr "funkció"
+
+msgid "capability2"
+msgstr ""
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr ""
+"%s egy engedélyező típussal rendelkezik (%s). Ez a hozzáférés nem volt "
+"megtagadva."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SElinux átengedő módban van. Ez a hozzáférés nem volt blokkolva."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr ""
+"SELinux megakadályozta %s számára %s elérhető hozzáférést a folyamaton."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr ""
+"SELinux megakadályozta %s számára %s elérhető hozzáféréseket a folyamaton."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux megakadályozta %s számára %s funkció használatát."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux megakadályozta %s számára '%s' funkciók használatát."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr ""
+"SELinux megakadályozta %s alkalmazás %s hozzáférését %s erőforrás %s "
+"címkézett elemén."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr ""
+"SElinux megakadályozta %s számára '%s' hozzáféréseit %s címkével ezen: %s"
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux megakadályozta %s számára %s hozzáférését itt: %s %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux megakadályozta %s számára '%s' hozzáféréseit itt: %s %s."
+
+msgid "Additional Information:\n"
+msgstr "További információ:\n"
+
+msgid "Source Context"
+msgstr "Forrás kontextus"
+
+msgid "Target Context"
+msgstr "Cél kontextus"
+
+msgid "Target Objects"
+msgstr "Cél objektumok"
+
+msgid "Source"
+msgstr "Forrás"
+
+msgid "Source Path"
+msgstr "Forrás elérési útja"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Host"
+msgstr "Kiszolgáló"
+
+msgid "Source RPM Packages"
+msgstr "Forrás RPM csomagok"
+
+msgid "Target RPM Packages"
+msgstr "Cél RPM csomagok"
+
+msgid "SELinux Policy RPM"
+msgstr ""
+
+msgid "Local Policy RPM"
+msgstr ""
+
+msgid "Selinux Enabled"
+msgstr "SELinux bekapcsolva"
+
+msgid "Policy Type"
+msgstr "Szabályzat típus"
+
+msgid "Enforcing Mode"
+msgstr "Kényszerítő mód"
+
+msgid "Host Name"
+msgstr "Kiszolgáló neve"
+
+msgid "Platform"
+msgstr "Platform"
+
+msgid "Alert Count"
+msgstr "Riasztás mennyisége"
+
+msgid "First Seen"
+msgstr "Először megjelent"
+
+msgid "Local ID"
+msgstr "Helyi azonosító"
+
+msgid "Raw Audit Messages"
+msgstr "Nyers auditálási üzenetek"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s bizonyossággal) javasolja a következőt   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"Akkor "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Tedd\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "Új SELinux biztonsági riasztás"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC tiltás. Kattintson az ikonra, hogy megtekinthesse"
+
+msgid "Dismiss"
+msgstr "Eldobás"
+
+msgid "Show"
+msgstr "Megjelenítés"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC megtagadás. Kattintson, hogy megtekinthesse"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+"SElinux nincs engedélyezve, sealert nem fog működni nem SElinux rendszereken"
+
+msgid "Not fixable."
+msgstr "Nem javítható."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "%s sikeresen lefutott"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "Plugin %s nem érvényes a %s ID-hez"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux nincs engedélyezve, setroubleshootd kilép..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "fork #1 sikertelen: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+
+msgid "Troubleshoot selected alert"
+msgstr "Hibaelhárítás a kiválasztott riasztáson"
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete Selected Alerts"
+msgstr "Kijelölt riasztások törlése"
+
+msgid "Close"
+msgstr ""
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux hibát érzékelt.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "Felugró riasztási üzenetek bekapcsolása."
+
+msgid "Turn off alert pop-ups."
+msgstr "Felugró riasztási üzenetek kikapcsolása."
+
+msgid "On this file:"
+msgstr "Ezen a fájlon:"
+
+msgid "label"
+msgstr "cimke"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"Olvassa el a riasztási problémamegoldó információkat.  Lehet hogy "
+"adminisztrációs jogokra lesz szüksége a megoldáshoz."
+
+msgid "Email alert to system administrator."
+msgstr "Email risztás a rendszer adminisztátorának"
+
+msgid "Delete current alert from the database."
+msgstr "Jelenlegi riasztás törlése az adatbázisból"
+
+msgid "Previous"
+msgstr ""
+
+msgid "Show previous alert."
+msgstr "Előző riasztás"
+
+msgid "Next"
+msgstr ""
+
+msgid "Show next alert."
+msgstr "Következő riasztás"
+
+msgid "List all alerts in the database."
+msgstr "Az összes riasztás listázása az azdatbázisból."
+
+msgid "Review and Submit Bug Report"
+msgstr "Felülvizsgálja és beküldi a hibajelentést"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Felülvizsgálja és beküldi a hiba jelentést</"
+"span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"Előfordulhat, hogy szeretné felülvizsgálni a hiba kimenetét amit a "
+"hibajelentésbe fogunk foglalni, és változtatni kíván rajta, azzal, hogy "
+"eltávolít érzékeny adatokat. Alább ezt megteheti."
+
+msgid "Included error output:"
+msgstr "Benne foglalt hiba kimenet:"
+
+msgid "Submit Report"
+msgstr "Jelentés beküldése"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr ""
+"Ez a művelet befejeződött.  A fürge vörösesbarna róka átugrotta a lusta "
+"kutyát."
+
+msgid "Success!"
+msgstr "Sikerült!"
+
+msgid "button"
+msgstr "gomb"

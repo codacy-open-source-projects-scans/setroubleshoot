@@ -1,0 +1,653 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Dimitris Glezos <glezos@transifex.com>, 2011
+# Göran Uddeborg <goeran@uddeborg.se>, 2011-2013
+# Magnus Larsson <fedoratrans@gmail.com>, 2006-2009
+# Göran Uddeborg <goeran@uddeborg.se>, 2017. #zanata
+# Göran Uddeborg <goeran@uddeborg.se>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2022-06-29 06:18+0000\n"
+"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/setroubleshoot/sv/>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux felsökare"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "Lokalisering av fel när SELinux nekat åtkomst"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "port %s"
+
+msgid "Unknown"
+msgstr "Okänd"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+"%s \n"
+"**** Den registrerade AVC:n är tillåten i den aktuella policyn ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+"%s \n"
+"**** Den registrerade AVC:n är dontaudit:ad i den aktuella policyn. "
+"”semodule -B” kommer slå på dontaudit-regler ****\n"
+
+msgid "Must call policy_init first"
+msgstr "Måste anropa policy_init först"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+"%s \n"
+"**** Felaktig AVC: felaktig målkontext ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+"%s \n"
+"**** Felaktig AVC: felaktig källkontext ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+"%s \n"
+"**** Felaktig AVC: felaktig typklass ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+"%s \n"
+"**** Felaktig AVC: felaktig rättighet ****\n"
+
+msgid "Error during access vector computation"
+msgstr "Fel under beräkning av åtkomstvektor"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux larmvisare"
+
+msgid "The source process:"
+msgstr "Källprocessen:"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nej"
+
+msgid "Attempted this access:"
+msgstr "Försökte komma åt:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshoot detaljfönster"
+
+msgid "Would you like to receive alerts?"
+msgstr "Vill du få larm?"
+
+msgid "Notify Admin"
+msgstr "Meddela administratör"
+
+msgid "Troubleshoot"
+msgstr "Felsök"
+
+msgid "Details"
+msgstr "Detaljer"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot larmlista"
+
+msgid "List All Alerts"
+msgstr "Lista alla larm"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Källprocess"
+
+msgid "Attempted Access"
+msgstr "Åtkomstförsök"
+
+msgid "On this"
+msgstr "På denna"
+
+msgid "Occurred"
+msgstr "Inträffade"
+
+msgid "Last Seen"
+msgstr "Senast sedd"
+
+msgid "Status"
+msgstr "Status"
+
+#, python-format
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr ""
+"Kunde inte meddela administratören.\n"
+"\n"
+"%s"
+
+msgid "Notify"
+msgstr "Meddela"
+
+msgid "Notify alert in the future."
+msgstr "Meddela om larmet i framtiden."
+
+msgid "Ignore"
+msgstr "Ignorera"
+
+msgid "Ignore alert in the future."
+msgstr "Ignorera larmet i framtiden."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Om du försökte …</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>Då är detta lösningen.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"Insticksmodul\n"
+"Detaljer"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Rapportera\n"
+"fel"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Insticksmodul: %s "
+
+msgid "Unable to grant access."
+msgstr "Kan inte bevilja åtkomst."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "Larm %d av %d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "På denna %s:"
+
+msgid "N/A"
+msgstr "Ej tillämpligt"
+
+msgid "No Alerts"
+msgstr "Inga larm"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux har upptäckt ett problem."
+
+msgid "Sealert Error"
+msgstr "Sealertfel"
+
+msgid "Sealert Message"
+msgstr "Sealertmeddelande"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "signatur ej funnen"
+
+msgid "multiple signatures matched"
+msgstr "flera signaturer matchade"
+
+msgid "id not found"
+msgstr "id ej funnet"
+
+msgid "database not found"
+msgstr "databas ej funnen"
+
+msgid "item is not a member"
+msgstr "artikel är ej en medlem"
+
+msgid "illegal to change user"
+msgstr "ogiltigt att ändra användare"
+
+msgid "method not found"
+msgstr "metod hittades inte"
+
+msgid "cannot create GUI"
+msgstr "kan inte skapa GUI"
+
+msgid "value unknown"
+msgstr "värde okänt"
+
+msgid "cannot open file"
+msgstr "kan inte öppna fil"
+
+msgid "invalid email address"
+msgstr "ogiltig epostadress"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "uttagsfel (socket)"
+
+msgid "connection has been broken"
+msgstr "anslutningen har avbrutits"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Ogiltig begäran. Fildeskriptorn är inte öppen"
+
+msgid "insufficient permission to modify user"
+msgstr "otillräckliga rättigheter för att ändra användare"
+
+msgid "authentication failed"
+msgstr "autenticering misslyckades"
+
+msgid "user prohibited"
+msgstr "användare förhindrad"
+
+msgid "not authenticated"
+msgstr "inte autenticerad"
+
+msgid "user lookup failed"
+msgstr "uppslagning av användare misslyckades"
+
+#, c-format, python-format
+msgid "Oops, %s hit an error!"
+msgstr "Hoppsan, %s stötte på ett fel!"
+
+msgid "Error"
+msgstr "Fel"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"Om du vill tillåta $SOURCE_BASE_PATH att ha $ACCESS till $TARGET_CLASS "
+"$TARGET_BASE_PATH"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr " För fullständiga SELinux-meddelanden kör: sealert -l %s"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "Användaren (%s) får inte modifiera data för (%s)"
+
+msgid "Started"
+msgstr "Startad"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Granskningslyssnare"
+
+msgid "Never Ignore"
+msgstr "Ignorera aldrig"
+
+msgid "Ignore Always"
+msgstr "Ignorera alltid"
+
+msgid "Ignore After First Alert"
+msgstr "Ignorera efter första larm"
+
+msgid "directory"
+msgstr "katalog"
+
+msgid "semaphore"
+msgstr "semafor"
+
+msgid "shared memory"
+msgstr "delat minne"
+
+msgid "message queue"
+msgstr "meddelandekö"
+
+msgid "message"
+msgstr "meddelande"
+
+msgid "file"
+msgstr "fil"
+
+msgid "socket"
+msgstr "uttag"
+
+msgid "process"
+msgstr "process"
+
+msgid "process2"
+msgstr "process2"
+
+msgid "filesystem"
+msgstr "filsystem"
+
+msgid "node"
+msgstr "nod"
+
+msgid "capability"
+msgstr "förmåga"
+
+msgid "capability2"
+msgstr "förmåga2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s har en tillåtande typ (%s). Denna åtkomst nekades inte."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux är i tillåtande läge. Denna åtkomst hindrades inte."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux hindrar %s från att använda åtkomsten %s på en process."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux hindrar %s från att använda åtkomsten ”%s” på en process."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux hindrar %s från att använda förmågan %s."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux hindrar %s från att använda förmågan ”%s”."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux hindrar %s från åtkomsten %s på %s med etiketten %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux hindrar %s från åtkomsten ”%s” till %s med etiketten %s."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux hindrar %s från åtkomsten %s på %s %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux hindrar %s från åtkomsten ”%s” på %s %s."
+
+msgid "Additional Information:\n"
+msgstr "Ytterligare information:\n"
+
+msgid "Source Context"
+msgstr "Källkontext"
+
+msgid "Target Context"
+msgstr "Målkontext"
+
+msgid "Target Objects"
+msgstr "Målobjekt"
+
+msgid "Source"
+msgstr "Källa"
+
+msgid "Source Path"
+msgstr "Källsökväg"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Host"
+msgstr "Värd"
+
+msgid "Source RPM Packages"
+msgstr "Käll-RPM-paket"
+
+msgid "Target RPM Packages"
+msgstr "Mål-RPM-paket"
+
+msgid "SELinux Policy RPM"
+msgstr "SELinux-policy-RPM"
+
+msgid "Local Policy RPM"
+msgstr "Lokal policy-RPM"
+
+msgid "Selinux Enabled"
+msgstr "SELinux aktiverat"
+
+msgid "Policy Type"
+msgstr "Policytyp"
+
+msgid "Enforcing Mode"
+msgstr "Verkställande läge"
+
+msgid "Host Name"
+msgstr "Värdnamn"
+
+msgid "Platform"
+msgstr "Plattform"
+
+msgid "Alert Count"
+msgstr "Antal larm"
+
+msgid "First Seen"
+msgstr "Först sedd"
+
+msgid "Local ID"
+msgstr "Lokalt ID"
+
+msgid "Raw Audit Messages"
+msgstr "Råa granskningsmeddelanden"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"***** Insticksmodulen %s (%.4s tilltro) föreslår   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"I så fall "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Gör\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "Ny SELinux säkerhetsvarning"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC-nekande, klicka på ikonen för att visa"
+
+msgid "Dismiss"
+msgstr "Avfärda"
+
+msgid "Show"
+msgstr "Visa"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "AVC-nekande från SELinux, klicka för att se"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+"SELinux felsökare: panelprogrammet förutsätter att SELinux är aktiverat för "
+"att köra"
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+"SELinux har inte aktiverats, sealert kommer inte att köras på icke SELinux-"
+"system"
+
+msgid "Not fixable."
+msgstr "Går ej att laga."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "Körde framgångsrikt %s"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "Insticksmodul %s är inte giltig för id %s"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux är inte aktiverat, setroubleshootd avslutar …"
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "gren nr. 1 misslyckades: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"Copyright © 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "Felsök valda larm"
+
+msgid "Delete"
+msgstr "Ta bort"
+
+msgid "Delete Selected Alerts"
+msgstr "Ta bort valda larm"
+
+msgid "Close"
+msgstr "Stäng"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux har upptäckt ett problem.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "Slå på larm-popup-fönster."
+
+msgid "Turn off alert pop-ups."
+msgstr "Stäng av larm-popup-fönster."
+
+msgid "On this file:"
+msgstr "På den här filen:"
+
+msgid "label"
+msgstr "etikett"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"Läs felsökningsinformation om larm.  Kan kräva administrativa rättigheter "
+"för att avhjälpa."
+
+msgid "Email alert to system administrator."
+msgstr "E-post-larm till systemadministratören."
+
+msgid "Delete current alert from the database."
+msgstr "Ta bort aktuellt larm från databasen."
+
+msgid "Previous"
+msgstr "Föregående"
+
+msgid "Show previous alert."
+msgstr "Visa föregående larm."
+
+msgid "Next"
+msgstr "Nästa"
+
+msgid "Show next alert."
+msgstr "Visa nästa larm."
+
+msgid "List all alerts in the database."
+msgstr "Lista alla larm i databasen."
+
+msgid "Review and Submit Bug Report"
+msgstr "Granska och skicka in felrapport"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Granska och skicka in felrapport</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"Du kanske vill granska felutskrifterna som kommer inkluderas i denna "
+"felrapport och ändra dem för att utestluta eventuella känsliga data nedan."
+
+msgid "Included error output:"
+msgstr "Inkluderad felutskrift:"
+
+msgid "Submit Report"
+msgstr "Skicka in rapport"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr ""
+"Operationen fullbordades.  Flygande bäckasiner söka hwila på mjuka tuvor."
+
+msgid "Success!"
+msgstr "Klart!"
+
+msgid "button"
+msgstr "knapp"
+
+#~ msgid ""
+#~ "%s \n"
+#~ "**** TEST OF method source - ATTEMPT #2 ****\n"
+#~ msgstr ""
+#~ "%s \n"
+#~ "**** TEST AV metodkälla – FÖRSÖK NR. 2 ****\n"

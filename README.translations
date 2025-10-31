@@ -1,0 +1,39 @@
+Setroubleshoot translations currently live in
+  https://translate.fedoraproject.org/projects/setroubleshoot/
+  - contains translations for both stable (rhel8) and main (Fedora) branches
+  - updated by community and partially by RH localization effort
+  - translations are periodicaly pulled from weblate to source repositories
+  -- please create an issue if you need to sync your translations sooner
+     https://gitlab.com/setroubleshoot/setroubleshoot/-/issues/new
+
+How to update source files on weblate:
+  # install dependencies
+  $ sudo dnf install automake autoconf inittool gettext glib2-devel dbus-devel libnotify-devel gtk3-devel audit-libs-devel
+  $ git clone git@gitlab.com:setroubleshoot/framework.git
+  $ git clone git@gitlab.com:setroubleshoot/plugins.git
+  $ cd framework
+  # Update Makefile
+  $ ./autogen.sh
+  # generate new potfile
+  $ cd po
+  $ make setroubleshoot.pot
+  # https://translate.fedoraproject.org/projects/setroubleshoot/setroubleshoot/en/
+  # Files -> Upload translations
+  # Repeat the process for plugins
+  # https://translate.fedoraproject.org/projects/setroubleshoot/plugins/en/
+  # Files -> Upload translations
+  # or use weblate command line tool:
+  $ wlc --key <API key> --url https://translate.fedoraproject.org/api/ upload --input framework/po/setroubleshoot.pot setroubleshoot/setroubleshoot/en
+  $ wlc --key <API key> --url https://translate.fedoraproject.org/api/ upload --input plugins/po/setroubleshoot.pot setroubleshoot/plugins/en/
+
+How to pull new translations from weblate
+  $ git clone git@gitlab.com:setroubleshoot/framework.git
+  $ git clone git@gitlab.com:setroubleshoot/plugins.git
+  # https://translate.fedoraproject.org/projects/setroubleshoot/setroubleshoot
+  # Files -> Download translation files as ZIP file
+  # https://translate.fedoraproject.org/projects/setroubleshoot/plugins/
+  # Files -> Download translation files as ZIP file
+  $ unzip setroubleshoot-setroubleshoot.zip
+  $ cp setroubleshoot/setroubleshoot/framework/po/*.po /framework/po
+  $ unzip setroubleshoot-plugins.zip
+  $ cp setroubleshoot/plugins/plugins/po/*.po /plugins/po

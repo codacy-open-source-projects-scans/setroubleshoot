@@ -1,0 +1,640 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2023-06-29 06:20+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/setroubleshoot/ka/>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.18.1\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux-ის პრობლემების გადაჭრა"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "SELinux_ის წვდომის აკრძალვების პრობლემების გადაწყვეტა"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "პორტი %s"
+
+msgid "Unknown"
+msgstr "უცნობი"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+"%s \n"
+"**** მიმდინარე წესში, ჩაწერილი AVC უკვე ჩართულია ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+"%s \n"
+"**** ჩაწერილი AVC მიმდინარე პოლიტიკაში dontaudited -ია. 'semodule -B' "
+"ჩართავს dontaudit წესებს ****\n"
+
+msgid "Must call policy_init first"
+msgstr "ჯერ საჭიროა policy_init-ის გამოძახება"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+"%s \n"
+"**** არასწორი AVC: სამიზნის არასწორი კონტექსტი ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+"%s \n"
+"**** არასწორი AVC: წყაროს არასწორი კონტექსტი ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+"%s \n"
+"**** არასწორი AVC: არასწორი ტიპის კლასი ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+"%s \n"
+"**** არასწორი AVC: არასწორი წვდომები ****\n"
+
+msgid "Error during access vector computation"
+msgstr "შეცდომა წვდომის ვექტორის გამოთვლის დროს"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux-ის გაფრთხილებების მოძებნა"
+
+msgid "The source process:"
+msgstr "საწყისი პროცესი:"
+
+msgid "Yes"
+msgstr "დიახ"
+
+msgid "No"
+msgstr "არა"
+
+msgid "Attempted this access:"
+msgstr "სცადა ეს წვდომა:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshoot-ის დეტალების ფანჯარა"
+
+msgid "Would you like to receive alerts?"
+msgstr "გნებავთ გაფრთხილებების მიღება?"
+
+msgid "Notify Admin"
+msgstr "ადმინისტრატორის გაფრთხილება"
+
+msgid "Troubleshoot"
+msgstr "პრობლემების გადაწყვეტა"
+
+msgid "Details"
+msgstr "დეტალები"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot გაფრთხილებების სია"
+
+msgid "List All Alerts"
+msgstr "ყველ გაფრთხილების სია"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "საწყისი პროცესი"
+
+msgid "Attempted Access"
+msgstr "ნაცადი წვდომა"
+
+msgid "On this"
+msgstr "ამ"
+
+msgid "Occurred"
+msgstr "მოხდა"
+
+msgid "Last Seen"
+msgstr "ბოლოს ნანახი"
+
+msgid "Status"
+msgstr "სტატუსი"
+
+#, python-format
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr ""
+"ადმინისტრატორისთვის შეტყობინების გაგზავნის შეცდომა.\n"
+"\n"
+"%s"
+
+msgid "Notify"
+msgstr "შემატყობინე"
+
+msgid "Notify alert in the future."
+msgstr "გაფრთხილების ჩვენება მომავალში."
+
+msgid "Ignore"
+msgstr "იგნორი"
+
+msgid "Ignore alert in the future."
+msgstr "მომავალში გაფრთხილების იგნორი."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>თუ ცდილობდით, რომ...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>ეს გადაწყვეტაა.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"დამატების\n"
+"დეტალები"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"შეცდომის \n"
+"ანგარიში"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "დამატება: %s "
+
+msgid "Unable to grant access."
+msgstr "წვდომის მინიჭების შეცდომა."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "გაფრთხილება %d %d-დან"
+
+#, python-format
+msgid "On this %s:"
+msgstr "ამ %s-ზე:"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "No Alerts"
+msgstr "გაფრთხილებების გარეშე"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux_მა პრობლემა იპოვა."
+
+msgid "Sealert Error"
+msgstr "Sealert -ის შეცდომა"
+
+msgid "Sealert Message"
+msgstr "Sealert -ის შეტყობინება"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "ხელმოწერა ნაპვნი არაა"
+
+msgid "multiple signatures matched"
+msgstr "ემთხვევა ერთზე მეტი ხელმოწერა"
+
+msgid "id not found"
+msgstr "მოცემული ID-ით ნაპოვნი არაა"
+
+msgid "database not found"
+msgstr "ბაზა ნაპოვნი არაა"
+
+msgid "item is not a member"
+msgstr "ჩანაწერი წევრი არაა"
+
+msgid "illegal to change user"
+msgstr "მომხმარებლზე გადასვლის შეცდომა"
+
+msgid "method not found"
+msgstr "მეთოდი არ არსებობს"
+
+msgid "cannot create GUI"
+msgstr "gui-ის შექმნის შეცდომა"
+
+msgid "value unknown"
+msgstr "უცნობი მნიშვნელობა"
+
+msgid "cannot open file"
+msgstr "ფაილის გახსნის შეცდომა"
+
+msgid "invalid email address"
+msgstr "ელ-ფოსტის არასწორი მისამართი"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "სოკეტის შეცდომა"
+
+msgid "connection has been broken"
+msgstr "შეერთება გაწყდა"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "არასწორი მოთხოვნა. ფაილის დესკრიპტორი ღია არაა"
+
+msgid "insufficient permission to modify user"
+msgstr "არასაკმარისი წვდომები მომხმარებლის ჩასასწორებლად"
+
+msgid "authentication failed"
+msgstr "ავთენტიკაციის შეცდომა"
+
+msgid "user prohibited"
+msgstr "მომხმარებელი აკრძალულია"
+
+msgid "not authenticated"
+msgstr "ავთენტიკაციის გარეშე"
+
+msgid "user lookup failed"
+msgstr "მომხმარებლის მოძებნის შეცდომა"
+
+#, c-format, python-format
+msgid "Oops, %s hit an error!"
+msgstr "ვაი! %s-მა შეცდომა იპოვა!"
+
+msgid "Error"
+msgstr "შეცდომა"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"თუ გნებავთ, $SOURCE_BASE_PATH-ს მისცეთ $ACCESS წვდომის უფლება $"
+"TARGET_BASE_PATH $TARGET_CLASS"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr " SELinux-ის შეტყობინებების სრულად სანახავად გაუშვით sealer -l %s"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "მომხმარებელს (%s) %s-ის მონაცემების ჩასწორება არ შეუძლიათ"
+
+msgid "Started"
+msgstr "გაეშვა"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "აუდიტის მომსმენი"
+
+msgid "Never Ignore"
+msgstr "არასდროს დააიგნორო"
+
+msgid "Ignore Always"
+msgstr "ყოველთვის იგნორი"
+
+msgid "Ignore After First Alert"
+msgstr "იგნორი პირველი შეცდომის შემდეგ"
+
+msgid "directory"
+msgstr "საქაღალდე"
+
+msgid "semaphore"
+msgstr "სემაფორა"
+
+msgid "shared memory"
+msgstr "გაზიარებული მეხსიერება"
+
+msgid "message queue"
+msgstr "შეტყობინებების რიგი"
+
+msgid "message"
+msgstr "შეტყობინება"
+
+msgid "file"
+msgstr "ფაილი"
+
+msgid "socket"
+msgstr "სოკეტი"
+
+msgid "process"
+msgstr "პროცესი"
+
+msgid "process2"
+msgstr "პროცესი2"
+
+msgid "filesystem"
+msgstr "ფაილური სისტემა"
+
+msgid "node"
+msgstr "კვანძი"
+
+msgid "capability"
+msgstr "შესაძლებლობა"
+
+msgid "capability2"
+msgstr "შესაძლებლობა2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s -ს დაშვებადი ტიპი (%s) გააჩნია. წვდომ არ აკრძალულა."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux-ი დაშვებად რეჟიმშია. წვდომა არ აკრძალულა."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux ხელს უშლის %s-ს პროცესის %s-ზე წვდომის ქონაში."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux-ი %s-ს '%s' წვდომის პროცესზე გამოყენებას უკრძალავს."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux-ი %s-ს %s შესაძლებლობის გამოყენებას უკრძალავს."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux-ი %s-ს %s შესაძლებლობის გამოყენებას უკრძალავს."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux-ი %s-ს %s-დან წვდომას უკრძალავს %s-ზე, რომელსაც %s ჭდე აქვს."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux-ი %s-ს %s-დან წვდომას უკრძალავს %s-ზე, რომელსაც %s ჭდე აქვს."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux-ი %s-ს %s წვდომას უკრძალავს %s-ზე %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux-ი %s-ს '%s' წვდომებს უკრძალავს %s-ზე %s."
+
+msgid "Additional Information:\n"
+msgstr "დამატებითი ინფორმაცია:\n"
+
+msgid "Source Context"
+msgstr "საწყისი კონეტქსტი"
+
+msgid "Target Context"
+msgstr "სამიზნე კონტექსტი"
+
+msgid "Target Objects"
+msgstr "სამიზნე ობიექტები"
+
+msgid "Source"
+msgstr "წყარო"
+
+msgid "Source Path"
+msgstr "წყაროს ბილიკი"
+
+msgid "Port"
+msgstr "პორტი"
+
+msgid "Host"
+msgstr "ჰოსტი"
+
+msgid "Source RPM Packages"
+msgstr "წყაროს RPM პაკეტები"
+
+msgid "Target RPM Packages"
+msgstr "სამიზნე RPM პაკეტები"
+
+msgid "SELinux Policy RPM"
+msgstr "SELinux-ის წესის RPM"
+
+msgid "Local Policy RPM"
+msgstr "ლოკალური წესის RPM"
+
+msgid "Selinux Enabled"
+msgstr "SELnux ჩართულია"
+
+msgid "Policy Type"
+msgstr "წესის ტიპი"
+
+msgid "Enforcing Mode"
+msgstr "დაძალების რეჟიმი"
+
+msgid "Host Name"
+msgstr "ჰოსტის სახელი"
+
+msgid "Platform"
+msgstr "პლატფორმა"
+
+msgid "Alert Count"
+msgstr "გაფრთხილებების რიცხვი"
+
+msgid "First Seen"
+msgstr "პირველად ნანახი"
+
+msgid "Local ID"
+msgstr "ლოკალური ID"
+
+msgid "Raw Audit Messages"
+msgstr "დაუმუშავებელი აუდიტის შეტყობინებები"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  დამატება %s (%.4s ნდობა) გირჩევთ   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"მაშინ "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"გააკეთე\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "SELinux-ის ახალი გაფრთხილება"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC აკრძალვა. სანახავად დააწკაპუნეთ ხატულას"
+
+msgid "Dismiss"
+msgstr "მოსილება"
+
+msgid "Show"
+msgstr "ჩვენება"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC-ის უარყოფა. სანახავად დააწკაპუნეთ"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+"SELinux -ის პრობლემების გადაწყვეტა: აპლეტს გასაშვებად ჩართული SELinux-ი "
+"ესაჭიროება"
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+"SELinux-ი ჩართული არაა. sealert-ი SELinux-ის არმქონე სისტემებზე ვერ გაეშვება"
+
+msgid "Not fixable."
+msgstr "შეკეთება შეუძლებელია."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "%s წარმატებით გაეშვა"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "დამატება %s %s-ის ამ ID-სთვის არასწორია"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux გამორთულია. setroubleshootd ამთავრებს მუშაობას..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "#1 დამხმარე პროცესის შეცდომა: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"(c) 2010 საავტორო უფლებები დაცულია\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "მონიშნული განგაშის გადაჭრა"
+
+msgid "Delete"
+msgstr "წაშლა"
+
+msgid "Delete Selected Alerts"
+msgstr "მონიშნული გაფრთხილებების წაშლა"
+
+msgid "Close"
+msgstr "დახურვა"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux_მა პრობლემა იპოვა.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "მხტუნავი გაფრთხილებების ჩართვა."
+
+msgid "Turn off alert pop-ups."
+msgstr "მხტუნავი გაფრთხილებების გამორთვა."
+
+msgid "On this file:"
+msgstr "ფაილზე:"
+
+msgid "label"
+msgstr "ჭდე"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"წაიკითხეთ გაფრთხილების ინფორმაცია.  გადასაწყვეტად შეიძლება ადმინისტრირების "
+"პრივილეგიები დაგჭირდეთ."
+
+msgid "Email alert to system administrator."
+msgstr "გაფრთხილების ელფოსტის გაგზავნა სისტემური ადმინისტრატორისთვის."
+
+msgid "Delete current alert from the database."
+msgstr "მიმდინარე გაფრთხილების წაშლა მონაცემთა ბაზიდან."
+
+msgid "Previous"
+msgstr "წინა"
+
+msgid "Show previous alert."
+msgstr "წინა გაფრთხილების ნახვა."
+
+msgid "Next"
+msgstr "შემდეგი"
+
+msgid "Show next alert."
+msgstr "შემდეგი გაფრთხილების ნახვა."
+
+msgid "List all alerts in the database."
+msgstr "ბაზიდან ყველა გაფრთხილების ნახვა."
+
+msgid "Review and Submit Bug Report"
+msgstr "შეაფასეთ და გამოგვიგზავნეთ ანგარიში შეცდომის შესახებ"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>შეაფასეთ და გამოგვიგზავნეთ ანგარიში "
+"შეცდომის შესახებ</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"შეიძლება დაგჭირდეთ გადახედოთ შეცდომის ტექსტს, რომელიც ამ ანგარიშზე იქნება "
+"მიბმული და შეცვალოთ, რათა თქვენი კონფიდენციალური ინფორმაცია მოაცილოთ."
+
+msgid "Included error output:"
+msgstr "შეცდომის ჩასმული ტექსტი:"
+
+msgid "Submit Report"
+msgstr "ანგარიშის გადაგზავნა"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "ოპერაცია დასრულდა.   ბაყაყი წყალში ყიყინებს."
+
+msgid "Success!"
+msgstr "წარმატება!"
+
+msgid "button"
+msgstr "ღილაკი"

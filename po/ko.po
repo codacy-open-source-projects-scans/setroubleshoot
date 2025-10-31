@@ -1,0 +1,654 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Dimitris Glezos <glezos@indifex.com>, 2011
+# eukim <eukim@redhat.com>, 2006-2007,2009
+# eukim <eukim@redhat.com>, 2012
+# bardisch <kwb0128@gmail.com>, 2011
+#   <raypoatssium@gmail.com>, 2011,2013
+# Ludek Janda <ljanda@redhat.com>, 2018. #zanata
+# Ludek Janda <ljanda@redhat.com>, 2020. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2023-10-11 09:36+0000\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/setroubleshoot/ko/>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.0.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux 문제 해결사"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "SELinux 접근 거부 문제 해결"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "포트 %s"
+
+msgid "Unknown"
+msgstr "알려지지 않음"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+"%s \n"
+"**** 기록된 AVC는 현재 정책에서 허용됩니다 ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+"%s \n"
+"**** 기록된 AVC가 현재 정책에서 dontaudit되었습니다. 'semodule -B'는 "
+"dontaudit 규칙을 활성화하게 됩니다. ***\n"
+
+msgid "Must call policy_init first"
+msgstr "반드시 policy_init이 먼저 호출돼야합니다"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+"%s \n"
+"**** 잘못된 AVC 잘못된 대상 문맥. ***\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+"%s \n"
+"**** 잘못된 AVC 잘못된 소스 문맥 ***\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+"%s \n"
+"**** 잘못된 AVC 잘못된 유형 등급 ***\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+"%s \n"
+"**** 잘못된 AVC 잘못된 권한 ***\n"
+
+msgid "Error during access vector computation"
+msgstr "접근 벡터 연산시 오류 발생"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux 보안 통지 브라우저"
+
+msgid "The source process:"
+msgstr "문제가 발생한 프로세스:"
+
+msgid "Yes"
+msgstr "예"
+
+msgid "No"
+msgstr "아니오"
+
+msgid "Attempted this access:"
+msgstr "시도한 접근:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETrouble 세부 정보 창"
+
+msgid "Would you like to receive alerts?"
+msgstr "이 통지를 받으시겠습니까?"
+
+msgid "Notify Admin"
+msgstr "관리자에게 알리기"
+
+msgid "Troubleshoot"
+msgstr "문제 해결"
+
+msgid "Details"
+msgstr "상세정보"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot 통지 목록"
+
+msgid "List All Alerts"
+msgstr "모든 통지 목록"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "문제 발생 프로세스"
+
+msgid "Attempted Access"
+msgstr "시도한 접근"
+
+msgid "On this"
+msgstr "시도한 곳"
+
+msgid "Occurred"
+msgstr "발생 횟수"
+
+msgid "Last Seen"
+msgstr "마지막 화면"
+
+msgid "Status"
+msgstr "상태"
+
+#, python-format
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr ""
+"관리자에게 알릴 수 없음.\n"
+"\n"
+"%s"
+
+msgid "Notify"
+msgstr "알림"
+
+msgid "Notify alert in the future."
+msgstr "나중에 통지를 표시합니다."
+
+msgid "Ignore"
+msgstr "무시"
+
+msgid "Ignore alert in the future."
+msgstr "앞으로 이 통지를 무시합니다."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>다음을 시도하려고 하였다면...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>이 방법이 그 해답일 것입니다.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"플러그인\n"
+"세부 정보"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"버그\n"
+"보고"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "플러그인: %s "
+
+msgid "Unable to grant access."
+msgstr "접근 권한을 부여 할 수 없습니다."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "%d번째 보고/ 총 %d개"
+
+#, python-format
+msgid "On this %s:"
+msgstr "%s 에서:"
+
+msgid "N/A"
+msgstr "없음"
+
+msgid "No Alerts"
+msgstr "경고 없음"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux가 문제를 발견했습니다."
+
+msgid "Sealert Error"
+msgstr "Sealert 오류"
+
+msgid "Sealert Message"
+msgstr "Sealert 메세지"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "서명을 찾을 수 없음"
+
+msgid "multiple signatures matched"
+msgstr "여러개의 서명이 일치함"
+
+msgid "id not found"
+msgstr "id를 찾을 수 없음"
+
+msgid "database not found"
+msgstr "데이터베이스를 찾을 수 없음"
+
+msgid "item is not a member"
+msgstr "멤버가 아닌 항목임"
+
+msgid "illegal to change user"
+msgstr "사용자 변경이 잘못됨"
+
+msgid "method not found"
+msgstr "방식을 찾을 수 없음"
+
+msgid "cannot create GUI"
+msgstr "GUI를 생성할 수 없음"
+
+msgid "value unknown"
+msgstr "값이 알려지지 않음"
+
+msgid "cannot open file"
+msgstr "파일을 열 수 없음"
+
+msgid "invalid email address"
+msgstr "잘못된 이메일 주소"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "소켓 오류"
+
+msgid "connection has been broken"
+msgstr "연결이 차단됨"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "잘못된 요청입니다. 파일 기술자는 공개되지 않습니다"
+
+msgid "insufficient permission to modify user"
+msgstr "사용자를 수정하는데 충분한 권한이 없습니다"
+
+msgid "authentication failed"
+msgstr "인증 실패"
+
+msgid "user prohibited"
+msgstr "사용자 금지"
+
+msgid "not authenticated"
+msgstr "인증되지 않음"
+
+msgid "user lookup failed"
+msgstr "사용자 검색 실패"
+
+#, c-format, python-format
+msgid "Oops, %s hit an error!"
+msgstr "어머나, %s가 오류를 발생시켰습니다!"
+
+msgid "Error"
+msgstr "오류"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"$SOURCE_BASE_PATH가 $TARGET_BASE_PATH $TARGET_CLASS에서 $ACCESS 접근을 "
+"갖도록 허용하려는 경우"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr " 완전한 SELinux 메시지를 실행하려면 : sealert -l %s"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "사용자 (%s)는 (%s)에 대한 데이터를 수정할 수 없습니다"
+
+msgid "Started"
+msgstr "시작"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "청취자 감사"
+
+msgid "Never Ignore"
+msgstr "절대 무시하지 않음"
+
+msgid "Ignore Always"
+msgstr "항상 무시"
+
+msgid "Ignore After First Alert"
+msgstr "첫 번째 통지 이후는 무시"
+
+msgid "directory"
+msgstr "디렉토리"
+
+msgid "semaphore"
+msgstr "세마포어"
+
+msgid "shared memory"
+msgstr "공유 메모리"
+
+msgid "message queue"
+msgstr "메세지 큐"
+
+msgid "message"
+msgstr "메세지"
+
+msgid "file"
+msgstr "파일"
+
+msgid "socket"
+msgstr "소켓"
+
+msgid "process"
+msgstr "프로세스"
+
+msgid "process2"
+msgstr "process2"
+
+msgid "filesystem"
+msgstr "파일 시스템"
+
+msgid "node"
+msgstr "노드"
+
+msgid "capability"
+msgstr "기능"
+
+msgid "capability2"
+msgstr "능력 2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s는 허용 유형 (%s)입니다. 이 접근은 거부되지 않습니다."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux가 허용 모드입니다. 이 접근은 거부되지 않습니다."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux는 %s가 프로세서에서 %s 접근을 사용하지 못하게 합니다."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux는 프로세스에서 %s가 '%s' 접근을 사용하지 못하게 합니다."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux는 %s가 %s 기능을 사용하지 못하게 합니다."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux는 %s가 '%s' 기능을 사용하지 못하게 합니다."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux는 %s로 명명된 %s의 %s 접근에서 %s를 차단합니다."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux는 %s로 명명된 %s의 '%s'에서 접근하지 못하도록 %s를 차단합니다."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux는 %s %s의 %s 접근에서 %s를 차단합니다."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux는 %s %s의 '%s' 접근에서 '%s'를 차단합니다."
+
+msgid "Additional Information:\n"
+msgstr "추가 정보:\n"
+
+msgid "Source Context"
+msgstr "소스 문맥"
+
+msgid "Target Context"
+msgstr "대상 문맥"
+
+msgid "Target Objects"
+msgstr "대상 객체"
+
+msgid "Source"
+msgstr "원천"
+
+msgid "Source Path"
+msgstr "원천 경로"
+
+msgid "Port"
+msgstr "포트"
+
+msgid "Host"
+msgstr "호스트"
+
+msgid "Source RPM Packages"
+msgstr "원천 RPM 꾸러미"
+
+msgid "Target RPM Packages"
+msgstr "대상 RPM 꾸러미(package)"
+
+msgid "SELinux Policy RPM"
+msgstr "SELinux 정책 RPM"
+
+msgid "Local Policy RPM"
+msgstr "로컬 정책 RPM"
+
+msgid "Selinux Enabled"
+msgstr "Selinux 활성화"
+
+msgid "Policy Type"
+msgstr "정책 유형"
+
+msgid "Enforcing Mode"
+msgstr "강제 모드"
+
+msgid "Host Name"
+msgstr "호스트명"
+
+msgid "Platform"
+msgstr "기술환경"
+
+msgid "Alert Count"
+msgstr "통지 카운트"
+
+msgid "First Seen"
+msgstr "초기 화면"
+
+msgid "Local ID"
+msgstr "로컬 ID"
+
+msgid "Raw Audit Messages"
+msgstr "원 감사 메세지"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  플러그인 %s (%.4s confidence) 제안   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"그 다음에 "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Do\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "새 SELinux 보안 통지"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC 거부, 아이콘 눌러 보기"
+
+msgid "Dismiss"
+msgstr "취소"
+
+msgid "Show"
+msgstr "보기"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC 거부, 눌러 보기"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr "SELinux 문제 해결사 : 애플릿을 실행하려면 SELinux를 활성화해야합니다"
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+"SELinux가 활성화되어있지 않습니다. sealert는 SELinux 시스템에서만 작동합니다"
+
+msgid "Not fixable."
+msgstr "수정할 수 없음."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "성공적으로 %s 실행"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "플러그인 %s가 플러그인 %s에 유효하지 않습니다"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux가 활성화되어 있지 않습니다. setroubleshootd를 종료합니다..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "fork #1 실패: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "문제 해결이 경고 선택"
+
+msgid "Delete"
+msgstr "삭제"
+
+msgid "Delete Selected Alerts"
+msgstr "선택된 경고"
+
+msgid "Close"
+msgstr "닫기"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux가 문제를 발견했습니다.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "알림 팝업창을 활성화."
+
+msgid "Turn off alert pop-ups."
+msgstr "알림 팝업창을 비활성화."
+
+msgid "On this file:"
+msgstr "시도한 파일:"
+
+msgid "label"
+msgstr "레이블"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"문제 해결 정보를 읽어보십시오.  관리자 권한 회복이 필요할 수도 있습니다."
+
+msgid "Email alert to system administrator."
+msgstr "시스템 관리자에게 문제에 대해 이메일을 보내세요."
+
+msgid "Delete current alert from the database."
+msgstr "데이터베이스에서 현재 경고."
+
+msgid "Previous"
+msgstr "이전"
+
+msgid "Show previous alert."
+msgstr "이전 통지 보기."
+
+msgid "Next"
+msgstr "다음"
+
+msgid "Show next alert."
+msgstr "다음 통지 보기."
+
+msgid "List all alerts in the database."
+msgstr "데이터베이스에 있는 모든 통지 목록을 보여줍니다."
+
+msgid "Review and Submit Bug Report"
+msgstr "버그 리포트를 검토하고 제출합니다"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr "<span size='large' weight='bold'>버그 보고 검색 및 제출</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"이 버그 보고에 포함된 오류 출력 결과를 다시 확인하여 기밀 데이터를 제외시키"
+"실 수도 있습니다."
+
+msgid "Included error output:"
+msgstr "포함할 오류 출력 결과:"
+
+msgid "Submit Report"
+msgstr "보고서 제출"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr ""
+"이 작업이 완료되었습니다.  The quick brown fox jumped over the lazy dog."
+
+msgid "Success!"
+msgstr "성공!"
+
+msgid "button"
+msgstr "버튼"
+
+#, fuzzy
+#~| msgid ""
+#~| "%s \n"
+#~| "**** Invalid AVC: bad source context ****\n"
+#~ msgid ""
+#~ "%s \n"
+#~ "**** TEST OF method source - ATTEMPT #2 ****\n"
+#~ msgstr ""
+#~ "%s \n"
+#~ "**** 잘못된 AVC 잘못된 소스 문맥 ***\n"

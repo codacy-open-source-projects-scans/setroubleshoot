@@ -1,0 +1,235 @@
+setroubleshoot 3.3.35                                      2024-11-26
+ - Adjust seapplet notification to desktop file
+ - Fix icon file name
+ - Do not hardcode /var/lib/selinux as store_root
+ - data: Fix AppStream metadata
+
+setroubleshoot 3.3.34                                      2024-11-04
+ - data: update app icon
+ - Disable bug reporting, if libreport is not available
+ - Enable Georgian and Arabic (ar) languages in configure.ac
+ - Update translations
+
+setroubleshoot 3.3.33                                      2024-01-31
+ - Improve limiting RAM utilization
+ - Check that SELinux is enabled before running
+ - Always reset pending alarms when alarm(0)
+ - 'imp' module is deprecated in favor of 'importlib'
+
+setroubleshoot 3.3.32                                      2023-02-15
+ - Rename session bus name to org.fedoraproject.sealert
+ - seapplet: wrap SEApplet() to try except
+ - util.py: Add doctext test for build_module_type_cache()
+ - Update translations
+
+setroubleshoot 3.3.31                                      2022-11-23
+ - Add a screen reader label to the icon
+ - seapplet: avoid ValueError when parsing sealert.conf
+ - doc: Document performance related changes
+ - Decrease setroubleshootd priority and limit RAM utilization to 1GB
+
+setroubleshoot 3.3.30                                      2022-06-28
+ - Miscellaneous python and build system changes
+ - Fix couple of typos
+ - Drop Python2 support
+ - Use inspect.signature() instead of instead.getargspec()
+ - Update translations
+
+setroubleshoot 3.3.29                                      2022-03-30
+ - Introduce email.use_sendmail option
+ - Update translations
+
+setroubleshoot 3.3.28                                      2022-02-08
+ - Look for modules in /usr/share/selinux/packages
+ - Always use rpm source package for reporting
+ - Improve after_first email filter behavior
+
+setroubleshoot 3.3.27                                      2022-01-13
+ - sedispatch: check read_size
+ - SafeConfigParser is deprecated and will be dropped
+ - Fix typos in --help, man pages and developer's guide
+ - html_util: remove html_document
+ - html_util: drop various unnecessary imports
+ - Considerably simplify html_util for Python 3.10 compatibility (#58)
+ - auparse_set_eoe_timeout() requires audit / libauparse 3.0.1
+ - sedispatch: improve performance using cache friendly api
+ - Do not use Python slip package
+ - Stop SetroubleshootFixit after 10 seconds of inactivity
+ - Update translations
+
+setroubleshoot 3.3.26                                      2021-03-26
+ - Update translations
+ - Fix plugin exception reporting
+
+setroubleshoot 3.3.25                                      2021-03-10
+ - Use Python dasbus instead of pydbus
+ - Optimize get_rpm_nvr_by_type by adding a cache
+ - Update translations
+
+setroubleshoot 3.3.24                                      2020-08-12
+ - Add 'fur' into shipped locales
+ - Update translations
+ - Log full reports with correct syslog identifier
+ - Cancel pending alarm during AVC analyses
+
+setroubleshoot 3.3.23                                      2020-04-16
+ - sepolicy.info() returns a generator, not a list
+ - Log plugin exception traceback when log level is DEBUG
+ - Update translations
+ - Drop old unused files
+ - Add get_rpm_nvr_by_type() and get_rpm_nvr_by_scontext()
+ - Export setroubleshoot.utils.get_rpm_nvr_by_scontext via DBUS
+ - get_rpm_nvr_by_scontext add option to use DBUS method
+ - Add Local SELinux policy package version to analyses reports
+ - Report bug on a package which owns the related SELinux domain
+ - Use pydbus, a modern Python dbus API, for SetroubleshootPrivileged
+ - Root user doesn't need to use SetroubleshootPrivileged API
+ - Drop updater.py - it's not used and doesn't work
+ - sealert: Drop unused import slib.dbus.service
+ - browser: Do not try to report a bug on None package
+ - Revert "sepolicy.info() returns a generator, not a list"
+ - Revert "Fix AVC.__typeMatch to handle aliases properly"
+ - Make date/time format locale specific
+ - Do not refer to hardcoded selinux-policy rpm in signature
+ - Add dpkg support
+ - setroubleshoot.util: Catch exceptions from sepolicy import
+ - Improve and unify error messages
+ - browser: Check return value of Gdk.Screen().get_default()
+
+setroubleshoot 3.3.22                                      2020-01-02
+ - sepolicy.info() returns a generator, not a list
+
+setroubleshoot 3.3.21                                      2019-12-11
+ - Use dbus.mainloop.glib.DBusGMainLoop() instead of dbus.glib
+ - Fix AVC.__typeMatch to handle aliases properly
+ - Handle sockets with abstract path properly
+
+setroubleshoot 3.3.20                                      2019-07-16
+ - Add man page for seapplet
+ - Update "missing" scripts to automake-1.15
+ - Add active polling for acquiring policy file
+ - Fix translation of hex values in AVCs
+
+setroubleshoot 3.3.19                                      2018-12-08
+ - Catch exceptions caused by lookup_signature
+ - Improve myplatform detection in get_os_environment()
+ - Update translations
+
+setroubleshoot 3.3.18                                      2018-07-18
+ - Make audit plugins dir used for sedispatch.conf configurable
+ - Fix summary and "if" text for AVCs with unknown target path
+
+setroubleshoot 3.3.17                                      2018-02-26
+ - seapplet: Try send and close notifications
+ - seapplet: Show icon first and then try send a notification
+ - Set auto_save_interval to 5
+ 
+setroubleshoot 3.3.16                                      2018-02-20
+ - seapplet: Do not show status_icon when there's no alert
+ - Run seapplet only on SELinux enabled system
+ - seapplet: Use context in Gio.AppInfo.launch
+
+setroubleshoot 3.3.15                                      2018-01-19
+ - Rewrite seapplet to Python3 to use Notify and Gtk 3.0
+ - Added new dependency on Python3 pydbus module
+ - Original seapplet can be built as seappletlegacy using --enable-seappletlegacy
+ - sealert: Finish dbus communication after error
+
+setroubleshoot 3.3.14                                      2017-11-18
+ - Increase the space for suggested solutions in sealert
+ - Highlight suggestions with the highest confidence
+ - Remove additional "If " string from plugin messages
+ - Fix sealert message for process2
+ - Do not change if_string[0] to lowercase
+
+setroubleshoot 3.3.13                                      2017-09-14
+ - Don't stop when the plugin directory is empty
+ - Fix missing margins on Troubleshoot window
+ - Resize all solutions panels horizontally
+ - Fix missing priority color for proposed solutions
+ - Do not split If sentences to framework and plugins - requires
+   setroubleshoot-plugins 3.3.8 at least
+ - Set translation domain for Gtk.Builder() object to have strings
+   correctly translated
+ - Make labels on GtkButtons translatable
+ - Handla all exceptions from do_analyze_logfile()
+ - Fix semi-translated messages
+ - Update translations
+ - Do not catch POSIX signals
+
+setroubleshoot 3.3.12                                      2017-06-11
+ - remove "Report bug" button when mozplugger plugin is used
+ - change "check_for_man" return value upon failure
+ - fix "plugin details" message content
+ - add "init_args" function to Plugin
+ - fix sealert crash when setroubleshootd fails to start
+ - improve obtaining AVC object path
+ - fix setroubleshootd.8
+ - fix report problem summary string
+ - sealert - provide a better error message when SELinux is disabled
+ - spelling fixes
+ - python 3.6 invalid escape sequence deprecation fixes
+
+setroubleshoot 3.3.11                                      2016-08-31
+ - fix "list all alerts" in sealert gui
+ - fix sealert message for capability2
+
+setroubleshoot 3.3.10                                      2016-07-14
+ - catch all subprocess exceptions
+ - update translations
+
+setroubleshoot 3.3.9.1                                     2016-06-21
+ - do not use dangerous shell=True
+ - use subprocess.check_output() with a sequence of program arguments
+
+setroubleshoot 3.3.8.1                                     2016-06-02
+ - bugfix
+
+setroubleshoot 3.3.8                                       2016-06-02
+ - added setroubleshootd_log.log_full=True|False directive
+ - setroubleshootd_log.level and sealert_log.level can be set to
+   different values
+ - get_alert() and get_all_alerts_since() DBUS APIs change to use
+   number of microseconds instead of date string
+ - setroubleshoot.conf cleanup
+
+setroubleshoot 3.3.7                                       2016-05-18
+ - added new methods to DBUS API:
+   set_filter(), get_all_alerts_ignored(), delete_alert()
+
+setroubleshoot 3.3.6                                       2016-05-06
+ - suggest my-<command>.pp modules instead of mypol.pp
+ - suggest priority 300 for modules created by audit2allow
+ - updated translations from
+   https://fedora.zanata.org/project/view/setroubleshoot
+ - bug fixes
+
+setroubleshoot 3.3.5                                       2016-04-04
+ - get_alert() DBUS API extended with more parameters
+ - sedispatch uses a timeout when collecting audit events
+ - alerts reflects plugins level
+
+setroubleshoot 3.3.4                                       2016-02-10
+ - bug fix
+
+setroubleshoot 3.3.3                                       2016-01-21
+ - fixed few UI browser problems
+ - extend DBUS API, see DBUS.md
+ - bug fixes
+
+setroubleshoot 3.3.2                                       2015-10-13
+ - fixed several GTK deprecated warnings
+
+setroubleshoot 3.3.1                                       2015-08-18
+ - switch and port setroubleshoot to Python 3
+
+setroubleshoot 3.2.24                                      2015-04-23
+ - updated translations from
+   https://fedora.zanata.org/project/view/setroubleshoot
+
+setroubleshoot 3.2.23                                      2015-04-09
+ - setroubleshootd is set to be run as setroubleshoot user instead of
+   root user
+ - commands.getstatusoutput() is not used anymore
+ - AppData file is provided now
+ - bug fixes

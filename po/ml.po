@@ -1,0 +1,618 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Ani Peter <apeter@redhat.com>, 2006-2007,2012-2013
+# Ani Peter <apeter@redhat.com>, 2013
+# Dimitris Glezos <glezos@indifex.com>, 2011
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2017-08-31 08:30-0400\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Malayalam (http://www.transifex.com/projects/p/fedora/"
+"language/ml/)\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 4.6.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux ട്രബിള്‍ഷൂട്ടര്‍"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "ട്രബിള്‍ഷൂട്ട് SELinux ആക്സസ്സ് എതിര്‍പ്പുകള്‍"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "പോര്‍ട്ട് %s"
+
+msgid "Unknown"
+msgstr "അപരിചിതം"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+
+msgid "Must call policy_init first"
+msgstr "ആദ്യം policy_init വിളിയ്ക്കേണ്ടതുണ്ടു്"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+
+msgid "Error during access vector computation"
+msgstr "ആക്സസ് വെക്ടര്‍ കമ്പ്യൂട്ടേഷന്‍ സമയത്തുള്ള പിശക്"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux അറിയിപ്പിനുള്ള ബ്രൌസര്‍"
+
+msgid "The source process:"
+msgstr "സോഴ്സ് പ്രക്രിയ:"
+
+msgid "Yes"
+msgstr "ഉവ്വു്"
+
+msgid "No"
+msgstr "ഇല്ല"
+
+msgid "Attempted this access:"
+msgstr "ഈ പ്രവേശനം ശ്രമിയ്ക്കുക:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "SETroubleshoot വിശദാംശങ്ങള്‍ക്കുള്ള ജാലകം"
+
+msgid "Would you like to receive alerts?"
+msgstr "അറിയിപ്പുകള്‍ ലഭ്യമാകണമോ?"
+
+msgid "Notify Admin"
+msgstr "അഡ്മിനെ അറിയിയ്ക്കുക"
+
+msgid "Troubleshoot"
+msgstr "ട്രബിള്‍ഷൂട്ട്"
+
+msgid "Details"
+msgstr "വിശദവിവരങ്ങള്‍"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot അറിയിപ്പു് പട്ടിക"
+
+msgid "List All Alerts"
+msgstr "എല്ലാ അറിയിപ്പുകളും കാണിയ്ക്കുക"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "സോഴ്സ് പ്രക്രിയ"
+
+msgid "Attempted Access"
+msgstr "ശ്രമിച്ചിരിയ്ക്കുന്ന അനുമതി"
+
+msgid "On this"
+msgstr "ഇതില്‍"
+
+msgid "Occurred"
+msgstr "സംഭവിച്ചിരിയ്ക്കുന്നു"
+
+msgid "Last Seen"
+msgstr "അവസാനം കണ്ടത്"
+
+msgid "Status"
+msgstr "അവസ്ഥ"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "അനുമതി നല്‍കുവാന്‍ സാധ്യമല്ല"
+
+msgid "Notify"
+msgstr "അറിയിയ്ക്കുക"
+
+msgid "Notify alert in the future."
+msgstr "ഭാവിയില്‍ അറിയിയ്ക്കുക."
+
+msgid "Ignore"
+msgstr "വേണ്ടെന്നു് വയ്ക്കുക"
+
+msgid "Ignore alert in the future."
+msgstr "ഭാവിയില്‍ അറിയിപ്പു് വേണ്ടെന്നുവയ്ക്കുക."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>നിങ്ങള്‍ ഇതിനായി ശ്രമിയ്ക്കുന്നെങ്കില്‍...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>അങ്ങനെയെങ്കില്‍ ഇതാണു് പ്രതിവിധി.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"പ്ലഗിന്‍\n"
+"വിശദാംശങ്ങള്‍"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"ബഗ്\n"
+"രേഖപ്പെടുത്തുക"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "പ്ലഗിന്‍: %s "
+
+msgid "Unable to grant access."
+msgstr "അനുമതി നല്‍കുവാന്‍ സാധ്യമല്ല"
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "അറിയിപ്പു് %d/%d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "ഈ %s-ല്‍:"
+
+msgid "N/A"
+msgstr "ലഭ്യമല്ല"
+
+msgid "No Alerts"
+msgstr "അറിയിപ്പുകളില്ല"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux ഒരു പ്രശ്നം കണ്ടുപിടിച്ചിരിയ്ക്കുന്നു."
+
+msgid "Sealert Error"
+msgstr "Sealert പിശക്"
+
+msgid "Sealert Message"
+msgstr "Sealert സന്ദേശങ്ങള്‍"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "ഒപ്പ് ലഭ്യമല്ല"
+
+msgid "multiple signatures matched"
+msgstr "അനവധി ഒപ്പുകള്‍ ചേര്‍ന്നിരിക്കുന്നു"
+
+msgid "id not found"
+msgstr "id ലഭ്യമല്ല"
+
+msgid "database not found"
+msgstr "ഡേറ്റാബേയിസ് ലഭ്യമല്ല"
+
+msgid "item is not a member"
+msgstr "ഇനം ഒരു അംഗമല്ല"
+
+msgid "illegal to change user"
+msgstr "ഉപയോഗിക്കുന്ന ആളിനെ മാറ്റുന്നത് തെറ്റാണ്"
+
+msgid "method not found"
+msgstr "മാര്‍ഗ്ഗം ലഭ്യമല്ല"
+
+msgid "cannot create GUI"
+msgstr "GUI ഉണ്ടാക്കുവാന്‍ സാധ്യമല്ല"
+
+msgid "value unknown"
+msgstr "മൂല്ല്യം ലഭ്യമല്ല"
+
+msgid "cannot open file"
+msgstr "ഫയല്‍ തുറക്കുവാന്‍ സാധ്യമല്ല"
+
+msgid "invalid email address"
+msgstr "തെറ്റായ ഈമെയില്‍ വിലാസം"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "സോക്കറ്റ് പിശക്"
+
+msgid "connection has been broken"
+msgstr "കണക്ഷന് തകരാറ് സംഭവിച്ചിരിക്കുന്നു"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "തെറ്റായ ആവശ്യം. ഫയല്‍ ഡിസ്ക്രിപ്റ്റര്‍ തുറന്നിട്ടില്ല"
+
+msgid "insufficient permission to modify user"
+msgstr "ഉപയോക്താവില്‍ മാറ്റം വരുത്തുന്നിന് മതിയാകാത്ത അനുവാദം"
+
+msgid "authentication failed"
+msgstr "ആധികാരികത ലഭ്യമാക്കുന്നതില്‍ പരാജയം"
+
+msgid "user prohibited"
+msgstr "ഉപയോക്താക്കള്‍ക്ക് പ്രവേശനമില്ല"
+
+msgid "not authenticated"
+msgstr "ആധികരികത ഉറപ്പാക്കിയിട്ടില്ല"
+
+msgid "user lookup failed"
+msgstr "ഉപയോക്താവിനുള്ള തിരച്ചില്‍ പരാജയപ്പെട്ടു"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "%s-ല്‍ ഒരു തകരാറു സംഭവിച്ചിരിക്കുന്നു!"
+
+msgid "Error"
+msgstr "പിശക്"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr ""
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "ഉപയോക്താവിന് (%s) (%s)-നുള്ള ഡേറ്റായില്‍ മാറ്റം വരുത്തുവാന്‍ സാധ്യമല്ല"
+
+msgid "Started"
+msgstr "ആരംഭിച്ചു"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "ഓഡിറ്റ് ലിസണര്‍"
+
+msgid "Never Ignore"
+msgstr "ഒരിക്കലും ഉപേക്ഷിക്കുവാന്‍ പാടില്ല"
+
+msgid "Ignore Always"
+msgstr "എപ്പോഴും ഉപേക്ഷിക്കുക"
+
+msgid "Ignore After First Alert"
+msgstr "ആദ്യത്തെ അറിയിപ്പിന് ശേഷം ഉപേക്ഷിക്കുക"
+
+msgid "directory"
+msgstr "ഡയറക്ടറി"
+
+msgid "semaphore"
+msgstr "സെമാഫോര്‍"
+
+msgid "shared memory"
+msgstr "പങ്കിട്ട മെമ്മറി"
+
+msgid "message queue"
+msgstr "സന്ദേശത്തിന്റെ ക്യൂ"
+
+msgid "message"
+msgstr "സന്ദേശം"
+
+msgid "file"
+msgstr "ഫയല്‍"
+
+msgid "socket"
+msgstr "സോക്കറ്റ്"
+
+msgid "process"
+msgstr "പ്രക്രിയ"
+
+msgid "process2"
+msgstr ""
+
+msgid "filesystem"
+msgstr "ഫയല്‍സിസ്റ്റം"
+
+msgid "node"
+msgstr "നോഡ്"
+
+msgid "capability"
+msgstr "കഴിവു്"
+
+msgid "capability2"
+msgstr ""
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s-നു് ഒരു പെര്‍മിസ്സീവ് തരമുണ്ടു് (%s). ഈ അനുമതി നിഷേധിച്ചിട്ടില്ല."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux പെര്‍മിസ്സീവ് മോഡിലാണു്. ഈ അനുമതി നിഷേധിച്ചിട്ടില്ല."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "%s-നെ, ഒരു പ്രക്രിയയില്‍ %s പ്രവേശനം ഉപയോഗിയ്ക്കുന്നതില്‍ നിന്നും SELinux തടയുന്നു."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "%s-നെ, ഒരു പ്രക്രിയയില്‍ '%s' പ്രവേശനങ്ങള്‍ ഉപയോഗിയ്ക്കുന്നതില്‍ നിന്നും SELinux തടയുന്നു."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "%s-നെ, %s വിശേഷത ഉപയോഗിയ്ക്കുന്നതില്‍ നിന്നും SELinux തടയുന്നു."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "%s-നെ, '%s' വിശേഷതകള്‍ ഉപയോഗിയ്ക്കുന്നതില്‍ നിന്നും SELinux തടയുന്നു."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux %s-നെ %s പ്രവേശനത്തില്‍ നിന്നും തടയുന്നു, %s-ല്‍ %s എന്നു് പേരിടുന്നു."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux %s-നെ '%s' പ്രവേശനത്തില്‍ നിന്നും തടയുന്നു, %s-ല്‍ %s എന്നു് പേരിടുന്നു."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "%s-നെ, %s %s-ലുള്ള %s പ്രവേശനങ്ങളില്‍ നിന്നും SELinux തടയുന്നു."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "%s-നെ, %s %s-ലുള്ള '%s' പ്രവേശനങ്ങളില്‍ നിന്നും SELinux തടയുന്നു."
+
+msgid "Additional Information:\n"
+msgstr "കൂടുതല്‍ വിവരം:\n"
+
+msgid "Source Context"
+msgstr "സോഴ്സ് കോണ്‍ട്ടെക്സ്റ്റ്"
+
+msgid "Target Context"
+msgstr "ടാര്‍ഗറ്റ് കോണ്‍ട്ടെക്സ്റ്റ്"
+
+msgid "Target Objects"
+msgstr "ടാര്‍ഗറ്റ് ഒബ്ജക്ടുകള്‍"
+
+msgid "Source"
+msgstr "സോഴ്സ് "
+
+msgid "Source Path"
+msgstr "സോഴ്സ് പാഥ്"
+
+msgid "Port"
+msgstr "പോര്‍ട്ട്"
+
+msgid "Host"
+msgstr "ഹോസ്റ്റ് "
+
+msgid "Source RPM Packages"
+msgstr "ഉറവിടമായ RPM പാക്കേജുകള്‍"
+
+msgid "Target RPM Packages"
+msgstr "ലക്ഷ്യമായ RPM പാക്കേജുകള്‍"
+
+msgid "SELinux Policy RPM"
+msgstr ""
+
+msgid "Local Policy RPM"
+msgstr ""
+
+msgid "Selinux Enabled"
+msgstr "Selinux സജ്ജമാക്കല്‍"
+
+msgid "Policy Type"
+msgstr "പോളിസി രീതി"
+
+msgid "Enforcing Mode"
+msgstr "Enforcing മോഡ്"
+
+msgid "Host Name"
+msgstr "ഹോസ്റ്റ് നെയിം"
+
+msgid "Platform"
+msgstr "പ്ളാറ്റ്ഫോം"
+
+msgid "Alert Count"
+msgstr "എണ്ണം അറിയിപ്പ്"
+
+msgid "First Seen"
+msgstr "ആദ്യം കണ്ടത്"
+
+msgid "Local ID"
+msgstr "ലോക്കല്‍ ഐഡി"
+
+msgid "Raw Audit Messages"
+msgstr "റോ ഓഡിറ്റ് സന്ദേശങ്ങള്‍"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  പ്ലഗിന്‍ %s (%.4s കോണ്‍ഫിഡന്‍സ്) നിര്‍ദ്ദേശിയ്ക്കുന്നു"
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"അങ്ങനെയെങ്കില്‍ "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"ചെയ്യേണ്ടതു്\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "പുതിയ SELinux സുരക്ഷാ അറിയിപ്പു്"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC നിഷേധം, കാണുന്നതിനായി പ്രതിരൂപത്തില്‍ ക്ലിക്ക് ചെയ്യുക"
+
+msgid "Dismiss"
+msgstr "വേണ്ടെന്നു് വയ്ക്കുക"
+
+msgid "Show"
+msgstr "കാണിക്കുക"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC നിഷേധം, കാണുന്നതിനായി ക്ലിക്ക് ചെയ്യുക"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+"SELinux പ്രവര്‍ത്തന സജ്ജമല്ല, SELinux അല്ലാത്ത സിസ്റ്റങ്ങള്‍ക്കു് sealert പ്രവര്‍ത്തിയ്ക്കുന്നതല്ല"
+
+msgid "Not fixable."
+msgstr "പരിഹരിക്കുവാന്‍ സാധ്യമല്ല."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "%s വിജയകരമായി പ്രവര്‍ത്തിപ്പിച്ചു."
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "പ്ലഗിന്‍ %s തെറ്റാണു് - %s id"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux സജ്ജമല്ല, setroubleshootd-ല്‍ നിന്നും പുറത്തു് കടക്കുന്നു..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "ഫോര്‍ക്ക് #1 പരാജയപ്പെട്ടു: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+
+msgid "Troubleshoot selected alert"
+msgstr "ട്രബിള്‍ഷൂട്ട് തെരഞ്ഞെടുത്തിരിയ്ക്കുന്നതിനുള്ള അറിയിപ്പു്"
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete Selected Alerts"
+msgstr "തെരഞ്ഞെടുത്ത അറിയിപ്പുകള്‍ വെട്ടിനീക്കുക"
+
+msgid "Close"
+msgstr ""
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux ഒരു പ്രശ്നം കണ്ടുപിടിച്ചിരിയ്ക്കുന്നു.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "അറിയിപ്പുകളുടെ പോപ്പപ്പുകള്‍ ഓണ്‍ ചെയ്യുക."
+
+msgid "Turn off alert pop-ups."
+msgstr "അറിയിപ്പുകളുടെ പോപ്പപ്പുകള്‍ ഓഫ് ചെയ്യുക."
+
+msgid "On this file:"
+msgstr "ഈ ഫയലില്‍:"
+
+msgid "label"
+msgstr "ലേബല്‍"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"അറിയിപ്പിനുള്ള ട്രബിള്‍ഷൂട്ട് വിവരം ലഭ്യമാക്കുക. പരിഹാരത്തിനായി നിങ്ങള്‍ക്കു് അഡിമിനിസ്ട്രേറ്റീവ് "
+"അനുമതികള്‍ ആവശ്യമുണ്ടു്."
+
+msgid "Email alert to system administrator."
+msgstr "സിസ്റ്റം അഡ്മിനിസ്ട്രേറ്ററിനു് ഈമെയില്‍ അറിയിപ്പു് നല്‍കുക."
+
+msgid "Delete current alert from the database."
+msgstr "ഡേറ്റാബെയിസില്‍ നിന്നും നിലവിലുള്ള അറിയിപ്പു് വെട്ടി നീക്കുക."
+
+msgid "Previous"
+msgstr ""
+
+msgid "Show previous alert."
+msgstr "മുമ്പുള്ള അറിയിപ്പു് കാണിയ്ക്കുക."
+
+msgid "Next"
+msgstr ""
+
+msgid "Show next alert."
+msgstr "അടുത്ത അറിയിപ്പു് കാണിയ്ക്കുക."
+
+msgid "List all alerts in the database."
+msgstr "ഡേറ്റാബെയിസില്‍ എല്ലാ അറിയിപ്പുകളും കാണിയ്ക്കുക."
+
+msgid "Review and Submit Bug Report"
+msgstr "പരിശോധിച്ചു് ബഗ് റിപോര്‍ട്ട് സമര്‍പ്പിക്കുക"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr "<span size='large' weight='bold'>പരിശോധിച്ചു് ബഗ് റിപോര്‍ട്ട് സമര്‍പ്പിക്കുക</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"ഈ ബഗില്‍ ഉള്‍പ്പെടുത്തിയിട്ടുള്ള ഔട്ട്പുട്ട് പിശക് പരിശോധിച്ചു് ഏതെങ്കിലും സെന്‍സിറ്റീവ് ഡേറ്റാ ഉള്‍"
+"പ്പെടുത്താതിരിക്കുന്നതിനായി മാറ്റങ്ങള്‍ വരുത്തുവാന്‍ സാധിക്കുന്നു."
+
+msgid "Included error output:"
+msgstr "Included error output:"
+
+msgid "Submit Report"
+msgstr "റിപ്പോര്‍ട്ട് സമര്‍പ്പിക്കുക"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "ഈ പ്രക്രിയ പൂര്‍ണ്ണമാക്കി.  The quick brown fox jumped over the lazy dog."
+
+msgid "Success!"
+msgstr "വിജയിച്ചു!"
+
+msgid "button"
+msgstr "ബട്ടണ്‍"

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2014 Ryan Lerch <rlerch@redhat.com> -->
+<!--
+BugReportURL: https://fedorahosted.org/setroubleshoot/ticket/14
+SentUpstream: 2014-07-02
+-->
+<component type="desktop-application">
+  <id>org.fedoraproject.setroubleshoot</id>
+  <name>SELinux Troubleshooter</name>
+  <developer_name>Red Hat, Inc.</developer_name>
+  <project_license>GPL-2.0</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <launchable type="desktop-id">setroubleshoot.desktop</launchable>
+  <summary>Troubleshoot SELinux policy and access denials</summary>
+  <description>
+    <p>
+      The SELinux Troubleshooter provides a graphical user interface to help
+      diagnose SELinux policy issues.
+      When Access Vector Cache (AVC) denial messages are logged by SELinux,
+      the SELinux Troubleshooter generates a desktop notification containing
+      information about the problem and allows the user to launch the
+      troubleshooting interface to help track down the cause of the denial.
+    </p>
+  </description>
+  <url type="homepage">https://pagure.io/setroubleshoot/</url>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Example alert window</caption>
+      <image>https://docs.pagure.org/setroubleshoot/setroubleshoot.png</image>
+    </screenshot>
+  </screenshots>
+  <update_contact>setroubleshoot-owner@fedoraproject.org</update_contact>
+  <content_rating type="oars-1.1"/>
+</component>
+

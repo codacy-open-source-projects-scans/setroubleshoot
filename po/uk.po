@@ -1,0 +1,661 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Dimitris Glezos <glezos@indifex.com>, 2011
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2003
+# Yuri Chornoivan <yurchor@ukr.net>, 2011-2013
+# Vit Mojzis <vmojzis@redhat.com>, 2017. #zanata
+# Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata
+# Yuri Chornoivan <yurchor@ukr.net>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2022-09-08 14:19+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/setroubleshoot/uk/>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.14\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "Діагностика проблем SELinux"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "Діагностика проблем відмові у доступі SELinux"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr ""
+"policy;security;selinux;avc;permission;mac;alert;sealert;правила;безпека;"
+"захист;доступ;права;попередження;"
+
+#, python-format
+msgid "port %s"
+msgstr "порт %s"
+
+msgid "Unknown"
+msgstr "Невідомо"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+"%s \n"
+"**** Записані AVC дозволено поточними правилами ***\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+"%s \n"
+"**** Аудит для записаного AVC вимкнено поточними правилами. Увімкнути "
+"правила аудита можна за допомогою команди «semodule -B» ****\n"
+
+msgid "Must call policy_init first"
+msgstr "Спочатку слід викликати policy_init"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+"%s \n"
+"**** Некоректний AVC: помилковий контекст цілі ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+"%s \n"
+"**** Некоректний AVC: помилковий контекст джерела ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+"%s \n"
+"**** Некоректний AVC: помилковий клас типу ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+"%s \n"
+"**** Некоректний AVC: помилкові права доступу ****\n"
+
+msgid "Error during access vector computation"
+msgstr "Помилка під час обчислення вектора доступу"
+
+msgid "SELinux Alert Browser"
+msgstr "Переглядач сповіщень SELinux"
+
+msgid "The source process:"
+msgstr "Первинний процес:"
+
+msgid "Yes"
+msgstr "Так"
+
+msgid "No"
+msgstr "Ні"
+
+msgid "Attempted this access:"
+msgstr "Спроба такого доступу:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "Вікно подробиць SETroubleshoot"
+
+msgid "Would you like to receive alerts?"
+msgstr "Бажаєте отримувати сповіщення?"
+
+msgid "Notify Admin"
+msgstr "Сповістити адміністратора"
+
+msgid "Troubleshoot"
+msgstr "Діагностика проблем"
+
+msgid "Details"
+msgstr "Подробиці"
+
+msgid "SETroubleshoot Alert List"
+msgstr "Список сповіщень SETroubleshoot"
+
+msgid "List All Alerts"
+msgstr "Показати список всіх сповіщення"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Первинний процес"
+
+msgid "Attempted Access"
+msgstr "Спроба доступу"
+
+msgid "On this"
+msgstr "У цей"
+
+msgid "Occurred"
+msgstr "Сталося"
+
+msgid "Last Seen"
+msgstr "Останній помічений"
+
+msgid "Status"
+msgstr "Статус"
+
+#, python-format
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr ""
+"Не вдалось надати доступ.\n"
+"\n"
+"%s"
+
+msgid "Notify"
+msgstr "Сповістити"
+
+msgid "Notify alert in the future."
+msgstr "Сповіщати надалі."
+
+msgid "Ignore"
+msgstr "Ігнорувати"
+
+msgid "Ignore alert in the future."
+msgstr "Надалі ігнорувати сповіщення."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Якщо ви намагалися…</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>Ось вирішення вашої проблеми:</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"Параметри⏎\n"
+"додатка"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Повідомити\n"
+"про ваду"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Додаток: %s "
+
+msgid "Unable to grant access."
+msgstr "Не вдалось надати доступ."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "Сповіщення %d з %d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "У цей %s:"
+
+msgid "N/A"
+msgstr "Н/д"
+
+msgid "No Alerts"
+msgstr "Немає сповіщень"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux виявлено проблему."
+
+msgid "Sealert Error"
+msgstr "Помилка sealert"
+
+msgid "Sealert Message"
+msgstr "Повідомлення sealert"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "підпис не знайдено"
+
+msgid "multiple signatures matched"
+msgstr "відповідність кільком підписам"
+
+msgid "id not found"
+msgstr "ID не знайдено"
+
+msgid "database not found"
+msgstr "базу даних не знайдено"
+
+msgid "item is not a member"
+msgstr "елемент не є членом"
+
+msgid "illegal to change user"
+msgstr "не вдається змінити користувача"
+
+msgid "method not found"
+msgstr "метод не знайдений"
+
+msgid "cannot create GUI"
+msgstr "не вдається створити графічний інтерфейс"
+
+msgid "value unknown"
+msgstr "значення невідоме"
+
+msgid "cannot open file"
+msgstr "не вдається відкрити файл"
+
+msgid "invalid email address"
+msgstr "неправильна адреса"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "помилка сокету"
+
+msgid "connection has been broken"
+msgstr "з'єднання перервано"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Неправильний запит. Дескриптор файлу не був відкритий"
+
+msgid "insufficient permission to modify user"
+msgstr "бракує прав для зміни користувача"
+
+msgid "authentication failed"
+msgstr "помилка при автентифікації"
+
+msgid "user prohibited"
+msgstr "заборона користувача"
+
+msgid "not authenticated"
+msgstr "немає авторизації"
+
+msgid "user lookup failed"
+msgstr "помилка під час пошуку користувача"
+
+#, c-format, python-format
+msgid "Oops, %s hit an error!"
+msgstr "Оце тобі, сталася помилка у %s!"
+
+msgid "Error"
+msgstr "Помилка"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"Якщо ви бажаєте дозволити $SOURCE_BASE_PATH мати доступ $ACCESS до "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr ""
+" Щоб показати повний список повідомлень SELinux, виконайте sealert -l %s"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "Користувач (%s) не може змінювати дані для (%s)"
+
+msgid "Started"
+msgstr "Розпочато"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Прослуховує аудит"
+
+msgid "Never Ignore"
+msgstr "Ніколи не ігнорувати"
+
+msgid "Ignore Always"
+msgstr "Завжди ігнорувати"
+
+msgid "Ignore After First Alert"
+msgstr "Ігнорувати після першого сповіщення"
+
+msgid "directory"
+msgstr "каталог"
+
+msgid "semaphore"
+msgstr "семафор"
+
+msgid "shared memory"
+msgstr "спільна пам’ять"
+
+msgid "message queue"
+msgstr "черга повідомлень"
+
+msgid "message"
+msgstr "повідомлення"
+
+msgid "file"
+msgstr "файл"
+
+msgid "socket"
+msgstr "сокет"
+
+msgid "process"
+msgstr "процес"
+
+msgid "process2"
+msgstr "процес2"
+
+msgid "filesystem"
+msgstr "файлова система"
+
+msgid "node"
+msgstr "вузол"
+
+msgid "capability"
+msgstr "можливість"
+
+msgid "capability2"
+msgstr "можливість2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr ""
+"%s запущено у дозволеному (permissive) режимі (%s). Доступ не було "
+"заборонено."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr ""
+"SELinux працює у режимі дозволеному (permissive) режимі. Доступ не було "
+"заборонено."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux заборонено %s використання доступу %s до процесу."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux заборонено '%s використання доступи «%s» до процесу."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux заборонено %s використання можливості %s."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux заборонено '%s використання можливостей «%s»."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux забороняє %s доступ %s на %s з міткою %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux запобігає %s спробам доступу «%s» на %s з міткою %s."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux заборонено %s доступ %s до %s %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux заборонено %s доступи «%s» до %s %s."
+
+msgid "Additional Information:\n"
+msgstr "Додаткова інформація:\n"
+
+msgid "Source Context"
+msgstr "Початковий контекст"
+
+msgid "Target Context"
+msgstr "Цільовий Контекст"
+
+msgid "Target Objects"
+msgstr "Цільові об'єкти"
+
+msgid "Source"
+msgstr "Джерело"
+
+msgid "Source Path"
+msgstr "Шлях до джерела"
+
+msgid "Port"
+msgstr "Порт"
+
+msgid "Host"
+msgstr "Вузол"
+
+msgid "Source RPM Packages"
+msgstr "Первинні пакети RPM"
+
+msgid "Target RPM Packages"
+msgstr "Цільові пакети RPM"
+
+msgid "SELinux Policy RPM"
+msgstr "RPM з правилами SELinux"
+
+msgid "Local Policy RPM"
+msgstr "RPM локальних правил"
+
+msgid "Selinux Enabled"
+msgstr "Selinux активна"
+
+msgid "Policy Type"
+msgstr "Тип політики"
+
+msgid "Enforcing Mode"
+msgstr "Примусовий режим"
+
+msgid "Host Name"
+msgstr "Назва вузла"
+
+msgid "Platform"
+msgstr "Платформа"
+
+msgid "Alert Count"
+msgstr "Лічильник повідомлень"
+
+msgid "First Seen"
+msgstr "Перший помічений"
+
+msgid "Local ID"
+msgstr "Локальний ID"
+
+msgid "Raw Audit Messages"
+msgstr "Необроблені повідомлення аудиту"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  Додаток %s (рівень надійності %.4s) пропонує   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"Тоді "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Виконати\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "Нове сповіщення безпеки SELinux"
+
+msgid "AVC denial, click icon to view"
+msgstr "Відмова AVC. Натисніть на значок для перегляду"
+
+msgid "Dismiss"
+msgstr "Скасувати"
+
+msgid "Show"
+msgstr "Показати"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "Відмова AVC SELinix. Натисніть для перегляду"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+"Засіб усування вад у системі SELinux: для запуску аплет потребує вмикання "
+"SELinux"
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr "SELinux не увімкнено, sealert не працюватиме у системі без SELinux"
+
+msgid "Not fixable."
+msgstr "Неможливе виправлення."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "Успішно запущено %s"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "Додаток %s є нечинним для ідентифікатора %s"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr ""
+"Механізм SELinux не включений. Роботу setroubleshootd буде завершено..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "помилка: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"Copyright (c) 2010\n"
+"© Thomas Liu <tliu@redhat.com>\n"
+"© Máirín Duffy <duffy@redhat.com>\n"
+"© Daniel Walsh <dwalsh@redhat.com>\n"
+"© John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "Позначене діагностичне сповіщення"
+
+msgid "Delete"
+msgstr "Вилучити"
+
+msgid "Delete Selected Alerts"
+msgstr "Вилучити позначені сповіщення"
+
+msgid "Close"
+msgstr "Закрити"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux виявлено проблему.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "Увімкнути контекстні сповіщення."
+
+msgid "Turn off alert pop-ups."
+msgstr "Вимкнути контекстні сповіщення."
+
+msgid "On this file:"
+msgstr "На цьому файлі:"
+
+msgid "label"
+msgstr "мітка"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"Читання діагностичних даних сповіщення. Виправлення помилок може потребувати "
+"адміністративних прав доступу."
+
+msgid "Email alert to system administrator."
+msgstr "Надіслати сповіщення адміністраторові системи."
+
+msgid "Delete current alert from the database."
+msgstr "Вилучити поточне сповіщення з бази даних."
+
+msgid "Previous"
+msgstr "Назад"
+
+msgid "Show previous alert."
+msgstr "Показати попереднє сповіщення."
+
+msgid "Next"
+msgstr "Далі"
+
+msgid "Show next alert."
+msgstr "Показати наступне сповіщення."
+
+msgid "List all alerts in the database."
+msgstr "Показати список всіх сповіщень у базі даних."
+
+msgid "Review and Submit Bug Report"
+msgstr "Переглянути та надіслати звіт про помилку"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Переглянути та надіслати звіт про помилку</"
+"span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"Якщо ви хочете переглянути чи змінити звіт про помилку, наприклад, видалити "
+"конфіденційні дані, це можна зробити нижче."
+
+msgid "Included error output:"
+msgstr "Вивід помилки:"
+
+msgid "Submit Report"
+msgstr "Надіслати звіт"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "Операцію завершено."
+
+msgid "Success!"
+msgstr "Успішно!"
+
+msgid "button"
+msgstr "кнопка"
+
+#~ msgid ""
+#~ "%s \n"
+#~ "**** TEST OF method source - ATTEMPT #2 ****\n"
+#~ msgstr ""
+#~ "%s \n"
+#~ "**** ПЕРЕВІРКА джерела методу – СПРОБА 2 ****\n"

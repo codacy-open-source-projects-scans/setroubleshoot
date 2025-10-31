@@ -1,0 +1,645 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Dimitris Glezos <glezos@transifex.com>, 2011
+# Geert Warrink <geert.warrink@onsnet.nu>, 2009-2013
+# Peter van Egdom <p.van.egdom@gmail.com>, 2007, 2008, 2009
+# Richard E. van der Luit <nippur@fedoraproject.org>, 2012
+# Geert Warrink <geert.warrink@onsnet.nu>, 2017. #zanata
+# Vit Mojzis <vmojzis@redhat.com>, 2017. #zanata
+# Geert Warrink <geert.warrink@onsnet.nu>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2021-03-01 09:40+0000\n"
+"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
+"Language-Team: Dutch <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/setroubleshoot/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "SELinux probleemoplosser"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "Los SELinux toegangsweigeringen op"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr "policy;security;selinux;avc;permission;mac;alert;sealert;"
+
+#, python-format
+msgid "port %s"
+msgstr "poort %s"
+
+msgid "Unknown"
+msgstr "Onbekend"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+"%s \n"
+"**** Opgenomen AVC is toegestaan in het huidige beleid ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+"%s \n"
+"**** Opgenomen AVC wordt in het huidige beleid niet gecontroleerd. 'semodule "
+"-B' zet dontaudit regels aan ****\n"
+
+msgid "Must call policy_init first"
+msgstr "policy_init moet eerst aangeroepen worden"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+"%s \n"
+"**** Ongeldige AVC: slechte doelcontext ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+"%s \n"
+"**** Ongeldige AVC: slechte broncontext ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+"%s \n"
+"**** Ongeldige AVC: slecht type klas ****\n"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+"%s \n"
+"**** Ongeldige AVC: slechte permissie ****\n"
+
+msgid "Error during access vector computation"
+msgstr "Fout tijdens toegangsvectorberekening"
+
+msgid "SELinux Alert Browser"
+msgstr "SELinux Waarschuwingen Browser"
+
+msgid "The source process:"
+msgstr "Het bronproces:"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Geen"
+
+msgid "Attempted this access:"
+msgstr "Deze toegang werd geprobeerd:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "Setroubleshoot detailsvenster"
+
+msgid "Would you like to receive alerts?"
+msgstr "Wil je waarschuwingen ontvangen?"
+
+msgid "Notify Admin"
+msgstr "Geef bericht aan beheerder"
+
+msgid "Troubleshoot"
+msgstr "Troubleshoot"
+
+msgid "Details"
+msgstr "Details"
+
+msgid "SETroubleshoot Alert List"
+msgstr "SETroubleshoot waarschuwingenlijst"
+
+msgid "List All Alerts"
+msgstr "Laat alle waarschuwingen zien"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "Bron proces"
+
+msgid "Attempted Access"
+msgstr "Poging tot toegang"
+
+msgid "On this"
+msgstr "Op dit"
+
+msgid "Occurred"
+msgstr "Opgetreden"
+
+msgid "Last Seen"
+msgstr "Laatst gezien op"
+
+msgid "Status"
+msgstr "Status"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "Niet in staat toegang te geven."
+
+msgid "Notify"
+msgstr "Kennisgeven"
+
+msgid "Notify alert in the future."
+msgstr "Informeer in de toekomst over waarschuwingen."
+
+msgid "Ignore"
+msgstr "Negeren"
+
+msgid "Ignore alert in the future."
+msgstr "Waarschuwing in de toekomst negeren."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>Als je probeerde...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>Dan is dit de oplossing.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"Plug-in\n"
+"details"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"Rapporteer\n"
+"fout"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "Plug-in: %s "
+
+msgid "Unable to grant access."
+msgstr "Niet in staat toegang te geven."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "Waarschuwing %d van %d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "Voor deze %s:"
+
+msgid "N/A"
+msgstr "N.v.t."
+
+msgid "No Alerts"
+msgstr "Geen waarschuwingen"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux heeft een probleem ontdekt."
+
+msgid "Sealert Error"
+msgstr "Sealert fout"
+
+msgid "Sealert Message"
+msgstr "Sealert boodschap"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "ondertekening niet gevonden"
+
+msgid "multiple signatures matched"
+msgstr "meervoudige ondertekeningen pasten bij elkaar"
+
+msgid "id not found"
+msgstr "id niet gevonden"
+
+msgid "database not found"
+msgstr "database niet gevonden"
+
+msgid "item is not a member"
+msgstr "item is geen onderdeel"
+
+msgid "illegal to change user"
+msgstr "illegaal om gebruiker te veranderen"
+
+msgid "method not found"
+msgstr "methode niet gevonden"
+
+msgid "cannot create GUI"
+msgstr "kan GUI niet aanmaken"
+
+msgid "value unknown"
+msgstr "waarde onbekend"
+
+msgid "cannot open file"
+msgstr "kan bestand niet openen"
+
+msgid "invalid email address"
+msgstr "ongeldig email adres"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "socket fout"
+
+msgid "connection has been broken"
+msgstr "verbinding is verbroken"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "Ongeldig verzoek. De bestandsdescriptor is niet open"
+
+msgid "insufficient permission to modify user"
+msgstr "onvoldoende rechten om gebruiker te wijzigen"
+
+msgid "authentication failed"
+msgstr "authenticatie faalde"
+
+msgid "user prohibited"
+msgstr "gebruiker verboden"
+
+msgid "not authenticated"
+msgstr "niet geauthenticeerd"
+
+msgid "user lookup failed"
+msgstr "opzoeken gebruiker faalde"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "Oeps, %s loopt tegen een fout aan!"
+
+msgid "Error"
+msgstr "Fout"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+"Als je $SOURCE_BASE_PATH wilt toestaan om $ACCESS toegang te hebben tot de "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr " Voor complete SELinux boodschappen voer uit: sealert -l %s"
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr "De gebruiker (%s) kan geen data veranderen voor (%s)"
+
+msgid "Started"
+msgstr "Gestart"
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr "Audit luisteraar"
+
+msgid "Never Ignore"
+msgstr "Nooit negeren"
+
+msgid "Ignore Always"
+msgstr "Altijd negeren"
+
+msgid "Ignore After First Alert"
+msgstr "Negeer na eerste waarschuwing"
+
+msgid "directory"
+msgstr "map"
+
+msgid "semaphore"
+msgstr "semafoor"
+
+msgid "shared memory"
+msgstr "gedeeld geheugen"
+
+msgid "message queue"
+msgstr "wachtrij meldingen"
+
+msgid "message"
+msgstr "melding"
+
+msgid "file"
+msgstr "bestand"
+
+msgid "socket"
+msgstr "socket"
+
+msgid "process"
+msgstr "proces"
+
+msgid "process2"
+msgstr "proces 2"
+
+msgid "filesystem"
+msgstr "bestandssysteem"
+
+msgid "node"
+msgstr "node"
+
+msgid "capability"
+msgstr "mogelijkheid"
+
+msgid "capability2"
+msgstr "capability2"
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr "%s heeft een toelatend type (%s). Deze toegang was niet verboden."
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr "SELinux is in de toelatende modus. Deze toegang werd niet geweigerd."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr "SELinux belet %s om de %s toegang tot een proces te gebruiken."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr "SELinux belet %s om de '%s' toegang tot een proces te gebruiken."
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr "SELinux belet %s om de %s mogelijkheid te gebruiken."
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr "SELinux belet %s om de '%s' mogelijkheden te gebruiken."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr "SELinux belet %s %s toegang voor de %s gelabeld met %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr "SELinux belet %s '%s' toegang tot de %s gelabeld met %s."
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr "SELinux belet %s %s toegang op %s %s."
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr "SELinux belet %s '%s' toegang op %s %s."
+
+msgid "Additional Information:\n"
+msgstr "Aanvullende informatie:\n"
+
+msgid "Source Context"
+msgstr "Broncontext"
+
+msgid "Target Context"
+msgstr "Doelcontext"
+
+msgid "Target Objects"
+msgstr "Doelobjecten"
+
+msgid "Source"
+msgstr "Bron"
+
+msgid "Source Path"
+msgstr "Bronpad"
+
+msgid "Port"
+msgstr "Poort"
+
+msgid "Host"
+msgstr "Host"
+
+msgid "Source RPM Packages"
+msgstr "Bron RPM-pakketten"
+
+msgid "Target RPM Packages"
+msgstr "Doel RPM-pakketten"
+
+msgid "SELinux Policy RPM"
+msgstr "SELinux Beleid RPM"
+
+msgid "Local Policy RPM"
+msgstr "Lokale Beleid RPM"
+
+msgid "Selinux Enabled"
+msgstr "SELinux aangezet"
+
+msgid "Policy Type"
+msgstr "Beleidstype"
+
+msgid "Enforcing Mode"
+msgstr "Afdwingende modus"
+
+msgid "Host Name"
+msgstr "Hostnaam"
+
+msgid "Platform"
+msgstr "Platform"
+
+msgid "Alert Count"
+msgstr "Aantal waarschuwingen"
+
+msgid "First Seen"
+msgstr "Eerst gezien op"
+
+msgid "Local ID"
+msgstr "Locale ID"
+
+msgid "Raw Audit Messages"
+msgstr "Onbewerkte auditboodschappen"
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+"\n"
+"\n"
+"*****  Plugin %s (met %.4s vertrouwen) suggereert   "
+
+msgid "*"
+msgstr "*"
+
+msgid "\n"
+msgstr "\n"
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"Dan "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"Doe\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "Nieuwe SELinux beveiligingswaarschuwing"
+
+msgid "AVC denial, click icon to view"
+msgstr "AVC-weigering, klik op icoon om te bekijken"
+
+msgid "Dismiss"
+msgstr "Verwerp"
+
+msgid "Show"
+msgstr "Laat zien"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "SELinux AVC-weigering, klik om te bekijken"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+"SELinux Troubleshooter: Om te draaien vereist de applet dat SELinux aangezet "
+"is"
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr "SELinux niet aangezet, sealert draait niet op niet-SELinux systemen"
+
+msgid "Not fixable."
+msgstr "Niet te repareren."
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr "%s succesvol uitgevoerd"
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr "Plug-in %s niet geldig voor %s id"
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr "SELinux is niet aangezet, setroubleshootd gaat afsluiten..."
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr "afsplitsen #1 faalde: %d (%s)"
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+
+msgid "Troubleshoot selected alert"
+msgstr "Waarschuwing geselecteerd door Troubleshoot"
+
+msgid "Delete"
+msgstr "Verwijderen"
+
+msgid "Delete Selected Alerts"
+msgstr "Verwijder geselecteerde waarschuwingen"
+
+msgid "Close"
+msgstr "Sluiten"
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux heeft een probleem gedetecteerd.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "Zet alle waarschuwingspop-ups aan."
+
+msgid "Turn off alert pop-ups."
+msgstr "Zet alle waarschuwingspop-ups uit."
+
+msgid "On this file:"
+msgstr "Over dit bestand:"
+
+msgid "label"
+msgstr "label"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr ""
+"Lees informatie over het oplossen van de waarschuwing.  Beheerrechten kunnen "
+"nodig zijn om het te verhelpen."
+
+msgid "Email alert to system administrator."
+msgstr "Email waarschuwing naar de systeembeheerder."
+
+msgid "Delete current alert from the database."
+msgstr "Verwijder huidige waarschuwing uit de database."
+
+msgid "Previous"
+msgstr "Vorige"
+
+msgid "Show previous alert."
+msgstr "Laat vorige waarschuwing zien."
+
+msgid "Next"
+msgstr "Volgende"
+
+msgid "Show next alert."
+msgstr "Laat volgende waarschuwing zien."
+
+msgid "List all alerts in the database."
+msgstr "Laat alle waarschuwingen in de database zien."
+
+msgid "Review and Submit Bug Report"
+msgstr "Bekijk en dien een foutrapport in"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr ""
+"<span size='large' weight='bold'>Bekijk en dien een foutrapport in</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+"Je wilt de fout-output, die aan dit foutrapport toegevoegd wordt, misschien "
+"bekijken en veranderen om gevoelige data te verwijderen."
+
+msgid "Included error output:"
+msgstr "Bijgesloten fout-output:"
+
+msgid "Submit Report"
+msgstr "Dien rapport in"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr ""
+"Deze bewerking is klaar.  The quick brown fox jumped over the lazy dog."
+
+msgid "Success!"
+msgstr "Succes!"
+
+msgid "button"
+msgstr "knop"

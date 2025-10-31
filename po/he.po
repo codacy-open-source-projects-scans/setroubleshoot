@@ -1,0 +1,611 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Elad Alfassa <el.il@doom.co.il>, 2011
+# Niv Baehr <bloop93@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 13:59+0200\n"
+"PO-Revision-Date: 2016-09-14 06:12-0400\n"
+"Last-Translator: Niv Baehr <bloop93@gmail.com>\n"
+"Language-Team: Hebrew (http://www.transifex.com/projects/p/fedora/language/"
+"he/)\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 4.6.2\n"
+
+msgid "SELinux Troubleshooter"
+msgstr "פותר בעיות SELinux"
+
+msgid "Troubleshoot SELinux access denials"
+msgstr "פתרון בעיות הנגרמות עקב דחיות גישה של SELinux"
+
+msgid "policy;security;selinux;avc;permission;mac;alert;sealert;"
+msgstr ""
+"policy;security;selinux;avc;permission;mac;alert;sealert;התראות;התרעות;"
+"אזהרות;התרעה;התראה;פתרון;בעיות;מדיניות;גישה;הרשאות;הרשאה;כתובת;אבטחה;"
+
+#, python-format
+msgid "port %s"
+msgstr "פתחה %s"
+
+msgid "Unknown"
+msgstr "לא ידוע"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is allowed in current policy ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Recorded AVC is dontaudited in current policy. 'semodule -B' will turn "
+"on dontaudit rules ****\n"
+msgstr ""
+
+msgid "Must call policy_init first"
+msgstr "יש לקרוא תחילה ל־ policy_init"
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad target context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad source context ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad type class ****\n"
+msgstr ""
+
+#, python-format
+msgid ""
+"%s \n"
+"**** Invalid AVC: bad permission ****\n"
+msgstr ""
+
+msgid "Error during access vector computation"
+msgstr "שגיאה במהלך גישה לחישובי וקטורים"
+
+msgid "SELinux Alert Browser"
+msgstr "דפדפן התראות SELinux"
+
+msgid "The source process:"
+msgstr "תהליך המקור:"
+
+msgid "Yes"
+msgstr "כן"
+
+msgid "No"
+msgstr "לא"
+
+msgid "Attempted this access:"
+msgstr "גישה שנוסתה:"
+
+msgid "SETroubleshoot Details Window"
+msgstr "חלון פרטי SETroubleshoot"
+
+msgid "Would you like to receive alerts?"
+msgstr "האם ברצונכם לקבל התראות?"
+
+msgid "Notify Admin"
+msgstr "הודעה למנהל"
+
+msgid "Troubleshoot"
+msgstr "פתרון בעיות"
+
+msgid "Details"
+msgstr "פרטים"
+
+msgid "SETroubleshoot Alert List"
+msgstr "רשימת התראות SETroubleshoot"
+
+msgid "List All Alerts"
+msgstr "רשימת כל ההתראות"
+
+msgid "#"
+msgstr "#"
+
+msgid "Source Process"
+msgstr "תהליך המקור"
+
+msgid "Attempted Access"
+msgstr "ניסיון גישה"
+
+msgid "On this"
+msgstr "בעניין"
+
+msgid "Occurred"
+msgstr "אירעה"
+
+msgid "Last Seen"
+msgstr ""
+
+msgid "Status"
+msgstr "מצב"
+
+#, fuzzy, python-format
+#| msgid "Unable to grant access."
+msgid ""
+"Unable to notify admin.\n"
+"\n"
+"%s"
+msgstr "לא ניתן להעניק גישה."
+
+msgid "Notify"
+msgstr "הודעה"
+
+msgid "Notify alert in the future."
+msgstr "קבלת התראה בעתיד."
+
+msgid "Ignore"
+msgstr "התעלם"
+
+msgid "Ignore alert in the future."
+msgstr "התעלמות מהתראה בעתיד."
+
+msgid "<b>If you were trying to...</b>"
+msgstr "<b>אם ניסיתם...</b>"
+
+msgid "<b>Then this is the solution.</b>"
+msgstr "<b>אז זהו הפתרון.</b>"
+
+msgid ""
+"Plugin\n"
+"Details"
+msgstr ""
+"פרטי\n"
+"תוסף"
+
+msgid ""
+"Report\n"
+"Bug"
+msgstr ""
+"דיווח\n"
+"תקלה"
+
+#, python-format
+msgid "Plugin: %s "
+msgstr "תוסף: %s "
+
+msgid "Unable to grant access."
+msgstr "לא ניתן להעניק גישה."
+
+#, python-format
+msgid "Alert %d of %d"
+msgstr "התראה %d מתוך %d"
+
+#, python-format
+msgid "On this %s:"
+msgstr "בעניין %s:"
+
+msgid "N/A"
+msgstr "לא זמין"
+
+msgid "No Alerts"
+msgstr "אין התראות"
+
+msgid "SELinux has detected a problem."
+msgstr "SELinux זיהה בעיה."
+
+msgid "Sealert Error"
+msgstr "שגיאת Sealert"
+
+msgid "Sealert Message"
+msgstr "הודעת Sealert"
+
+#. -----------------------------------------------------------------------------
+msgid "signature not found"
+msgstr "לא נמצאה חתימה"
+
+msgid "multiple signatures matched"
+msgstr "הותאמו מספר חתימות"
+
+msgid "id not found"
+msgstr "מזהה לא נמצא"
+
+msgid "database not found"
+msgstr "מסד נתונים לא נמצא"
+
+msgid "item is not a member"
+msgstr "פריט אינו איבר"
+
+msgid "illegal to change user"
+msgstr "החלפת המשתמש אינה חוקית"
+
+msgid "method not found"
+msgstr "שיטה לא נמצאה"
+
+msgid "cannot create GUI"
+msgstr "לא ניתן ליצור ממשק משתמש גרפי (GUI)"
+
+msgid "value unknown"
+msgstr "ערך לא ידוע"
+
+msgid "cannot open file"
+msgstr "לא ניתן לפתוח קובץ"
+
+msgid "invalid email address"
+msgstr "כתובת דוא״ל לא תקפה"
+
+#. gobject IO Errors
+msgid "socket error"
+msgstr "שגיאת שקע"
+
+msgid "connection has been broken"
+msgstr "חיבור נשבר"
+
+msgid "Invalid request. The file descriptor is not open"
+msgstr "בקשה בלתי תקפה. מתאר הקובץ לא נפתח"
+
+msgid "insufficient permission to modify user"
+msgstr "הרשאות לא מספיקות לשינוי משתמש"
+
+msgid "authentication failed"
+msgstr "אימות נכשל"
+
+msgid "user prohibited"
+msgstr "נאסר על ידי משתמש"
+
+msgid "not authenticated"
+msgstr "לא אומת"
+
+msgid "user lookup failed"
+msgstr "חיפוש משתמשים נכשל"
+
+#, fuzzy, c-format, python-format
+#| msgid "Opps, %s hit an error!"
+msgid "Oops, %s hit an error!"
+msgstr "אופס, %s נתקל בשגיאה!"
+
+msgid "Error"
+msgstr "שגיאה"
+
+msgid ""
+"If you want to allow $SOURCE_BASE_PATH to have $ACCESS access on the "
+"$TARGET_BASE_PATH $TARGET_CLASS"
+msgstr ""
+
+#, python-format
+msgid " For complete SELinux messages run: sealert -l %s"
+msgstr ""
+
+#, python-format
+msgid "The user (%s) cannot modify data for (%s)"
+msgstr ""
+
+msgid "Started"
+msgstr ""
+
+msgid "AVC"
+msgstr "AVC"
+
+msgid "Audit Listener"
+msgstr ""
+
+msgid "Never Ignore"
+msgstr ""
+
+msgid "Ignore Always"
+msgstr ""
+
+msgid "Ignore After First Alert"
+msgstr ""
+
+msgid "directory"
+msgstr ""
+
+msgid "semaphore"
+msgstr ""
+
+msgid "shared memory"
+msgstr ""
+
+msgid "message queue"
+msgstr ""
+
+msgid "message"
+msgstr ""
+
+msgid "file"
+msgstr ""
+
+msgid "socket"
+msgstr ""
+
+msgid "process"
+msgstr ""
+
+msgid "process2"
+msgstr ""
+
+msgid "filesystem"
+msgstr ""
+
+msgid "node"
+msgstr ""
+
+msgid "capability"
+msgstr ""
+
+msgid "capability2"
+msgstr ""
+
+#, python-format
+msgid "%s has a permissive type (%s). This access was not denied."
+msgstr ""
+
+msgid "SELinux is in permissive mode. This access was not denied."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s access on a process."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' accesses on a process."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from using the %s capability."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from using the '%s' capabilities."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s labeled %s."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s labeled %s."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from %s access on the %s %s."
+msgstr ""
+
+#, python-format
+msgid "SELinux is preventing %s from '%s' accesses on the %s %s."
+msgstr ""
+
+msgid "Additional Information:\n"
+msgstr ""
+
+msgid "Source Context"
+msgstr ""
+
+msgid "Target Context"
+msgstr ""
+
+msgid "Target Objects"
+msgstr ""
+
+msgid "Source"
+msgstr ""
+
+msgid "Source Path"
+msgstr ""
+
+msgid "Port"
+msgstr "פתחה"
+
+msgid "Host"
+msgstr "מארח"
+
+msgid "Source RPM Packages"
+msgstr "חבילות RPM מקור"
+
+msgid "Target RPM Packages"
+msgstr "חבילות RPM יעד"
+
+msgid "SELinux Policy RPM"
+msgstr ""
+
+msgid "Local Policy RPM"
+msgstr ""
+
+msgid "Selinux Enabled"
+msgstr ""
+
+msgid "Policy Type"
+msgstr ""
+
+msgid "Enforcing Mode"
+msgstr ""
+
+msgid "Host Name"
+msgstr ""
+
+msgid "Platform"
+msgstr ""
+
+msgid "Alert Count"
+msgstr ""
+
+msgid "First Seen"
+msgstr ""
+
+msgid "Local ID"
+msgstr ""
+
+msgid "Raw Audit Messages"
+msgstr ""
+
+#, python-format
+msgid ""
+"\n"
+"\n"
+"*****  Plugin %s (%.4s confidence) suggests   "
+msgstr ""
+
+msgid "*"
+msgstr ""
+
+msgid "\n"
+msgstr ""
+
+msgid ""
+"\n"
+"Then "
+msgstr ""
+"\n"
+"ואז "
+
+msgid ""
+"\n"
+"Do\n"
+msgstr ""
+"\n"
+"יש לבצע\n"
+
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+msgid "New SELinux security alert"
+msgstr "התראת אבטחת SELux חדשה"
+
+msgid "AVC denial, click icon to view"
+msgstr "דחיית AVC, יש ללחוץ על הצלמית לצפייה"
+
+msgid "Dismiss"
+msgstr ""
+
+msgid "Show"
+msgstr "הצגה"
+
+#. set tooltip
+msgid "SELinux AVC denial, click to view"
+msgstr "דחיית AVC, יש ללחוץ לצפייה"
+
+msgid "SELinux Troubleshooter: Applet requires SELinux be enabled to run"
+msgstr ""
+
+msgid "SELinux not enabled, sealert will not run on non SELinux systems"
+msgstr ""
+
+msgid "Not fixable."
+msgstr ""
+
+#, c-format
+msgid "Successfully ran %s"
+msgstr ""
+
+#, c-format
+msgid "Plugin %s not valid for %s id"
+msgstr ""
+
+msgid "SELinux not enabled, setroubleshootd exiting..."
+msgstr ""
+
+#, c-format
+msgid "fork #1 failed: %d (%s)"
+msgstr ""
+
+msgid ""
+"Copyright (c) 2010\n"
+"Thomas Liu <tliu@redhat.com>\n"
+"Máirín Duffy <duffy@redhat.com>\n"
+"Daniel Walsh <dwalsh@redhat.com>\n"
+"John Dennis <jdennis@redhat.com>\n"
+msgstr ""
+
+msgid "Troubleshoot selected alert"
+msgstr "פתרון בעיות עבור ההתראה שנבחרה"
+
+msgid "Delete"
+msgstr ""
+
+msgid "Delete Selected Alerts"
+msgstr "מחיקת התראות שנבחרו"
+
+msgid "Close"
+msgstr ""
+
+msgid "<b>SELinux has detected a problem.</b>"
+msgstr "<b>SELinux זיהה בעיה.</b>"
+
+msgid "Turn on alert pop-ups."
+msgstr "הפעלת התראות צצות."
+
+msgid "Turn off alert pop-ups."
+msgstr "כיבוי התראות צצות."
+
+msgid "On this file:"
+msgstr "בקובץ זה:"
+
+msgid "label"
+msgstr "תווית"
+
+msgid ""
+"Read alert troubleshoot information.  May require administrative privileges "
+"to remedy."
+msgstr "קריאת מידע פתרון הבעיות.  התרופה עלולה לדרוש זכויות ניהול."
+
+msgid "Email alert to system administrator."
+msgstr "שליחת ההתראה למנהל המערכת בדואר אלקטרוני."
+
+msgid "Delete current alert from the database."
+msgstr "מחיקת ההתראה הנוכחית מבסיס הנתונים."
+
+msgid "Previous"
+msgstr ""
+
+msgid "Show previous alert."
+msgstr "הצגת ההתראה הקודמת."
+
+msgid "Next"
+msgstr ""
+
+msgid "Show next alert."
+msgstr "הצגת ההתראה הבאה."
+
+msgid "List all alerts in the database."
+msgstr "פירוט כל ההתראות בבסיס הנתונים."
+
+msgid "Review and Submit Bug Report"
+msgstr "סקירה ושליחת דו״ח תקלה"
+
+msgid "<span size='large' weight='bold'>Review and Submit Bug Report</span>"
+msgstr "<span size='large' weight='bold'>סקירה ושליחת דו״ח תקלה</span>"
+
+msgid ""
+"You may wish to review the error output that will be included in this bug "
+"report and modify it to exclude any sensitive data below."
+msgstr ""
+
+msgid "Included error output:"
+msgstr "פלט השגיאה הכלול:"
+
+msgid "Submit Report"
+msgstr "שליחת דו״ח"
+
+msgid ""
+"This operation was completed.  The quick brown fox jumped over the lazy dog."
+msgstr "הפעולה הושלמה.  השועל החום הזריז זינק מעל לכלב העצלן."
+
+msgid "Success!"
+msgstr "הצלחה!"
+
+msgid "button"
+msgstr "לחצן"
