@@ -828,8 +828,8 @@ def RunFaultServer(timeout=10):
             alert_receiver = TestPluginReportReceiver(host_database)
 
         # Create a synchronized queue for analysis requests
-        import six.moves.queue
-        analysis_queue = six.moves.queue.Queue(0)
+        import queue
+        analysis_queue = queue.Queue(0)
 
         # Create a thread to perform analysis, it takes AVC objects off
         # the analysis queue and runs the plugins against the

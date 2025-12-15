@@ -5,7 +5,7 @@ from setuptools import setup
 
 
 setup(name="setroubleshoot",
-      version="3.3.33",
+      version="3.3.36",
       description="Python SELinux Troubleshooter",
       author="Dan Walsh", author_email="dwalsh@redhat.com",
       url='https://gitlab.com/setroubleshoot/setroubleshoot/',

@@ -19,7 +19,6 @@ from __future__ import print_function
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 
-import six
 import libxml2
 import re
 import syslog
@@ -576,7 +575,7 @@ class SocketAddress(object):
 
     @staticmethod
     def map_family(family):
-        if isinstance(family, six.string_types):
+        if isinstance(family, str):
             family = family.lower()
             family = {'unix': Socket.AF_UNIX, 'inet': Socket.AF_INET}.get(family)
             return family

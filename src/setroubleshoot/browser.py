@@ -25,7 +25,6 @@ from math import pi
 from subprocess import *
 from gettext import ngettext as P_
 from setroubleshoot.config import parse_config_setting, get_config
-import six
 import sys
 domain = get_config('general', 'i18n_text_domain')
 localedir = get_config('general', 'i18n_locale_dir')
@@ -51,7 +50,7 @@ except AttributeError:
 import sys
 import os
 from xml.dom import minidom
-from six.moves.xmlrpc_client import ProtocolError
+from xmlrpc.client import ProtocolError
 
 import gi
 gi.require_version('Gdk', '3.0')

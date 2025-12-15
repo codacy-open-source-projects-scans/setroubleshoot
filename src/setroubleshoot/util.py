@@ -1,5 +1,4 @@
 from __future__ import absolute_import
-from six.moves import range
 # Authors: John Dennis <jdennis@redhat.com>
 #
 # Copyright (C) 2006,2007,2008 Red Hat, Inc.
@@ -69,7 +68,6 @@ __all__ = [
 ]
 
 import bz2
-import six
 import datetime
 from dasbus.connection import SystemMessageBus
 import glob
@@ -256,7 +254,7 @@ def preextend_list(requested_length, _list=None, default=None):
 
 
 def fmt_obj(obj):
-    if isinstance(obj, six.string_types):
+    if isinstance(obj, str):
         return obj
     elif isinstance(obj, (list, tuple)):
         return "[" + " ".join(["%s" % fmt_obj(x) for x in obj]) + "]"
@@ -978,7 +976,7 @@ class TimeStamp:
     def __init__(self, t=None):
         if t is None:
             self._dt = self.now(local=False)
-        elif isinstance(t, six.string_types):
+        elif isinstance(t, str):
             self.parse(t)
         elif isinstance(t, float):
             self._dt = datetime.datetime.fromtimestamp(t, self.utc_tz)

@@ -9,7 +9,6 @@ from gi.repository import GObject
 import errno as Errno
 import gettext
 import os
-import six.moves.queue
 import re
 import signal
 import selinux

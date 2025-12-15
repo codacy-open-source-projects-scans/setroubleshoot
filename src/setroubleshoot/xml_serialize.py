@@ -50,7 +50,6 @@ from setroubleshoot.config import get_config
 from setroubleshoot.errcode import *
 from setroubleshoot.util import *
 
-from six import add_metaclass, string_types
 
 #------------------------------------------------------------------------
 
@@ -79,7 +78,7 @@ def boolean(value):
     'convert value to bool'
     if isinstance(value, bool):
         return value
-    elif isinstance(value, string_types):
+    elif isinstance(value, str):
         value = value.lower()
         if value in ('t', 'true', '1'):
             return True
@@ -228,8 +227,7 @@ class XmlSerializeMetaData(type):
             cls._names.sort()
 
 
-@add_metaclass(XmlSerializeMetaData)
-class XmlSerialize(object):
+class XmlSerialize(object, metaclass=XmlSerializeMetaData):
 
     def __init__(self):
         self._init_defaults()
@@ -316,7 +314,7 @@ class XmlSerialize(object):
             need_to_close = False
             if f is None:
                 f = sys.stdout
-            elif isinstance(f, string_types):
+            elif isinstance(f, str):
                 f = open(f, "w")
                 need_to_close = True
             elif isinstance(f, FileType):

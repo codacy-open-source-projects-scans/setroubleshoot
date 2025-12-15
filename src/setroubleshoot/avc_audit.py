@@ -32,7 +32,7 @@ import select
 import selinux
 import socket as Socket
 import fcntl
-from six.moves import _thread
+import _thread
 import threading
 import time
 from functools import cmp_to_key

@@ -29,7 +29,7 @@ build:debian:
     - apt-get update
     - >
       apt-get -y install autoconf automake libglib2.0-dev libdbus-glib-1-dev libnotify-dev
-      libgtk-3-dev gcc python3-selinux python3-gi python3-dbus python3-six python3-sepolicy
+      libgtk-3-dev gcc python3-selinux python3-gi python3-dbus python3-sepolicy
       xdg-utils make intltool libaudit-dev libauparse-dev python3-pip python3-dasbus
       python3-setuptools
     - ./autogen.sh

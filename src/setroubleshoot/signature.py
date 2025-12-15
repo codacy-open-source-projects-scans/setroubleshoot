@@ -21,10 +21,8 @@ from __future__ import print_function
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 
-import six
 import syslog
 from subprocess import *
-from six.moves import range
 from functools import cmp_to_key
 import gettext
 from setroubleshoot.config import parse_config_setting, get_config

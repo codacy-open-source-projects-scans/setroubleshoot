@@ -1,6 +1,4 @@
 from __future__ import absolute_import
-import six
-from six.moves import range
 import sys
 # Authors: John Dennis <jdennis@redhat.com>
 #          Thomas Liu <tliu@redhat.com
@@ -34,7 +32,6 @@ __all__ = ['derive_record_format',
            'compute_avcs',
            ]
 
-import six
 import audit
 import struct
 import os
@@ -163,7 +160,7 @@ class AvcContext(XmlSerialize):
 
     def __init__(self, data):
         super(AvcContext, self).__init__()
-        if isinstance(data, six.string_types):
+        if isinstance(data, str):
             fields = data.split(':')
             if len(fields) >= 3:
                 self.user = fields[0]
