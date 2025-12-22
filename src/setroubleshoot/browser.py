@@ -548,11 +548,15 @@ class BrowserApplet:
             report_button.connect("clicked", self.fix_bug, alert.local_id, plugin.analysis_id)
             vbox.add(report_button)
 
-        elif plugin.report_bug and has_libreport:
+        elif plugin.report_bug:
             report_button = Gtk.Button()
             report_button.set_label(_("Report\nBug"))
             report_button.show()
-            report_button.connect("clicked", self.report_bug, alert)
+            if has_libreport:
+                report_button.connect("clicked", self.report_bug, alert)
+            else:
+                report_button.set_sensitive(False)
+                report_button.set_tooltip_text(_("Please install python3-libreport to enable bug reporting."))
             vbox.add(report_button)
 
         vbox.set_sensitive(highlight)
