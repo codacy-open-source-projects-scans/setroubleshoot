@@ -882,10 +882,6 @@ class SEEmailRecipientSet(XmlSerialize):
 
 
 if __name__ == '__main__':
-    import libxml2
-    #memory debug specific
-    libxml2.debugMemory(1)
-
     xml_file = 'audit_listener_database.xml'
 
     sigs = SEFaultSignatureSet()
@@ -895,11 +891,3 @@ if __name__ == '__main__':
     print((record.record_type))
     print(("siginfo.audit_event=%s" % siginfo.audit_event))
     print(sigs)
-
-    #memory debug specific
-    libxml2.cleanupParser()
-    if libxml2.debugMemory(1) == 0:
-        print("Memory OK")
-    else:
-        print(("Memory leak %d bytes" % (libxml2.debugMemory(1))))
-        libxml2.dumpMemory()

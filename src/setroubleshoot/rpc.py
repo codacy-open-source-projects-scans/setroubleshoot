@@ -19,7 +19,7 @@ from __future__ import print_function
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 
-import libxml2
+import xml.etree.ElementTree as ET
 import re
 import syslog
 
@@ -33,7 +33,6 @@ from types import *
 
 from setroubleshoot.config import get_config
 from setroubleshoot.errcode import *
-from setroubleshoot.xml_serialize import xml_child_elements, xml_get_child_elements_by_name
 from setroubleshoot.util import *
 
 __all__ = [
@@ -60,7 +59,6 @@ __all__ = [
 content_length_re = re.compile(r"content-length:(\d+)")
 header_end_re = re.compile("\r\n\r\n")
 header_field_re = re.compile("([a-zA-Z0-9_-]+):(.*)\r\n")
-i18n_encoding = get_config('general', 'i18n_encoding')
 
 #------------------------------ Utility Functions -----------------------------
 
@@ -146,84 +144,68 @@ def rpc_message(rpc_id, type, body):
     return hdr + body
 
 
-def convert_rpc_xml_to_args(cmd):
-    interface = method = args = doc = None
-    try:
-        doc = libxml2.parseDoc(cmd)
-        cmd = doc.getRootElement()
+def convert_rpc_xml_to_args(xml):
+    interface = method = args = None
+    cmd = ET.fromstring(xml)
 
-        interface = cmd.prop('interface')
-        method = cmd.prop('method')
+    interface = cmd.get('interface')
+    method = cmd.get('method')
 
-        # FIXME: If the interface.method is not known you get back a dummy
-        # rpc_def with zero parameters defined, but if the incoming call has
-        # parameters we'll try to iterate through them generating an IndexError
-        # exception when this code executes: rpc_def.positional_args[arg_position]
-        #
-        # We either need to detect and report the failed rpc_def lookup earlier
-        # and/or we need to not iterate on unknown parameters.
-        rpc_def = interface_registry.get_rpc_def(interface, method)
+    # FIXME: If the interface.method is not known you get back a dummy
+    # rpc_def with zero parameters defined, but if the incoming call has
+    # parameters we'll try to iterate through them generating an IndexError
+    # exception when this code executes: rpc_def.positional_args[arg_position]
+    #
+    # We either need to detect and report the failed rpc_def lookup earlier
+    # and/or we need to not iterate on unknown parameters.
+    rpc_def = interface_registry.get_rpc_def(interface, method)
 
-        arg_nodes = xml_get_child_elements_by_name(cmd, 'arg')
-        args = preextend_list(len(arg_nodes))
-        for arg_node in arg_nodes:
-            arg_name = arg_node.prop('name')
-            arg_type = arg_node.prop('type')
-            arg_position = int(arg_node.prop('position'))
-            rpc_arg = rpc_def.positional_args[arg_position]
-            if rpc_arg.obj_type is not None:
-                if arg_type == 'xml':
-                    arg_value = rpc_arg.obj_type(arg_node, obj_name=arg_name)
-                else:
-                    arg_value = rpc_arg.obj_type(arg_node.content)
+    arg_nodes = cmd.findall('arg')
+    args = preextend_list(len(arg_nodes))
+    for arg_node in arg_nodes:
+        arg_name = arg_node.get('name')
+        arg_type = arg_node.get('type')
+        arg_position = int(arg_node.get('position'))
+        rpc_arg = rpc_def.positional_args[arg_position]
+        if rpc_arg.obj_type is not None:
+            if arg_type == 'xml':
+                arg_value = rpc_arg.obj_type(arg_node, obj_name=arg_name)
             else:
-                arg_value = arg_node.content
-            args[arg_position] = arg_value
-
-    finally:
-        if doc is not None:
-            doc.freeDoc()
+                arg_value = rpc_arg.obj_type(arg_node.text or '')
+        else:
+            arg_value = arg_node.text or ''
+        args[arg_position] = arg_value
 
     return interface, method, args
 
 
 def convert_rpc_to_xml(rpc_id, rpc_def, *args):
-    text_doc = doc = None
-    try:
-        interface = rpc_def.interface
-        method = rpc_def.method
+    interface = rpc_def.interface
+    method = rpc_def.method
 
-        doc = libxml2.newDoc('1.0')
-        root = libxml2.newNode('cmd')
-        root.setProp('interface', interface)
-        root.setProp('method', method)
-        doc.setRootElement(root)
+    root = ET.Element('cmd')
+    root.set('interface', interface)
+    root.set('method', method)
 
-        position = 0
-        for rpc_arg in rpc_def.positional_args:
-            arg_name = rpc_arg.name
-            arg_value = args[position]
-            arg_node = libxml2.newNode('arg')
-            root.addChild(arg_node)
-            arg_node.setProp('name', arg_name)
-            arg_node.setProp('position', str(position))
-            if isinstance(arg_value, libxml2.xmlNode):
-                arg_node.setProp('type', 'xml')
-                arg_node.addChild(arg_value)
-            elif hasattr(arg_value, 'get_xml_nodes'):
-                arg_node.setProp('type', 'xml')
-                arg_node.addChild(arg_value.get_xml_nodes(doc, arg_name))
-            else:
-                arg_node.setProp('type', 'string')
-                arg_node.addContent(str(arg_value))
-            position += 1
-        root.setProp('arg_count', str(position))
-        text_doc = doc.serialize(encoding=i18n_encoding, format=1)
-    finally:
-        if doc is not None:
-            doc.freeDoc()
-
-    return text_doc
+    position = 0
+    for rpc_arg in rpc_def.positional_args:
+        arg_name = rpc_arg.name
+        arg_value = args[position]
+        arg_node = ET.SubElement(root, 'arg')
+        arg_node.set('name', arg_name)
+        arg_node.set('position', str(position))
+        if isinstance(arg_value, ET.Element):
+            arg_node.set('type', 'xml')
+            arg_node.append(arg_value)
+        elif hasattr(arg_value, 'get_xml_nodes'):
+            arg_node.set('type', 'xml')
+            arg_node.append(arg_value.get_xml_nodes(arg_name))
+        else:
+            arg_node.set('type', 'string')
+            arg_node.text = str(arg_value)
+        position += 1
+    root.set('arg_count', str(position))
+    return ET.tostring(root, encoding="unicode")
 
 #-----------------------------------------------------------------------------
 

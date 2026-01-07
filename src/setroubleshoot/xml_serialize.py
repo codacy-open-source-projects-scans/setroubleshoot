@@ -24,26 +24,15 @@ from __future__ import absolute_import
 # stringDecodeEntities
 
 __all__ = [
-    'string_to_xmlnode',
-    'string_to_cdata_xmlnode',
-
     'validate_database_doc',
     'boolean',
-    'xml_attributes',
-    'xml_attribute_dict',
-    'xml_child_elements_iter',
-    'xml_child_elements',
-    'xml_get_child_element_by_name',
-    'xml_get_child_elements_by_name',
-    'xml_child_element_names',
-    'xml_has_child_elements',
 
     'XmlSerialize',
 ]
 
 import sys
 from types import *
-import libxml2
+import xml.etree.ElementTree as ET
 
 import syslog
 from setroubleshoot.config import get_config
@@ -62,11 +51,11 @@ def validate_database_doc(doc):
     if doc is None:
         log_debug("validate_database_doc: doc is empty, validate fails")
         return False
-    root_node = doc.getRootElement()
+    root_node = doc.getroot()
     if root_node is None:
         log_debug("validate_database_doc: root is empty, validate fails")
         return False
-    version = root_node.prop('version')
+    version = root_node.get('version')
     if version is None:
         log_debug("validate_database_doc: version is empty, validate fails")
         return False
@@ -91,88 +80,7 @@ def boolean(value):
     else:
         raise ValueError("cannot convert (%s) to boolean" % value)
 
-
-def string_to_xmlnode(doc, value):
-    return libxml2.newText(str(value))
-
-
-def string_to_cdata_xmlnode(doc, value):
-    return doc.newCDataBlock(value, len(value))
-
-# newChild() content is a string, which will be added as children
-
-# addChild() adds xmlNode
-
-#    newChild(None, name, stringGetNodeList(value))
-# newTextChild --> newDocRawNode --> newDocNode;newDocText --> newText --> strdup(content)
-# newChild --> newDocNode --> newNode;stringGetNodeList(content) # note: this inserts entity nodes if content contains &;
-
-# xmlEncodeEntitiesReentrant called from xmlNodeListGetString
-# xmlEncodeSpecialChars called from xmlNodeListGetRawString
 #------------------------------------------------------------------------
-
-
-def xml_attributes(node):
-    prop = node.get_properties()
-    while prop:
-        yield prop.get_name(), prop.get_content()
-        prop = prop.get_next()
-
-
-def xml_attribute_dict(node):
-    props = {}
-    for name, value in xml_attributes(node):
-        props[name] = value
-    return props
-
-
-def xml_child_elements_iter(node):
-    child = node.get_children()
-    while child:
-        if child.get_type() == 'element':
-            yield child
-        child = child.get_next()
-
-
-def xml_get_child_element_by_name(node, name):
-    child = node.get_children()
-    while child:
-        if child.get_type() == 'element':
-            if child.get_name() == name:
-                return child
-        child = child.get_next()
-    return None
-
-
-def xml_get_child_elements_by_name(node, name):
-    elements = []
-    child = node.get_children()
-    while child:
-        if child.get_type() == 'element':
-            if child.get_name() == name:
-                elements.append(child)
-        child = child.get_next()
-    return elements
-
-
-def xml_child_elements(node):
-    return list(xml_child_elements_iter(node))
-
-
-def xml_child_element_names(node):
-    return [e.get_name() for e in xml_child_elements_iter(node)]
-
-
-def xml_has_child_elements(node):
-    child = node.get_children()
-    while child:
-        if child.get_type() == 'element':
-            return True
-        child = child.get_next()
-    return False
-
-#------------------------------------------------------------------------
-
 
 class XmlSerializeMetaData(type):
 
@@ -197,7 +105,7 @@ class XmlSerializeMetaData(type):
             #print "found in class %s" % classname
 
         def wrapped_init(*args, **kwds):
-            if len(args) == 2 and isinstance(args[1], libxml2.xmlNode):
+            if len(args) == 2 and isinstance(args[1], ET.Element):
                 xml_init(*args, **kwds)
                 if _init_postprocess is not None:
                     _init_postprocess(args[0])
@@ -233,7 +141,7 @@ class XmlSerialize(object, metaclass=XmlSerializeMetaData):
         self._init_defaults()
 
     def __str__(self):
-        return self.get_xml_text_doc()
+        return ET.tostring(self.get_xml_nodes(), encoding="unicode")
 
     def _init_defaults(self):
         # Initialize each known class variable to avoid KeyError on access
@@ -260,95 +168,66 @@ class XmlSerialize(object, metaclass=XmlSerializeMetaData):
         return(elements, attributes)
 
     def get_xml_doc(self, obj_name=None):
-        doc = libxml2.newDoc("1.0")
-        root = self.get_xml_nodes(doc, obj_name)
-        doc.setRootElement(root)
-        return doc
-
-    def get_xml_text_doc(self, obj_name=None):
-        doc = text_doc = None
-        try:
-            doc = self.get_xml_doc(obj_name)
-            text_doc = doc.serialize(encoding=i18n_encoding, format=1)
-        finally:
-            if doc is not None:
-                doc.freeDoc()
-        return text_doc
+        root = self.get_xml_nodes(obj_name)
+        return ET.ElementTree(root)
 
     def read_xml(self, buf, obj_name=None):
-        doc = None
         try:
-            try:
-                doc = libxml2.parseDoc(buf.strip())
-                root_node = doc.getRootElement()
-                self.init_from_xml_node(doc, obj_name)
-            except libxml2.parserError as e:
-                syslog.syslog(syslog.LOG_ERR, "read_xml() libxml2.parserError: %s" % e)
-                return
-        finally:
-            if doc is not None:
-                doc.freeDoc()
+            root = ET.fromstring(buf.strip())
+            assert root.tag == obj_name
+            self.init_from_xml_node(root)
+        except ET.ParseError as e:
+            syslog.syslog(syslog.LOG_ERR, "read_xml() xml.etree.ElementTree.ParseError: %s" % e)
+            return
 
     def read_xml_file(self, xmlfile, obj_name=None, validate_doc=None):
-        doc = None
         try:
-            try:
-                doc = libxml2.parseFile(xmlfile)
-                if validate_doc:
-                    if not validate_doc(doc):
-                        return False
-                self.init_from_xml_node(doc, obj_name)
-            except libxml2.parserError as e:
-                syslog.syslog(syslog.LOG_ERR, "read_xml_file() libxml2.parserError: %s" % e)
-                return False
-            except Exception as e:
-                syslog.syslog(syslog.LOG_ERR, "read_xml_file() error: %s" % e)
-                return False
-        finally:
-            if doc is not None:
-                doc.freeDoc()
+            with open(xmlfile, 'r') as f:
+                doc = ET.parse(f)
+            if validate_doc:
+                if not validate_doc(doc):
+                    return False
+            root = doc.getroot()
+            assert root.tag == obj_name
+            self.init_from_xml_node(root)
+        except ET.ParseError as e:
+            syslog.syslog(syslog.LOG_ERR, "read_xml_file() xml.etree.ElementTree.ParseError: %s" % e)
+            return False
+        except Exception as e:
+            syslog.syslog(syslog.LOG_ERR, "read_xml_file() error: %s" % e)
+            return False
         return True
 
     def write_xml(self, obj_name=None, f=None):
         try:
-            need_to_close = False
             if f is None:
                 f = sys.stdout
-            elif isinstance(f, str):
-                f = open(f, "w")
-                need_to_close = True
-            elif isinstance(f, FileType):
-                pass
-            else:
-                raise ValueError("bad file parameter %s" % f)
 
-            f.write(self.get_xml_text_doc(obj_name))
-            if need_to_close:
-                f.close()
+            self.get_xml_doc(obj_name).write(f, encoding=i18n_encoding, xml_declaration=True)
         except Exception as e:
             syslog.syslog(syslog.LOG_ERR, "could not write %s: %s" % (f, e))
 
-    def get_xml_nodes(self, doc, obj_name=None):
+    def get_xml_nodes(self, obj_name=None):
         elements, attributes = self.get_elements_and_attributes()
         if obj_name is None:
             obj_name = self.__class__.__name__
-        root = libxml2.newNode(obj_name)
+        root = ET.Element(obj_name)
 
         for name in attributes:
             name_info = self._xml_info[name]
             typecast = name_info.get('export_typecast', str)
             value = getattr(self, name)
             if value is not None:
-                root.setProp(name, typecast(value))
+                root.set(name, typecast(value))
 
         for name in elements:
             try:
                 if self._xml_info == 'unstructured':
-                    typecast = string_to_xmlnode
+                    typecast = str
                     list_item_name = None
                 else:
                     name_info = self._xml_info[name]
-                    typecast = name_info.get('export_typecast', string_to_xmlnode)
+                    typecast = name_info.get('export_typecast', str)
                     list_item_name = name_info.get('list')
 
                 value = getattr(self, name)
@@ -357,27 +236,30 @@ class XmlSerialize(object, metaclass=XmlSerializeMetaData):
 
                 if list_item_name:
                     # Element is list container, iterate over list items
-                    element_node = libxml2.newNode(name)
-                    root.addChild(element_node)
+                    element_node = ET.SubElement(root, name)
                     for item in value:
                         if isinstance(item, XmlSerialize):
-                            child = item.get_xml_nodes(doc, list_item_name)
-                            element_node.addChild(child)
+                            child = item.get_xml_nodes(list_item_name)
+                            element_node.append(child)
                         else:
-                            list_item_node = libxml2.newNode(list_item_name)
-                            element_node.addChild(list_item_node)
-                            child = typecast(doc, item)
-                            list_item_node.addChild(child)
+                            list_item_node = ET.SubElement(element_node, list_item_name)
+                            child = typecast(item)
+                            if isinstance(child, ET.Element):
+                                list_item_node.append(child)
+                            else:
+                                list_item_node.text = child
                 else:
                     # Element is scalar
                     if isinstance(value, XmlSerialize):
-                        child = value.get_xml_nodes(doc, name)
-                        root.addChild(child)
+                        child = value.get_xml_nodes(name)
+                        root.append(child)
                     else:
-                        element_node = libxml2.newNode(name)
-                        root.addChild(element_node)
-                        child = typecast(doc, value)
-                        element_node.addChild(child)
+                        element_node = ET.SubElement(root, name)
+                        child = typecast(value)
+                        if isinstance(child, ET.Element):
+                            element_node.append(child)
+                        else:
+                            element_node.text = child
             except Exception as e:
                 syslog.syslog(syslog.LOG_ERR, "%s.%s value=%s" % (self.__class__.__name__, name, value))
 
@@ -390,17 +272,17 @@ class XmlSerialize(object, metaclass=XmlSerializeMetaData):
         if obj_name is None:
             root = xml_node
         else:
-            root = xml_get_child_element_by_name(xml_node, obj_name)
+            root = xml_node.find(obj_name)
             if root is None:
-                raise KeyError("xml child element (%s) not found in node %s" % (obj_name, xml_node.get_name()))
+                raise KeyError("xml child element (%s) not found in node %s" % (obj_name, xml_node.tag))
 
         # Read the attributes in the xml node Cast the attribute value
         # to a Python type and store coerced value in the Python
         # object (self) which can then be accessed by "name"
 
-        for name, value in xml_attributes(root):
+        for name, value in root.items():
             if name not in attributes:
-                log_debug("unknown attribute (%s) found in xml element (%s)" % (name, root.get_name()))
+                log_debug("unknown attribute (%s) found in xml element (%s)" % (name, root.tag))
                 continue
             name_info = self._xml_info[name]
             typecast = name_info.get('import_typecast', str)
@@ -409,13 +291,13 @@ class XmlSerialize(object, metaclass=XmlSerializeMetaData):
             else:
                 self.__setattr__(name, typecast(value))
 
-        for element_node in xml_child_elements_iter(root):
-            name = element_node.get_name()
+        for element_node in root:
+            name = element_node.tag
             if self._unstructured:
                 # Unstructured data, store the string content of each
                 # element in the Python object (self) which can then
                 # be accessed by "name"
-                value = element_node.getContent()
+                value = "".join(element_node.itertext())
                 self.__setattr__(name, value)
             else:
                 # Recursively read the contents of each element.  Casting to a
@@ -423,7 +305,7 @@ class XmlSerialize(object, metaclass=XmlSerializeMetaData):
                 # Python value in the Python object (self) which can then be
                 # accessed by "name"
                 if name not in elements:
-                    log_debug("unknown element (%s) found in xml element (%s)" % (name, root.get_name()))
+                    log_debug("unknown element (%s) found in xml element (%s)" % (name, root.tag))
                     continue
                 name_info = self._xml_info[name]
                 typecast = name_info.get('import_typecast', str)
@@ -432,16 +314,16 @@ class XmlSerialize(object, metaclass=XmlSerializeMetaData):
                 if list_item_name:
                     # Element is a list, recursively iterate over the elements children, e.g. list elements
                     attr = getattr(self, name, [])
-                    list_nodes = xml_get_child_elements_by_name(element_node, list_item_name)
+                    list_nodes = element_node.findall(list_item_name)
                     if isinstance(typecast, type) and issubclass(typecast, XmlSerialize):
                         for list_node in list_nodes:
                             attr.append(typecast(list_node))
                     else:
                         for list_node in list_nodes:
-                            attr.append(typecast(list_node.getContent()))
+                            attr.append(typecast("".join(list_node.itertext())))
                 else:
                     if isinstance(typecast, type) and issubclass(typecast, XmlSerialize):
                         self.__setattr__(name, typecast(element_node))
                     else:
-                        value = element_node.getContent()
+                        value = "".join(element_node.itertext())
                         self.__setattr__(name, typecast(value))
