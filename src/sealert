@@ -382,6 +382,13 @@ class SEAlert():
             syslog.syslog(syslog.LOG_ERR, e.strerror)
             sys.exit(1)
 
+        except ImportError as e:
+            # Handle ImportError of setroubleshoot.browser when not available
+            # (e.g. no gui)
+            syslog.syslog(syslog.LOG_ERR, "exception %s: %s" % (e.__class__.__name__, str(e)))
+            print ("This feature requires setroubleshoot package installed on the system.", file=sys.stderr)
+            sys.exit(1)
+
     def finish(self):
         if self.setroubleshootd_dbus is not None:
             self.setroubleshootd_dbus.finish()
