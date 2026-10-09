@@ -15,8 +15,7 @@
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+# along with this program; if not, see <https://www.gnu.org/licenses/>.
 #
 
 import gettext
@@ -53,7 +52,7 @@ class Plugin(object):
      * summary: summary of the denial
      * problem_description: detailed description of the denial
      * fix_description: description of how to allow the denied access
-     * fix_cmd: command that can be used to allow the access
+     * fix_cmd: command string, or list of command strings, to allow the access
 
     All of the strings will have a standard set of substitutions performed.
     Each keyword (proceeded by a '$' will be replace by a string) - see
@@ -117,7 +116,8 @@ o
         return self.do_text
 
     def get_fix_cmd(self, avc, args):
-        return self.fix_cmd
+        """Return a list of command strings, or a single command string (each may contain $VAR placeholders)."""
+        return getattr(self, 'fix_cmd', [])
 
     def get_if_text(self, avc, args):
         return self.if_text

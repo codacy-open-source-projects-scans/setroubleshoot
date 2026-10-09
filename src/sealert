@@ -16,8 +16,7 @@
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+# along with this program; if not, see <https://www.gnu.org/licenses/>.
 #
 
 from __future__ import print_function
@@ -173,14 +172,19 @@ def fix_lookup_id(local_id, analysis_id):
                         cl.main_loop.quit()
                         return
                     siginfo.update_derived_template_substitutions()
-                    command = siginfo.substitute_array(p.get_fix_cmd(siginfo.audit_event, plugin.args).split())
-                    try:
-                        output = subprocess.check_output(command, universal_newlines=True)
-                        print(_("Successfully ran %s" % ' '.join(command)))
-                    except subprocess.CalledProcessError as e:
-                        print((e.output))
-                    except Exception:
-                        pass
+                    fix_cmds = p.get_fix_cmd(siginfo.audit_event, plugin.args)
+                    if isinstance(fix_cmds, str):
+                        fix_cmds = [fix_cmds]
+                    for cmd_str in fix_cmds:
+                        command = siginfo.substitute_array(cmd_str.split())
+                        try:
+                            subprocess.check_output(command, universal_newlines=True)
+                            print(_("Successfully ran %s") % ' '.join(command))
+                        except subprocess.CalledProcessError as e:
+                            print(e)
+                            break
+                        except Exception:
+                            break
                     cl.main_loop.quit()
                     return
         print(_("Plugin %s not valid for %s id") % (analysis_id, local_id))

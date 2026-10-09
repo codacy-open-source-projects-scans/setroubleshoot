@@ -15,8 +15,7 @@ from __future__ import print_function
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+# along with this program; if not, see <https://www.gnu.org/licenses/>.
 #
 
 import xml.etree.ElementTree as ET
@@ -101,7 +100,7 @@ def get_default_port():
 
 def get_socket_list_from_config(cfg_section):
     addr_string = get_config(cfg_section, 'address_list')
-    socket_addresses = parse_socket_address_list(addr_string)
+    socket_addresses = parse_socket_address_list(addr_string, get_default_port())
     return socket_addresses
 
 
@@ -578,6 +577,8 @@ class SocketAddress(object):
             port = match.group(3)
             if port is None:
                 port = self.default_port
+            else:
+                port = int(port)
 
             if addr == 'hostname':
                 addr = get_hostname()
@@ -686,6 +687,7 @@ class ListeningServer(ConnectionIO):
                 try:
                     client_socket, client_address = socket.accept()
                     fcntl.fcntl(client_socket.fileno(), fcntl.F_SETFD, fcntl.FD_CLOEXEC)
+                    client_socket.settimeout(RpcChannel.socket_timeout)
                     client_handler = self.client_connection_handler_class(self.socket_address)
                     client_handler.open(client_socket, client_address)
                     self.connection_state.update(0, ConnectionState.PROBLEM_FLAGS)
@@ -711,6 +713,8 @@ class ListeningServer(ConnectionIO):
 
 
 class RequestReceiver:
+    MAX_HEADER_LEN = 8192
+    MAX_BODY_LEN = 1024 * 1024
 
     def __init__(self, dispatchFunc):
         self.dispatchFunc = dispatchFunc
@@ -737,6 +741,8 @@ class RequestReceiver:
                     self.parse_header()
                     continue
                 else:
+                    if len(self.feed_buf) > self.MAX_HEADER_LEN:
+                        raise ValueError("RPC header too large")
                     # Can't read header till more data arrives
                     break
             if len(self.feed_buf) >= self.headerLen + self.bodyLen:
@@ -755,6 +761,8 @@ class RequestReceiver:
 
     def feed(self, data):
         self.feed_buf += data
+        if len(self.feed_buf) > self.MAX_HEADER_LEN + self.MAX_BODY_LEN:
+            raise ValueError("RPC request exceeds maximum allowed size")
         self.process()
 
     def parse_header(self):
@@ -769,7 +777,11 @@ class RequestReceiver:
                 begin = match.end()
             else:
                 break
+        if 'content-length' not in self.header:
+            raise ValueError("RPC request missing content-length")
         self.bodyLen = int(self.header['content-length'])
+        if self.bodyLen < 0 or self.bodyLen > self.MAX_BODY_LEN:
+            raise ValueError("RPC body length out of range")
 
 #-----------------------------------------------------------------------------
 
@@ -860,10 +872,17 @@ class RpcChannel(ConnectionIO, RpcManage):
                                      result_code, result_msg)
         self.io_watch_remove()
 
-    def get_method_implementation(self, interface, method):
+    def get_method_implementation(self, interface, method, expected_type=None):
         handler_obj = self.rpc_handlers.get(interface, None)
         if handler_obj is None:
             return None
+        if expected_type is not None:
+            interface_dict = interface_registry.interfaces.get(interface)
+            if interface_dict is None:
+                return None
+            rpc_def = interface_dict.get(method)
+            if rpc_def is None or rpc_def.type != expected_type:
+                return None
         method_ptr = getattr(handler_obj, method, None)
         return method_ptr
 
@@ -962,7 +981,7 @@ class RpcChannel(ConnectionIO, RpcManage):
             self.handle_return(type, rpc_id, body)
         elif type == 'method':
             interface, method, args = convert_rpc_xml_to_args(body)
-            method_ptr = self.get_method_implementation(interface, method)
+            method_ptr = self.get_method_implementation(interface, method, 'method')
             if method_ptr:
                 try:
                     return_args = method_ptr(*args)
@@ -981,7 +1000,7 @@ class RpcChannel(ConnectionIO, RpcManage):
                 self.emit_rpc(rpc_id, 'error_return', rpc_error_def, method, err_code, err_msg)
         elif type == 'signal':
             interface, method, args = convert_rpc_xml_to_args(body)
-            method_ptr = self.get_method_implementation(interface, method)
+            method_ptr = self.get_method_implementation(interface, method, 'signal')
             if method_ptr:
                 try:
                     method_ptr(*args)

@@ -16,8 +16,7 @@ from __future__ import absolute_import
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+# along with this program; if not, see <https://www.gnu.org/licenses/>.
 #
 
 __all__ = ['RunFaultServer',
@@ -150,6 +149,8 @@ def send_alert_notification(siginfo):
     system_bus.send_message(alert)
 
     for client in connection_pool.clients('sealert'):
+        if not (client.connection_state.flags & ConnectionState.AUTHENTICATED):
+            continue
         client.alert(siginfo)
 
 #------------------------------ Variables -------------------------------
@@ -325,6 +326,9 @@ class SetroubleshootdClientConnectionHandler(ClientConnectionHandler,
     def logon(self, type, username, password):
         log_debug("logon(%s) type=%s username=%s" % (self, type, username))
 
+        if self.uid is None:
+            raise ProgramError(ERR_USER_LOOKUP, detail="peer credentials unavailable; refusing logon on non-unix socket")
+
         if username != get_identity(self.uid):
             raise ProgramError(ERR_USER_LOOKUP, detail="uid=%s does not match logon username (%s)" % (self.uid, username))
 
@@ -359,6 +363,9 @@ class SetroubleshootdClientConnectionHandler(ClientConnectionHandler,
 
         if not (self.connection_state.flags & ConnectionState.AUTHENTICATED):
             raise ProgramError(ERR_NOT_AUTHENTICATED)
+
+        if self.uid != 0 and not self.access.user_allowed('fix_cmd', self.username):
+            raise ProgramError(ERR_USER_PROHIBITED)
 
         email_recipients = recipients
         email_recipients.write_recipient_file(email_recipients_filepath)
@@ -443,6 +450,8 @@ class ClientNotifier(object):
 
     def signatures_updated(self, type, item):
         for client in self.connection_pool.clients('sealert'):
+            if not (client.connection_state.flags & ConnectionState.AUTHENTICATED):
+                continue
             client.signatures_updated(type, item)
 
 
@@ -663,6 +672,8 @@ Deletes an alert from the database.
 
 * `success(b)`:
 """
+        if self.connection.get_unix_user(sender) != 0:
+            return False
         try:
             database = get_host_database()
             alert = self._get_alert(local_id, database)
